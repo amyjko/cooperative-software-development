@@ -1,0 +1,10 @@
+body {
+	max-width: 800px;
+	padding: 3em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.text-left td {
+	text-align: left;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Comprehension</title>
+		
+	</head>
+	<body>
+		<p><a href="index.html">Back to table of contents</a></p>
+
+		<!-- UPDATE -->
+		<img src="images/network.png" class="img-responsive" />		
+		<small>Credit: public domain</small>
+		
+		<h1>Program Comprehension</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>Despite all of the different activities that we've talked about so far&mdash;communicating, coordinating, planning, designing, architecting&mdash;really, most of a software engineers time is spent reading code (<a href="#maalej">Maalej et al. 2014</a>). Sometimes this is their own code, which makes this reading easier. Most of the time, it is someone else's code, whether it's a teammate's, or part of a library or API you're using. We call this reading <strong>program comprehension</strong>.</p>
+		
+		<p>Being good at program comprehension is a critical skill. You need to be able to read a function and know what it will do with its inputs; you need to be able to read a class and understand its state and functionality; you also need to be able to comprehend a whole implementation, understanding its architecture. Without these skills, you can't test well, you can't debug well, and you can fix or enhance the systems you're building or maintaining. In fact, studies of software engineers' first year at their first job show that a significant majority of their time is spent trying to simply comprehend the architecture of the system they are building or maintaining and understanding the processes that are being followed to modify and enhance them (<a href="#dagenais">Dagenais et al. 2010</a>).</p>
+
+
+		
+		<p>What's going on when developers comprehend code? Usually, developers are trying to answer questions about code that help them build larger models of how a program works. Because program comprehension is hard, they avoid it when they can, relying on explanations from other developers rather than trying to build precise models of how a program works on their own (<a href="#roehm">Roehm et al. 2012</a>). When they do try to comprehend code, developers are usually trying to answer questions. Several studies have many general questions that developers must be able to answer in order to understand programs (<a href="#sillito">Sillito et al. 2006</a>, <a href="#latoza">LaToza & Myers 2010</a>). Here are over forty common questions that developers ask:</p>
+		
+		<table class="table table-striped">
+			<tr>
+				<td>Which type represents this domain concept or this UI element or action?</td>
+				<td>Where in the code is the text in this error message or UI element?</td>
+			</tr>
+			<tr>
+				<td>Where is there any code involved in the implementation of this behavior?</td>
+				<td>Is there an entity named something like this in that unit (for example in a project, package or class)?</td>
+			</tr>
+			<tr>
+				<td>What are the parts of this type?</td>
+				<td>Which types is this type a part of?</td>
+			</tr>
+			<tr>
+				<td>Where does this type fit in the type hierarchy?</td>
+				<td>Does this type have any siblings in the type hierarchy?</td>
+			</tr>
+			<tr>
+				<td>Where is this field declared in the type hierarchy?</td>
+				<td>Who implements this interface or these abstract methods?</td>
+			</tr>
+			<tr>
+				<td>Where is this method called or type referenced?</td>
+				<td>When during the execution is this method called?</td>
+			</tr>
+			<tr>
+				<td>Where are instances of this class created?</td>
+				<td>Where is this variable or data structure being accessed?</td>
+			</tr>
+			<tr>
+				<td>What data can we access from this object?</td>
+				<td>What does the declaration or definition of this look like?</td>
+			</tr>
+			<tr>
+				<td>What are the arguments to this function?</td>
+				<td>What are the values of these arguments at runtime?</td>
+			</tr>
+			<tr>
+				<td>What data is being modified in this code?</td>
+				<td>How are instances of these types created and assembled?</td>
+			</tr>
+			<tr>
+				<td>How are these types or objects related?</td>
+				<td>How is this feature or concern (object ownership, UI control, etc) implemented?</td>
+			</tr>
+			<tr>
+				<td>What in this structure distinguishes these cases?</td>
+				<td>What is the "correct" way to use or access this data structure?</td>
+			</tr>
+			<tr>
+				<td>How does this data structure look at runtime?</td>
+				<td>How can data be passed to (or accessed at) this point in the code?</td>
+			</tr>
+			<tr>
+				<td>How is control getting (from here to) here?</td>
+				<td>Why isn't control reaching this point in the code?</td>
+			</tr>
+			<tr>
+				<td>Which execution path is being taken in this case?</td>
+				<td>Under what circumstances is this method called or exception thrown?</td>
+			</tr>
+			<tr>
+				<td>What parts of this data structure are accessed in this code?</td>
+				<td>How does the system behavior vary over these types or cases?</td>
+			</tr>
+			<tr>
+				<td>What are the differences between these files or types?</td>
+				<td>What is the difference between these similar parts of the code (e.g., between sets of methods)?</td>
+			</tr>
+			<tr>
+				<td>What is the mapping between these UI types and these model types?</td>
+				<td>How can we know this object has been created and initialized correctly?</td>
+			</tr>
+		</table>
+		
+		<p>If you think about the massive diversity in this list, you can see why program comprehension requires expertise. You not only need to understand programming languages quite well, but you also need to have strategies for answering all of the questions above (and more) quickly, effectively, and accurately.</p>
+		
+		<p>So how do developers go about answering these questions? Studies comparing experts and novices show that experts use prior knowledge that they have about architecture, design patterns, and the problem domain a program is built for to know what questions to ask and how to answer them, whereas novices use surface features of code, which leads them to spend considerable time reading code that is irrelevant to a question ((<a href="#vonmay">von Mayrhauser & Vans 1994</a>), <a href="latoza2">LaToza et al. 2007</a>). Fundamentally, reading and comprehending source code is fundamentally different from those of reading and comprehending natural language (<a href="#binkley">Binkley et al. 2013</a>); what experts are doing is ultimately reasoning about <strong>dependencies</strong> between code (<a href="#weiser">Weiser 1981</a>). Dependencies include things like <strong>data dependencies</strong> (where a variable is used to compute something, what modifies a data structure, how data flows through a program, etc.) and <strong>control dependencies</strong> (which components call which functions, which events can trigger a function to be called, how a function is reached, etc.). All of the questions above fundamentally get at different types of data and control dependencies. In fact, theories of how developers navigate code by following these dependencies are highly predictive of what information a developer will seek next (<a href="#fleming">Fleming et al. 2013</a>), suggesting that expert behavior is highly routine.</p>
+
+		<p>While much of program comprehension is skill, some of it is determined by design. For example, some programming languages result in programs that are more comprehensible. One framework called the <em>Cognitive Dimensions of Notations</em> (<a href="#green">Green 1989</a>) lays out some of the tradeoffs in programming language design that result in these differences in comprehensibility. For example, one of the dimensions in the framework is <strong>consistency</strong>, which refers to how much of a notation can be guessed based on an initial understanding of a language. JavaScript is a low-consistency language because of operators like <code>==</code>, which behave differently depending on what the type of the left and right operands are. Knowing the behavior for Booleans doesn't tell you the behavior for a Boolean being compared to an integer. In contrast, Java is a high consistency language: <code>==</code> is only ever valid when both operands are of the same type.</p>
+		
+		<p>These differences in notation have real impact. Encapsulation through data structures leads to better comprehension that monolithic or purely functional languages (<a href="#woodfield">Woodfield et al. 1981</a>, <a href="#bhattacharya">Bhattacharya & Neamtiu</a>). Declarative programming paradigms (like the JavaScript <a href="https://facebook.github.io/react/">React</a>) have greater comprehensibility than imperative languages (<a href="#salvaneschi">Salvaneschi et al. 2014</a>). In general, languages that are statically typed result in fewer defects (<a href="#ray">Ray et la. 2014</a>), better comprehensibility because of the ability to construct better documentation (<a href="#endrikat">Endrikat et al. 2014</a>), and result in easier debugging (<a href="#hanenberg">Hanenberg et al. 2013</a>). In fact, studies of more dynamic languages like JavaScript and Smalltalk (<a href="#callau">Calla&uacute et al. 2013</a>) show that the dynamic features of these languages aren't really used all that much anywhere. It appears then that the more you tell a compiler about what your code means, the more it helps the other developers know what it means too.</p>
+		
+		<p>Code editors, development environments, and program comprehension tools can also be helpful. Early evidence showed that simple features like syntax highlighting and careful typographic choices can improve the speed of program comprehension (<a href="#baecker">Baecker 1988</a>). I have also worked on several tools to support program comprehension, including the Whyline, which automates many of the more challenging aspects of navigating dependencies in code, and visualizes them (<a href="#ko">Ko & Myers 2009</a>):</p>
+
+		<p class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t6gVZ-qZ4sI" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</p>
+
+		<p>The path from novice to expert in program comprehension is one that involves understanding programming language semantics exceedingly well and reading <em>a lot</em> of code, design patterns, and architectures. Anticipate that as you develop these skills, it will take you time to build robust understandings of what a program is doing, slowing down your writing, testing, and debugging.</p>
+
+		<center class="lead"><a href="verification.html">Next chapter: Verification</a></center>
+
+		<h2>Further reading</h2>
+
+		<small>
+
+		<p id="baecker">R. Baecker. 1988. <a href="http://ieeexplore.ieee.org/abstract/document/93716/" target="_blank">Enhancing program readability and comprehensibility with tools for program visualization</a>. In Proceedings of the 10th international conference on Software engineering (ICSE '88). IEEE Computer Society Press, Los Alamitos, CA, USA, 356-366.</p>
+		<p id="bhattacharya">Pamela Bhattacharya and Iulian Neamtiu. 2011. <a href="https://doi.org/10.1145/1985793.1985817" target="_blank">Assessing programming language impact on development and maintenance: a study on C and C++</a>. In Proceedings of the 33rd International Conference on Software Engineering (ICSE '11). ACM, New York, NY, USA, 171-180.</p>
+		<p id="binkley">Binkley, D., Davis, M., Lawrie, D., Maletic, J. I., Morrell, C., & Sharif, B. (2013). <a href="https://link.springer.com/article/10.1007/s10664-012-9201-4" target="_blank">The impact of identifier style on effort and comprehension</a>. Empirical Software Engineering, 18(2), 219-276.</p>
+		<p id="callau">Calla&uacute, O., Robbes, R., Tanter, &Eacute., & R&oumlthlisberger, D. (2013). <a href="https://doi.org/10.1145/1985441.1985448" target="_blank">How (and why) developers use the dynamic features of programming languages: the case of Smalltalk</a>. Empirical Software Engineering, 18(6), 1156-1194.
+		<p id="dagenais">Barth&eacutel&eacutemy Dagenais, Harold Ossher, Rachel K. E. Bellamy, Martin P. Robillard, and Jacqueline P. de Vries. 2010. <a href="http://dx.doi.org/10.1145/1806799.1806842" target="_blank">Moving into a new software project landscape</a>. In Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 1 (ICSE '10), Vol. 1. ACM, New York, NY, USA, 275-284.</p>
+		<p id="endrikat">Stefan Endrikat, Stefan Hanenberg, Romain Robbes, and Andreas Stefik. 2014. <a href="https://doi.org/10.1145/2568225.2568299" target="_blank">How do API documentation and static typing affect API usability?</a> In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 632-642.</p>		<p id="green">Green, T. R. (1989). Cognitive dimensions of notations. People and computers V, 443-460.</p>
+		<p id="fleming">Fleming, S. D., Scaffidi, C., Piorkowski, D., Burnett, M., Bellamy, R., Lawrance, J., & Kwan, I. (2013). <a href="https://doi.org/10.1145/2430545.2430551" target="_blank">An information foraging theory perspective on tools for debugging, refactoring, and reuse tasks</a>. ACM Transactions on Software Engineering and Methodology (TOSEM), 22(2), 14.</p>
+		<p id="hanenberg">Stefan Hanenberg, Sebastian Kleinschmager, Romain Robbes, &Eacuteric Tanter, Andreas Stefik. <a href="https://doi.org/10.1007/s10664-013-9289-1" target="_blank">An empirical study on the impact of static typing on software maintainability</a>. Empirical Software Engineering. 2013.</p>
+		<p id="ko">Ko, A. J., & Myers, B. A. (2009, April). <a href="https://doi.org/10.1145/1518701.1518942" target="_blank">Finding causes of program output with the Java Whyline</a>. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 1569-1578).</p>
+		<p id="latoza">Thomas D. LaToza and Brad A. Myers. 2010. <a href="http://dx.doi.org/10.1145/1806799.1806829" target="_blank">Developers ask reachability questions</a>. In Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 1 (ICSE '10), Vol. 1. ACM, New York, NY, USA, 185-194.</p>
+		<p id="latoza2">Thomas D. LaToza, David Garlan, James D. Herbsleb, and Brad A. Myers. 2007. <a href="http://dx.doi.org/10.1145/1287624.1287675" target="_blank">Program comprehension as fact finding</a>. In Proceedings of the the 6th joint meeting of the European software engineering conference and the ACM SIGSOFT symposium on The foundations of software engineering (ESEC-FSE '07). ACM, New York, NY, USA, 361-370.</p>
+		<p id="maalej">Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke. 2014. <a href="http://dx.doi.org/10.1145/2622669" target="_blank">On the Comprehension of Program Comprehension</a>. ACM Transactions on Software Engineering and Methodology. 23, 4, Article 31 (September 2014), 37 pages.</p>
+		<p id="vonmay">A. von Mayrhauser and A. M. Vans. 1994. <a href="http://dl.acm.org/citation.cfm?id=257741" target="_blank">Comprehension processes during large scale maintenance</a>. In Proceedings of the 16th international conference on Software engineering (ICSE '94). IEEE Computer Society Press, Los Alamitos, CA, USA, 39-48.</p>
+		<p id="ray">Baishakhi Ray, Daryl Posnett, Vladimir Filkov, and Premkumar Devanbu. 2014. <a href="http://dx.doi.org/10.1145/2635868.2635922" target="_blank">A large scale study of programming languages and code quality in GitHub</a>. In Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2014). ACM, New York, NY, USA, 155-165.</p>
+		<p id="roehm">Tobias Roehm, Rebecca Tiarks, Rainer Koschke, and Walid Maalej. 2012. <a href="http://dl.acm.org/citation.cfm?id=2337254" target="_blank">How do professional developers comprehend software?</a> In Proceedings of the 34th International Conference on Software Engineering (ICSE '12). IEEE Press, Piscataway, NJ, USA, 255-265.</p>
+		<p id="salvaneschi">Guido Salvaneschi, Sven Amann, Sebastian Proksch, and Mira Mezini. 2014. <a href="https://doi.org/10.1145/2635868.2635895" target="_blank">An empirical study on program comprehension with reactive programming</a>. In Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2014). ACM, New York, NY, USA, 564-575.</p>
+		<p id="sillito">Jonathan Sillito, Gail C. Murphy, and Kris De Volder. 2006. <a href="http://dx.doi.org/10.1145/1181775.1181779" target="_blank">Questions programmers ask during software evolution tasks</a>. In Proceedings of the 14th ACM SIGSOFT international symposium on Foundations of software engineering (SIGSOFT '06/FSE-14). ACM, New York, NY, USA, 23-34.</p>
+		<p id="woodfield">S. N. Woodfield, H. E. Dunsmore, and V. Y. Shen. 1981. <a href="http://dl.acm.org/citation.cfm?id=802534" target="_blank">The effect of modularization and comments on program comprehension</a>. In Proceedings of the 5th international conference on Software engineering (ICSE '81). IEEE Press, Piscataway, NJ, USA, 215-223.</p>
+		<p id="stefik">Andreas Stefik and Susanna Siebert. 2013. <a href="https://doi.org/10.1145/2534973" target="_blank">An Empirical Investigation into Programming Language Syntax</a>. ACM Transactions on Computing Education 13, 4, Article 19 (November 2013), 40 pages.</p>
+		<p id="tao">Yida Tao, Yingnong Dang, Tao Xie, Dongmei Zhang, and Sunghun Kim. 2012. <a href="http://dx.doi.org/10.1145/2393596.2393656" target="_blank">How do software engineers understand code changes? An exploratory study in industry</a>. In Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering (FSE '12). ACM, New York, NY, USA, , Article 51 , 11 pages.</p>
+		<p id="weiser">Mark Weiser. 1981. <a href="http://dl.acm.org/citation.cfm?id=802557" target="_blank">Program slicing</a>. In Proceedings of the 5th international conference on Software engineering (ICSE '81). IEEE Press, Piscataway, NJ, USA, 439-449.</p>
+
+		</small>
+
+		<h2>Podcasts</h2>
+		
+		<small>
+		
+		<p>Software Engineering Daily, <a href="https://softwareengineeringdaily.com/2016/01/06/language-design-with-brian-kernighan/" target="_blank">Language Design with Brian Kernighan</a>.</p>
+
+		</small>
+
+	</body>
+
+</html>
+
+
+

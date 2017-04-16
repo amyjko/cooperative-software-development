@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Verification</title>
+		
+	</head>
+	<body>
+		<p><a href="index.html">Back to table of contents</a></p>
+
+		<img src="images/check.png" class="img-responsive" />		
+		<small>Credit: public domain</small>
+		
+		<h1>Verification</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>How do you know a program does what you intended? Part of this is being clear about what you intended (by writing <a href="specifications.html">specifications</a>, for example), but your intents, however clear, are not enough: you need evidence that your intents were correctly expressed computationally. To get this evidence, we do <strong>verification</strong>.</p>
+		
+		<p>There are many ways to verify code. A reasonable first instinct is to simply run your program. After all, what better way to check whether you expressed your intents then to see with your own eyes what your program does? This is an empirical approach is called <strong>testing</strong>. Some testing is <em>manual</em>, in that a human executes a program and verifies that it does what was intended. Some testing is <em>automated</em>, in that the test is run automatically by a computer. Another way to verify code is to <strong>analyze</strong> it, using logic to verify its correct operation. As with testing, some analysis is <em>manual</em>, since humans do it. We call this manual analysis <em>inspection</em>, whereas other analysis is <em>automated</em>, since computers do it. We call this <em>program analysis</em>. This leads to a nice complementary set of verification technique along two axes:</p>
+		
+		<table class="table table-striped">
+			<tr>
+				<th></th>
+				<th>manual</th>
+				<th>automatic</th>
+			</tr>
+			<tr>
+				<th>empirical</th>
+				<td>manual testing</td>
+				<td>automated testing</td>
+			</tr>
+			<tr>
+				<th>analytical</th>
+				<td>inspection</td>
+				<td>program analysis</td>
+			</tr>
+		</table>
+		
+		<p>To discuss each of these and their tradeoffs, first we have to cover some theory about verification. The first and simplest ideas are some terminology:</p>
+		
+		<ul>
+			<li>A <strong>defect</strong> is some subset of a program's code that exhibits behavior that violates a program's specifications. For example, if a program was supposed to sort a list of numbers in increasing order and print it to a console, but a flipped inequality in the sorting algorithm made it sort them in decreasing order, the flipped inequality is the defect.</li>
+			<li>A <strong>failure</strong> is the program behavior that results from a defect executing. In our sorting example, the failure is the incorrectly sorted list printed on the console.</li>
+			<li>A <strong>bug</strong> vaguely refers to either the defect, the failure, or both. When we say "bug", we're not being very precise, but it is a popular shorthand for a defect and everything it causes.</li>
+		</ul>
+		
+		<p>Note that because defects are defined relative to <em>intent</em>, whether a behavior is a failure depends entirely the definition of intent. If that intent is vague, whether something is a defect is vague. Moreover, you can define intents that result in behaviors that seem like failures: for example, I can write a program that intentionally crashes. A crash isn't a failure if it was intended! This might be pedantic, but you'd be surprised how many times I've seen professional developers in bug triage meetings say:</p>
+
+		<p><em>"Well, it's worked this way for a long time, and people have built up a lot of workarounds for this bug. It's also really hard to fix. Let's just call this by design. Closing this bug as won't fix."</em></p>
+
+		<h2>Testing</h2>
+		
+		<p>So how do you <em>find</em> defects in a program? Let's start with testing. Testing is generally the easiest kind of verification to do, but as a practice, it has questionable efficacy. Empirical studies of testing find that it <em>is</em> related to fewer defects in the future, but not strongly related, and it's entirely possible that it's not the testing itself that results in fewer defects, but that other activities (such as more careful implementation) result in fewer defects and testing efforts (<a href="#ahmed">Ahmed et al. 2016</a>). At the same time, modern developers don't test as much as they think they do (<a href="#beller">Beller et al. 2015</a>). Moreover, students are often not convinced of the return on investment of automated tests and often opt for laborious manual tests (even though they regret it later) (<a href="#pham">Pham et al. 2014</a>). Testing is therefore in a strange place: it's a widespread activity in industry, but it's not very systematically, and it doesn't seem to help very much when we try to measure its benefits.</p>
+
+		<p>Why is this? One possibility is that <strong>no amount of testing can prove a program correct with respect to its specifications</strong>. Why? It boils down to the same limitations that exist in science: with empiricism, we can provide evidence that a program <em>does</em> have defects, but we can't provide complete evidence that a program <em>doesn't</em> have defects. This is because even simple programs can execute in a infinite number of different ways.</p>
+		
+		<p>Consider this JavaScript program:</p>
+		
+		<pre>
+function count(input) {
+	while(input > 0)
+		input--;
+	return input;
+}</pre>
+
+		<p>The function should always return 0, right? How many possible values of <code>input</code> do we have to try manually to verify that it always does? Well, if <code>input</code> is an integer, then there are 2<sup>32</sup> possible integer values. That's not infinite, but that's a lot. But what if <code>input</code> is a string? There are an infinite number of possible strings because they can have any sequence of characters of any length. Now we have to manually test an infinite number of possible inputs. So if we were restricting ourselves to testing, we will never know that the program is correct for all possible inputs. In this case, automatic testing doesn't even help, since there are an infinite number of tests to run.</p>
+		
+		<p>There are some ideas in testing that can improve how well we can find defects. For example, rather than just testing the inputs you can think of, focus on all of the lines of code in your program. If you find a set of tests that can cause all of the lines of code to execute, you have one notion of <strong>test coverage</strong>. Of course, lines of code aren't enough, because an individual line can contain multiple different paths in it (e.g., <code>value ? getResult1() : getResult2()</code>). So another notion of coverage is executing all of the possible <em>control flow paths</em> through the various conditionals in your program. Executing <em>all</em> of the possible paths is hard, of course, because every conditional in your program doubles the number of possible paths (you have 200 if statements in your program? That's 2<sup>200</sup> possible paths, which is more paths than there are <a href="https://en.wikipedia.org/wiki/Observable_universe#Matter_content">atoms in the universe</a>).</p>
+		
+		<p>There are many types of testing that are common in software engineering:</p>
+		
+		<ul>
+			<li><strong>Unit tests</strong> verify that low-level functions return the correct output. For example, a program that implemented a function for finding the day of the week for a given date might also include unit tests that verify for a large number of dates that the correct day of the week is returned. They're good for ensuring widely used low-level functionality is correct.</li>
+			<li><strong>Integration tests</strong> verify that when all of the functionality of a program is put together into the final product, it behaves according to specifications. Integration tests often operate at the level of user interfaces, clicking buttons, entering text, submitting forms, and verifying that the expected feedback always occurs. Integration tests are good for ensuring that important tasks that users will perform are correct.</li>
+			<li><strong>Regression tests</strong> verify that previously fixed defects do not break again. For example, imagine you find a defect that causes logins to fail; you might write a test that verifies that this cause of login failure does not occur, in case someone breaks the same functionality again, even for a different reason. Regression tests are good for ensuring that you don't break things when you make changes to your application.</li>
+		</ul>
+		
+		<p>Which tests you should write depends on what risks you want to take. Don't care about failures? Don't write any tests. If failures of a particular kind are highly consequential to your team, you should probably write tests that check for those failures. As we noted above, you can't write enough tests to catch all bugs, so deciding which tests to write and maintain is a key challenge.</p>
+		
+		<h2>Analysis</h2>
+		
+		<p>Now, you might be thinking that it's obvious that the program above is defective for some integers and strings. How did you know? You <em>analyzed</em> the program rather than executing it with specific inputs. For example, when I read (analyzed) the program, I thought:</p>
+		
+		<p><em>"if we assume <code>input</code> is an integer, then there are only three types of values to meaningfully consider with respect to the <code>&gt;</code> in the loop condition: positive, zero, and negative. Positive numbers will always decrement to 0 and return 0. Zero will return zero. And negative numbers just get returned as is, since they're less then zero, which is wrong with respect to the specification. And in JavaScript, strings are never greater than 0 (as if that even makes sense), so the string is returned, which is wrong."</em></p>
+				
+		<p>The above is basically an informal proof, using logic to divide the possible states of <code>input</code> and their effect on the program's behavior. It used <strong>symbolic execution</strong> to verify all possible paths through the function, finding the paths that result in correct and incorrect values. The strategy was an inspection because we did it manually. If we had written a program that read the program to perform this deduction automatically, we would have called it <em>program analysis</em>.</p>
+		
+		<p>The benefits of analysis is that it <em>can</em> demonstrate that a program is correct in all cases. This is because they can handle infinite spaces of possible inputs by mapping those infinite inputs onto a finite space of possible executions. It's not always possible to do this in practice, since many kinds of programs can execute in infinitely possible ways, but it gets us closer.</p>
+		
+		<p>One popular type of automatic program analysis tools is a <strong>static analysis</strong> tool. These tools read programs and identify potential defects using the types of formal proofs like the ones above. They typically result in a set of warnings, each one requiring inspection by a developer to verify, since some of the warnings may be false positives (something the tool thought was a defect, but wasn't). Although static analysis tools can find all kinds of defects, they aren't yet viewed by developers to be that useful because the false positives are often large in number and the way they are presented make them difficult to understand (<a href="#johnson">Johnson et al. 2013</a>).</p>
+
+		<p>Not all analytical techniques rely entirely on logic. In fact, one of the most popular methods of verification in industry are <strong>code reviews</strong>, also known as <em>inspections</em>. The basic idea of an inspection is to read the program analytically, following the control and data flow inside the code to look for defects. This can be done alone, in groups, and even included as part of process of integrating changes, to verify them before they are committed to a branch. Modern code reviews, while informal, help find defects, stimulate knowledge transfer between developers, increase team awareness, and help identify alternative implementations that can improve quality (<a href="bacchelli">Bacchelli & Bird 2013</a>). One study found that measures of how much a developer knows about an architecture can increase 66% to 150% depending on the project (<a href="#rigby2">Rigby & Bird 2013</a>). That said, not all reviews are created equal: the best ones are thorough and conducted by a reviewer with strong familiarity with the code (<a href="#kononenko">Kononenko et al. 2016</a>); including reviewers that do not know each other or do not know the code can result in longer reviews, especially when run as meetings (<a href="#seaman">Seaman & Basili 1997</a>). Soliciting reviews asynchronously by allowing developers to request reviewers of their peers is generally much more scalable (<a href="#rigby">Rigby & Storey 2011</a>), but this requires developers to be careful about which reviews they invest in.</p>
+		
+		<p>Beyond these more technical considerations around verifying a program's correctness are organizational issues around different software qualities. For example, different organizations have different sensitivities to defects. If a $0.99 game on the app store has a defect, that might not hurt its sales much, unless that defect prevents a player from completing the game. If Boeing's flight automation software has a defect, hundreds of people might die. The game developer might do a little manual play testing, release, and see if anyone reports a defect. Boeing will spend years proving mathematically with automatic program analysis that every line of code does what is intended, and repeating this verification every time a line of code changes. What type of verification is right for your team depends entirely on what you're building, who's using it, and how they're depending on it.</p>
+		
+		<center class="lead"><a href="monitoring.html">Next chapter: Monitoring</a></center>
+
+		<h2>Further reading</h2>
+
+		<small>
+		<p id="ahmed">Iftekhar Ahmed, Rahul Gopinath, Caius Brindescu, Alex Groce, and Carlos Jensen. 2016. <a href="https://doi.org/10.1145/2950290.2950324">Can testedness be effectively measured?</a> In Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2016). ACM, New York, NY, USA, 547-558.</p>
+		<p id="bacchelli">Alberto Bacchelli and Christian Bird. 2013. Expectations, outcomes, and challenges of modern code review. In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 712-721.</p>
+		<p id="beller">Moritz Beller, Georgios Gousios, Annibale Panichella, and Andy Zaidman. 2015. <a href="https://doi.org/10.1145/2786805.2786843">When, how, and why developers (do not) test in their IDEs</a>. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 179-190.</p>
+		<p id="johnson">Brittany Johnson, Yoonki Song, Emerson Murphy-Hill, and Robert Bowdidge. 2013. Why don't software developers use static analysis tools to find bugs? In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 672-681.</p>
+		<p id="kononenko">Oleksii Kononenko, Olga Baysal, and Michael W. Godfrey. 2016. <a href="https://doi.org/10.1145/2884781.2884840">Code review quality: how developers see it</a>. In Proceedings of the 38th International Conference on Software Engineering (ICSE '16). ACM, New York, NY, USA, 1028-1038.</p>
+		<p id="pham">Raphael Pham, Stephan Kiesling, Olga Liskin, Leif Singer, and Kurt Schneider. 2014. <a href="http://dx.doi.org/10.1145/2635868.2635925">Enablers, inhibitors, and perceptions of testing in novice software teams</a>. In Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2014). ACM, New York, NY, USA, 30-40.</p>
+		<p id="rigby">Peter C. Rigby and Margaret-Anne Storey. 2011. <a href="https://doi.org/10.1145/1985793.1985867">Understanding broadcast based peer review on open source software projects</a>. In Proceedings of the 33rd International Conference on Software Engineering (ICSE '11). ACM, New York, NY, USA, 541-550.</p> 
+		<p id="rigby2">Peter C. Rigby and Christian Bird. 2013. <a href="http://dx.doi.org/10.1145/2491411.2491444">Convergent contemporary software peer review practices</a>. In Proceedings of the 2013 9th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2013). ACM, New York, NY, USA, 202-212.</p>
+		<p id="seaman">Carolyn B. Seaman and Victor R. Basili. 1997. <a href="http://dx.doi.org/10.1145/253228.253248">An empirical study of communication in code inspections</a>. In Proceedings of the 19th international conference on Software engineering (ICSE '97). ACM, New York, NY, USA, 96-106.</p>
+
+		</small>
+
+	</body>
+
+</html>
+
+
+

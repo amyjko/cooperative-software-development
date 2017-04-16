@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- UPDATE -->
+		<title>Monitoring</title>
+		
+	</head>
+	<body>
+		<p><a href="index.html">Back to table of contents</a></p>
+
+		<img src="images/police.jpg" class="img-responsive" />		
+		<small>Credit: public domain</small>
+		
+		<h1>Monitoring</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>The first application I ever wrote was a complete and utter failure.</p>
+		
+		<p>I was an eager eighth grader, full of wonder and excitement about the infinite possibilities in code, with an insatiable desire to build, build, build. I'd made plenty of little games and widgets for myself, but now was my chance to create something for someone else: my friend and I were making a game and he needed a tool to create pixel art for it. We had no money for fancy Adobe licenses, and so I decided to make a tool.</p>
+
+		<p>In designing the app, I made every imaginable software engineering mistake. I didn't talk to him about requirements. I didn't test on his computer before sending the finished app. I certainly didn't conduct any usability tests, performance tests, or acceptance tests. The app I ended up shipping was a pure expression of what I wanted to build, not what he needed to be creative or productive. As a result, it was buggy, slow, confusing, and useless, and blinded by my joy of coding, I had no clue.</p>
+		
+		<p>Now, ideally my "customer" would have reported any of these problems to me right away, and I would have learned some tough lessons about software engineering. But this customer was my best friend, and also a very nice guy. He wasn't about to trash all of my hard work. Instead, he suffered in silence. He struggled to install, struggled to use, and worst of all struggled to create. He produced some amazing art a few weeks after I gave him the app, but it was only after a few months of progress on our game that I learned he hadn't used my app for a single asset, preferring instead to suffer through Microsoft Paint. My app was too buggy, too slow, and too confusing to be useful. I was devastated.</p>
+
+		<p>Why didn't I know it was such a complete failure? <strong>Because I wasn't looking</strong>. I'd ignored the ultimate test suite: <em>my customer</em>. I'd learned that the only way to really know whether software requirements are right is by watching how it executes in the world through <strong>monitoring</strong>.</p>
+
+		<h2>Discovering Failures</h2>
+
+		<p>Of course, this is easier said than done. That's because the (ideally) massive numbers of people executing your software is not easily observable. Moreover, each software quality you might want to monitor (performance, functional correctness, usability) requires entirely different methods of observation and analysis. Let's talk about some of the most important qualities to monitor and how to monitor them.</p>
+
+		<p>These are some of the easiest failures to detect because they are overt and unambiguous. Microsoft was one of the first organizations to do this comprehensively, building what eventually became known as Windows Error Reporting (<a href="#glerum">Gelrum et al 2009</a>). It turns out that actually capturing these errors at scale and mining them for repeating, reproducible failures is quite complex, requiring classification, progressive data collection, and many statistical techniques to extract signal from noise. In fact, Microsoft has a dedicated team of data scientists and engineers whose sole job is to manage the error reporting infrastructure, monitor and triage incoming errors, and use trends in errors to make decisions about improvements to future releases and release processes. This is now standard practice in most companies and organizations, including other big software companies (Google, Apple, IBM, etc.), as well as open source projects (eg, Mozilla). In fact, many application development platforms now include this as a standard operating system feature.</p>
+
+		<p>Performance, like crashes, kernel panics, and hangs, is easily observable in software, but a bit trickier to characterize as good or bad. How slow is too slow? How bad is it if something is slow occasionally? You'll have to define acceptable thresholds for different use cases to be able to identify problems automatically. Some experts in industry <a href="https://softwareengineeringdaily.com/2016/12/27/performance-monitoring-with-andi-grabner/">still view this as an art</a>.</p>
+		
+		<p>It's also hard to monitor performance without actually <em>harming</em> performance. Many tools and services (e.g., <a href="https://newrelic.com/">New Relic</a>) are getting better at reducing this overhead and offering real time data about performance problems through sampling.</p>
+
+		<p>Monitoring for data breaches, identity theft, and other security and privacy concerns are incredibly important parts of running a service, but also very challenging. This is partly because the tools for doing this monitoring are not yet well integrated, requiring each team to develop its own practices and monitoring infrastructure. But it's also because protecting data and identity is more than just detecting and blocking malicious payloads, but also about recovering from ones that get through, developing reliable data streams about application network activity, monitoring for anomalies and trends in those streams, and developing practices for tracking and responding to warnings that your monitoring system might generate. Researchers are still actively inventing more scalable, usable, and deployable techniques for all of these activities.</p>
+
+		<h2>Discovering Missing Requirements</h2>
+		
+		<p>Usability problems and missing features, unlike some of the preceding problems, are even harder to detect or observe, because the only true indicator that something is hard to use is in a user's mind. That said, there are a couple of approaches to detecting the possibility of usability problems.</p>
+		
+		<p>One is by monitoring application usage. Assuming your users will tolerate being watched, there are many techniques for automatically instrumenting applications for user interaction events, for mining these events for problematic patterns, and for browsing and analyzing these patterns for more subjective issues (<a href="#ivory">Ivory & Hearst 2001</a>). Modern tools and services like <a href="https://www.intercom.com/">Intercom</a> make it easier to capture, store, and analyze this usage data, although they still require you to have some upfront intuition about what to monitor. More advanced, experimental techniques in research automatically analyze undo events as indicators of usability problems (<a href="#akers">Akers et al. 2009</a>).</p>
+
+		 <p>All of the usage data above can tell you <em>what</em> your users are doing, but not <em>why</em>. For this, you'll need to get explicit feedback from support tickets, support forums, product reviews, and other critiques of user experience. Some of these types of reports go directly to engineering teams, becoming part of bug reporting systems, while others end up in customer service or marketing departments. While all of this data is valuable for monitoring user experience, most companies still do a bad job of using anything but bug reports to improve user experience, overlooking the rich insights in customer service interactions (<a href="#chilana2">Chilana et al. 2011</a>).</p>
+		 
+		 <p>Although bug reports are widely used, they have significant problems as a way to monitor: for developers to fix a problem, they need detailed steps to reproduce the problem, or stack traces or other state to help them track down the cause of a problem (<a href="#bettenburg">Bettenburg et al. 2008</a>); these are precisely the kinds of information that are hard for users to find and submit, given that most people aren't trained to produce reliable, precise information for failure reproduction. Additionally, once the information is recorded in a bug report, even <em>interpreting</em> the information requires social, organizational, and technical knowledge, meaning that if a problem is not addressed soon, an organization's ability to even interpret what the failure was and what caused it can decay over time (<a href="#aranda">Aranda & Venolia 2009</a>). All of these issues can lead to <a href="https://softwareengineeringdaily.com/2016/11/19/debugging-stories-with-haseeb-qureshi/">intractable debugging challenges</a>.</p>
+
+		 <p>Larger software organizations now employ data scientists to help mitigate these challenges of analyzing and maintaining monitoring data and bug reports. Most of them try to answer questions such as (<a href="#begel">Begel & Zimmermann 2014</a>):</p>
+		 
+		 <ul>
+			 <li>"How do users typically use my application?"</li>
+			 <li>"What parts of a software product are most used and/or loved by customers?"</li>
+			 <li>"What are best key performance indicators (KPIs) for monitoring services?"</li>
+			 <li>"What are the common patterns of execution in my application?"</li>
+			 <li>"How well does test coverage correspond to actual code usage by our customers?"</li>
+		</ul>
+		
+		<p>The most mature data science roles in software engineering teams even have multiple distinct roles, including <em>Insight Providers</em>, who gather and analyze data to inform decisions, <em>Modeling Specialists</em>, who use their machine learning expertise to build predictive models, <em>Platform Builders</em>, who create the infrastructure necessary for gathering data (<a href="#kim">Kim et al. 2016</a>). Of course, smaller organizations may have individuals who take on all of these roles.</p>
+
+		 <p>All of this effort to capture and maintain user feedback can be messy to analyze because it usually comes in the form of natural language text. Services like <a href="http://answerdash.com">AnswerDash</a> (a company I co-founded) structure this data by organizing requests around frequently asked questions. AnswerDash imposes a little widget on every page in a web application, making it easy for users to submit questions and find answers to previously asked questions. This generates data about the features and use cases that are leading to the most confusion, which types of users are having this confusion, and where in an application the confusion is happening most frequently. This product was based on several years of research in my lab (<a href="#chilana">Chilana et al. 2013</a>).</p>
+				
+		<center class="lead"><a href="evolution.html">Next chapter: Evolution</a></center>
+
+		<h2>Further reading</h2>
+
+		<small>
+		
+		<p id="akers">David Akers, Matthew Simpson, Robin Jeffries, and Terry Winograd. 2009. <a href="http://dx.doi.org/10.1145/1518701.1518804">Undo and erase events as indicators of usability problems</a>. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '09). ACM, New York, NY, USA, 659-668.</p>
+		<p id="aranda">Jorge Aranda and Gina Venolia. 2009. The secret life of bugs: Going past the errors and omissions in software repositories. In Proceedings of the 31st International Conference on Software Engineering (ICSE '09). IEEE Computer Society, Washington, DC, USA, 298-308.</p>
+		<p id="begel">Begel, A., & Zimmermann, T. (2014). <a href="https://doi.org/10.1145/2568225.2568233">Analyze this! 145 questions for data scientists in software engineering</a>. In Proceedings of the 36th International Conference on Software Engineering (pp. 12-23).</a>
+		<p id="bettenburg">Nicolas Bettenburg, Sascha Just, Adrian Schr&oumlter, Cathrin Weiss, Rahul Premraj, and Thomas Zimmermann. 2008. <a href="http://dx.doi.org/10.1145/1453101.1453146">What makes a good bug report?</a> In Proceedings of the 16th ACM SIGSOFT International Symposium on Foundations of software engineering (SIGSOFT '08/FSE-16). ACM, New York, NY, USA, 308-318.</p>
+		<p id="chilana">Chilana, P. K., Ko, A. J., Wobbrock, J. O., & Grossman, T. (2013). A multi-site field study of crowdsourced contextual help: usage and perspectives of end users and software teams. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 217-226).</p>
+		<p id="chilana2">Parmit K. Chilana, Andrew J. Ko, Jacob O. Wobbrock, Tovi Grossman, and George Fitzmaurice. 2011. <a href="http://dx.doi.org/10.1145/1978942.1979270">Post-deployment usability: a survey of current practices</a>. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '11). ACM, New York, NY, USA, 2243-2246.</p>
+		<p id="glerum">Kirk Glerum, Kinshuman Kinshumann, Steve Greenberg, Gabriel Aul, Vince Orgovan, Greg Nichols, David Grant, Gretchen Loihle, and Galen Hunt. 2009. <a href="http://dx.doi.org/10.1145/1629575.1629586">Debugging in the (very) large: ten years of implementation and experience</a>. In Proceedings of the ACM SIGOPS 22nd symposium on Operating systems principles (SOSP '09). ACM, New York, NY, USA, 103-116.</p>
+		<p id="ivory">Ivory M.Y., Hearst, M.A. (2001). <a href="http://doi.acm.org/10.1145/503112.503114">The state of the art in automating usability evaluation of user interfaces</a>. ACM Computing Surveys, 33(4).</p>
+		<p id="kim">Miryung Kim, Thomas Zimmermann, Robert DeLine, and Andrew Begel. 2016. <a href="https://doi.org/10.1145/2884781.2884783">The emerging role of data scientists on software development teams</a>. In Proceedings of the 38th International Conference on Software Engineering (ICSE '16). ACM, New York, NY, USA, 96-107.</p>
+		
+		</small>
+
+		<h2>Podcasts</h2>
+
+		<small>
+
+		<p>Software Engineering Daily, <a href="https://softwareengineeringdaily.com/2016/12/27/performance-monitoring-with-andi-grabner/">Performance Monitoring with Andi Grabner</a></p>
+		<p>Software Engineering Daily, <a href="https://softwareengineeringdaily.com/2016/07/28/2739/">The Art of Monitoring with James Turnbull</a></p>
+		<p>Software Engineering Daily, <a href="https://softwareengineeringdaily.com/2016/11/19/debugging-stories-with-haseeb-qureshi/">Debugging Stories with Haseeb Qureshi</a>
+		
+		</small>
+
+
+	</body>
+
+</html>
+
+
+

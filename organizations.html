@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- UPDATE -->
+		<title>Software engineering organizations</title>
+		
+	</head>
+	<body>
+		<p><a href="index.html">Back to table of contents</a></p>
+
+		<img src="images/team.jpg" class="img-responsive" />
+		<small>Credit: Andrew J. Ko</small>
+		
+		<h1>Software organizations</h1>
+		<div class="lead">Andrew J. Ko</div>
+		
+		<p>The photo above is candid shot of some of the software engineers of <a href="http://answerdash.com">AnswerDash</a>, a company I co-founded in 2012. There are a few things to notice. First, you see one of the employees explaining something, while others are diligently working off to the side. It's not a huge team; just a few engineers, plus several employees in other parts of the organization in another room. This, as simple as it looks, is pretty much what all software engineering work looks like. Some organizations have one of these teams; others have thousands.</p>
+		
+		<p>What you <em>can't</em> see is just how much <em>complexity</em> underlies this work. You can't see the organizational structures that exist to manage this complexity. Inside this room and the rooms around it were processes, standards, reviews, workflows, managers, values, culture, decision making, analytics, marketing, sales. And at the center of it were people executing all of these things as well as they could to achieve the organization's goal.</p>
+		
+		<p>Organizations are a much bigger topic than I could possibly address here. To deeply understand them, you'd need to learn about <a href="https://en.wikipedia.org/wiki/Organizational_studies" target="_blank">organizational studies</a>, <a href="https://en.wikipedia.org/wiki/Organizational_behavior" target="_blank">organizational behavior</a>, <a href="https://en.wikipedia.org/wiki/Information_system" target="_blank">information systems</a>, and business in general.</p>
+		
+		<p>The subset of this knowledge that's critical to understand about software engineering is limited to a few important concepts. The first and most important concept is that even in software organizations, the point of the company is rarely to make software; it's to provide <em>value</em> <a href="#osterwalder">(Osterwalder et al. 2015)</a>. Software is sometimes the central means to providing that value, but more often than not, it's the <em>information</em> flowing through that software that's the truly valuable piece. <a href="requirements-engineering.html">Requirements</a>, which will discuss in more detail soon, help engineers organize how software will provide value.</p>
+		
+		<p>The individuals in a software organization take on different roles to achieve that value. These roles are sometimes spread across different people and sometimes bundled up into one person, depending on how the organization is structured, but the roles are always there. Let's go through each one in detail so you understand how software engineers relate to each role.</>
+		
+		<ul>
+			<li><b>Marketers</b> look for opportunities to provide value. In for-profit businesses, this might mean conducting market research, estimating the size of opportunities, identifying audiences, and getting those audiences attention. Non-profits need to do this work as well in order to get their solutions to people, but may be driven more by solving problems than making money.</li>
+			<li><b>Product</b> managers decide what value the product will provide, monitoring the marketplace and prioritizing work.</li>
+			<li><b>Designers</b> decide <em>how</em> software will provide value. This isn't about code or really even about software; it's about envisioning solutions to problems that people have.</li>
+			<li><b>Software engineers</b> write code with other engineers to implement requirements envisioned by designers. If they fail to meet requirements, the design won't be implemented correctly, which will prevent the software from providing value.</li>
+			<li><b>Sales</b> takes the product that's been built and try to sell it to the audiences that marketers have identified. They also try to refine an organization's understanding of what the customer wants and needs, providing feedback to marketing, product, and design, which engineers then address.</li>
+			<li><b>Support</b> helps the people using the product to use it successfully and, like sales, provides feedback to product, design, and engineering about the product's value (or lack thereof) and it's defects.</li>
+		</ul>
+		
+		<p>As I noted above, sometimes the roles above get merged into individuals. When I was CTO at AnswerDash, I had software engineering roles, design roles, product roles, sales roles, <em>and</em> support roles. This was partly because it was a small company when I was there. As organizations grow, these roles tend to be divided into smaller pieces. This division often means that different parts of the organization don't share knowledge, even when it would be advantageous <a href="#chilana">(Chilana 2011)</a>.</p>
+		
+		<p>Note that in the division of responsibilities above, software engineers really aren't the designers by default. They don't decide what product is made or what problems that product solves. They may have opinions&mdash;and a great deal of power to enforce their opinions, as the people building the product&mdash;but it's not ultimately their decision.</p>
+		
+		<p>There are other roles you might be thinking of that I haven't mentioned:</p>
+		
+		<ul>
+			<li><b>Managers</b> exist in all roles when teams get to a certain size, helping to move information from between higher and lower parts of an organization. Even <em>engineering</em> managers are primarily focused on organizing and prioritizing work, and not doing engineering.</li>
+			<li><b>Data scientists</b>, although a new role, typically <em>facilitate</em> decision making on the part of any of the roles above <a href="#begel">(Begel & Zimmermann 2014)</a>. They might help engineers find bugs, marketers analyze data, track sales targets, mine support data, or inform design decisions. They're experts at using data to accelerate and improve the decisions made by the roles above.</li>
+			<li><b>Researchers</b>, also called user researchers, also help people in a software organization make decisions, but usually <em>product</em> decisions, helping marketers, sales, and product managers decide what products to make and who would want them. In many cases, they can complement the work of data scientists, <a href="https://www.linkedin.com/pulse/ux-research-analytics-yann-riche?trk=prof-post" target="_blank">providing qualitative work to triangulate quantitative data</a>.</li>
+		</ul>
+
+		<p>Every decision made in a software team is under uncertainty, and so another important concept in organizations is <strong>risk</strong> <a href="#boehm">(Boehm 1991)</a>. It's rarely possible to predict the future, and so organizations must take risks. Much of an organization's function is to mitigate the consequences of risks. Data scientists and researchers mitigate risk by increasing confidence in an organization's understanding of the market and it's consumers. Engineers manage risk by trying to avoid defects and moving fast.</p>
+		
+		<p>Open source communities are organizations too. The core activities of design, engineering, and support still exist in these, but how much a community is engaged in marketing and sales depends entirely on the purpose of the community. Big, established open source projects like <a href="https://mozilla.org" target="_blank">Mozilla</a> have revenue, buildings, and a CEO, and while they don't sell anything, they do market. Others like Linux <a href="#lee">(Lee & Cole 2013)</a> rely heavily on contributions both from volunteers <a href="#ye">(Ye & Kishida 2003)</a>, but also paid employees from companies that depend on Linux, like IBM, Google, and others. In these settings, there are still all of the challenges that come with software engineering, but fewer of the constraints that come from a for-profit or non-profit motive.</p>
+		
+		<p>All of the above has some important implications for what it means to be a software engineer:</p>
+		
+		<ul>
+			<li>Engineers are not the only important role in a software organization. In fact, they may be less important to an organization's success than other roles because the decisions they make (how to implement requirements) have smaller impact on the organization's goals than other decisions (what to make, who to sell it to, etc.).</li>
+			<li>Engineers have to work with <em>a lot</em> of people working with different roles. Learning what those roles are and what shapes their success is important to being a good collaborator <a href="#li">(Li et al. 2017)</a>.</li>
+			<li>While engineers might have many great ideas for product, if they really want to shape what they're building, they should be in a product role, not an engineering role.</li>
+		</ul>
+				
+		<p>All that said, without engineers, products wouldn't exist. They ensure that every detail about a product reflects the best knowledge of the people in their organization, and so attention to detail is paramount. In future chapters, we'll discuss all of the ways that software engineers manage this detail, mitigating the burden on their memories with tools and processes.</p>
+
+		<center class="lead"><a href="communication.html">Next chapter: Communication</a></center>
+
+		<h2>Further reading</h2>
+
+		<p id="begel">Begel, A., & Zimmermann, T. (2014, May). <a href="http://dl.acm.org/citation.cfm?id=2568233" target="_blank">Analyze this! 145 questions for data scientists in software engineering</a>. In Proceedings of the 36th International Conference on Software Engineering (pp. 12-23).
+
+		<p id="boehm">Boehm, B. W. (1991). <a href="http://ieeexplore.ieee.org/abstract/document/62930" target="_blank">Software risk management: principles and practices</a>. IEEE software, 8(1), 32-41.</p>
+
+		<p id="chilana">Chilana, P. K., Ko, A. J., Wobbrock, J. O., Grossman, T., & Fitzmaurice, G. (2011, May). <a href="http://dl.acm.org/citation.cfm?id=1979270" target="_blank">Post-deployment usability: a survey of current practices</a>. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 2243-2246). ACM.
+
+		<p>Clegg, S. and Bailey, J.R. (2008). <a href="https://books.google.com/books?id=Uac5DQAAQBAJ" target="_blank">International Encyclopedia of Organization Studies</a>. Sage Publications.</p>
+		
+		<p>Ko, Andrew J. (2017). <a href="https://faculty.washington.edu/ajko/papers/Ko2017AnswerDashReflection.pdf" target="_blank">A Three-Year Participant Observation of Software Startup Software Evolution</a>. International Conference on Software Engineering, Software Engineering in Practice, to appear.</p>
+
+		<p id="lee">Lee, G. K., & Cole, R. E. (2003). <a href="http://pubsonline.informs.org/doi/abs/10.1287/orsc.14.6.633.24866" target="_blank">From a firm-based to a community-based model of knowledge creation: The case of the Linux kernel development</a>. Organization science, 14(6), 633-649.</p>
+
+		<p id="li">Li, Paul, Ko, Andrew J., and Begel, Andrew (2017). Collaborating with Software Engineers: Perspectives from Non-Software Experts. In review.</p>
+
+		<p id="osterwalder">A. Osterwalder, Y. Pigneur, G. Bernarda, & A. Smith (2015). <a href="https://books.google.com/books?id=jgu5BAAAQBAJ" target="_blank">Value proposition design: how to create products and services customers want</a>. John Wiley & Sons.</p>
+
+		<p id="ye">Yunwen Ye and Kouichi Kishida. 2003. <a href="http://dl.acm.org/citation.cfm?id=776867" target="_blank">Toward an understanding of the motivation Open Source Software developers</a>. In Proceedings of the 25th International Conference on Software Engineering (ICSE '03). IEEE Computer Society, Washington, DC, USA, 419-429.
+
+
+	</body>
+
+</html>
+
+
+

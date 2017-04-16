@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- UPDATE -->
+		<title>Software Quality</title>
+		
+	</head>
+	<body>
+
+		<p><a href="index.html">Back to table of contents</a></p>
+
+		<img src="images/pomegranate.jpg" class="img-responsive" />		
+		<small>Credit: Anton Croos</small>
+		
+		<h1>Software Quality</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>There are numerous ways a software project can fail: projects can be over budget, they can ship late, they can fail to be useful, or they can simply not be useful enough. Evidence clearly shows that success is highly contextual and stakeholder-dependent: success might be financial, social, physical and even emotional, suggesting that software engineering success is a multifaceted variable that cannot explained simply by user satisfaction, profitability or meeting requirements, budgets and schedules (<a href="#ralph">Ralph & Kelly 2014</a>).</p>
+		
+		<p>One of the central reasons for this is that there are many distinct <b>software qualities</b> that software can have and depending on the stakeholders, each of these qualities might have more or less importance. For example, a safety critical system such as flight automation software should be reliable and defect-free, but it's okay if it's not particularly learnable&mdash;that's what training is for. A video game, however, should probably be fun and learnable, but it's fine if it ships with a few defects, as long as they don't interfere with fun (<a href="#murphy">Murphy-Hill et al. 2014</a>).</p>
+
+		<p>There are a surprisingly large number of software qualities (<a href="#boehm">Boehm 1976</a>):</p>
+
+		<table class="table table-striped">
+			<tr>
+				<td>Correctness</td>
+				<td>The extent to which a program behaves according to its specification. If your specifications are ambiguous, correctness is ambiguous.</td>
+			</tr>	
+			<tr>
+				<td>Reliability</td>
+				<td>The extent to which a program behaves the same way over time. If your online banking app crashes sometimes, it's not reliable. (It's probably also not correct, unless it's specification said that it should crash randomly).</td>
+			</tr>	
+			<tr>
+				<td>Robustness</td>
+				<td>The extent to which a program behaves similarly in different operating environments. A touch screen is less robust because it stops working consistently in the rain. Web forms that reject my last name as invalid are not robust.</td>
+			</tr>	
+			<tr>
+				<td>Performance</td>
+				<td>The extent to which a program uses computing resources economically. Synonymous with "fast" and "zippy". Performance is directly determined by how many instructions a program has to execute to accomplish it's operations, but it is difficult to measure because operations, inputs, and the operating environment can vary widely.</td>
+			</tr>	
+			<tr>
+				<td>Learnability</td>
+				<td>The ease with which a person can learn to operate a program. Learnability is multi-dimensional and can be difficult to measure <a href="#grossman">(Grossman et al. 2009)</a></td>
+			</tr>	
+			<tr>
+				<td>User efficiency</td>
+				<td>The speed with which a person can perform tasks with a program. For example, think about how many taps and keystrokes it takes you to log in to an app on your phone compared to using a fingerprint sensor like Apple's TouchID.</td>
+			</tr>	
+			<tr>
+				<td>Accessibility</td>
+				<td>The diversity of physical or cognitive abilities that can successfully operate software. For example, something that can only be used with a mouse is less accessible than something that can be used with a mouse, keyboard, or speech. Software can be designed for all abilities, and even automatically adapted for individual abilities (<a href="#wobbrock">Wobbrock et al. 2011</a>).</td>
+			</tr>	
+			<tr>
+				<td>Usefulness</td>
+				<td>The extent to which software solves a problem. Utility is often the <em>most</em> important quality because it subsumes all of the other lower-level qualities software can have (e.g., part of what makes a messaging app useful is that it's performant, user efficient, and reliable). That also makes it less useful as a concept, because it can be so difficult to measure for most problems. That said, usefulness is not always the most important quality. For example, if you can sell a product to a customer and get a one time payment of their money, it might not matter that the product has low usefulness.</td>
+			</tr>
+			<tr>
+				<td>Verifiability</td>
+				<td>The effort required to verify that software does what it is intended to do. For example, it is hard to verify a safety critical system without either proving it correct or testing it in a safety-critical context (which isn't safe). Take driverless cars, for example: for Google to test their software, they've had to set up thousands of paid drivers to monitor and report problems on the road. In contrast, verifying that a simple static HTML web page works correctly is as simple as opening it in a browser.</td>
+			</tr>	
+			<tr>
+				<td>Maintainability</td>
+				<td>The extent to which software can be corrected, adapted, or perfected. This depends mostly on how comprehensible the implementation of a program is.</td>
+			</tr>	
+			<tr>
+				<td>Reusability</td>
+				<td>The extent to which a program's components can be used for unintended purposes. APIs are quite reusable, whereas black box embedded software (like the software built into your car's traction systems) is not.</td>
+			</tr>
+			<tr>
+				<td>Portability</td>
+				<td>The extent to which an implementation can run on different platforms and environments</td>
+			</tr>	
+			<tr>
+				<td>Interoperability</td>
+				<td>The extent to which a system uses standard interfaces.</td>
+			</tr>	
+			<tr>
+				<td>Security</td>
+				<td>The extent to which a system prevents access to information that is restricted to a certain population</td>
+			</tr>	
+		</table>
+
+		<p>Although the list above is not complete, you might have already noticed some tradeoffs between different qualities. A secure system is necessarily going to be less learnable, because there will be more to learn to operate it. A robust system will likely be less maintainable because it it will likely have more code to account for its diverse operating environments. Because one cannot achieve all software qualities, and achieving each quality takes significant time, it is necessary to prioritize qualities for each project.</p>
+		
+		<p>These external notions of quality are not the only qualities that matter. For example, developers often view projects as successful if they offer intrinsically rewarding work (Procaccino et al. 2005). That may sound selfish, but if developers <em>aren't</em> enjoying their work, they're probably not going to achieve any of the qualities very well. Moreover, there are many organizational factors that can inhibit developers' ability to obtain these rewards. Project complexity, internal and external dependencies that are out of a developers control, process barriers, budget limitations, deadlines, poor HR planning, and pressure to ship can all interfere with project success (<a href="#lavallee">Lavallee & Robillard 2015</a>).</p>
+		
+		<p>As I've noted before, the person most responsible for isolating developers from these organizational problems, and most responsible for prioritizing software qualities is a product manager. Check out the podcast below for one product manager's perspectives on the challenges of balancing these different priorities.</p>
+
+		<center class="lead"><a href="requirements.html">Next chapter: Requirements</a></center>
+
+		<h2>Further reading</h2>
+
+		<p id="boehm">Boehm, B.W. 1976. <a href="http://ieeexplore.ieee.org/document/1674590/" target="_blank">Software Engineering</a>, IEEE Transactions on Computers, 25(12), 1226-1241.</p>
+		<p id="grossman">Grossman, T., Fitzmaurice, G., & Attar, R. (2009, April). <a href="https://doi.org/10.1145/1518701.1518803">A survey of software learnability: metrics, methodologies and guidelines</a>. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 649-658).</p>
+		<p id="murphy">Emerson Murphy-Hill, Thomas Zimmermann, and Nachiappan Nagappan. 2014. <a href="http://dx.doi.org/10.1145/2568225.2568226" target="_blank">Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?</a> In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 1-11.</p>
+		<p id="procaccino">Procaccino, J. D., Verner, J. M., Shelfer, K. M., & Gefen, D. (2005). <a href="http://www.sciencedirect.com/science/article/pii/S0164121204002614" target="_blank">What do software practitioners really think about project success: an exploratory study</a>. Journal of Systems and Software, 78(2), 194-203.</p>
+		<p id="ralph">Paul Ralph and Paul Kelly. 2014. <a href="http://dx.doi.org/10.1145/2568225.2568261" target="_blank">The dimensions of software engineering success</a>. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 24-35.</p>
+		<p id="lavallee">Mathieu Lavallee and Pierre N. Robillard. 2015. <a href="http://dl.acm.org/citation.cfm?id=2818754.2818837" target="_blank">Why good developers write bad code: an observational case study of the impacts of organizational factors on software quality</a>. In Proceedings of the 37th International Conference on Software Engineering - Volume 1 (ICSE '15), Vol. 1. IEEE Press, Piscataway, NJ, USA, 677-687.</p>
+		<p id="wobbrock">Wobbrock, J. O., Kane, S. K., Gajos, K. Z., Harada, S., & Froehlich, J. (2011). <a href="https://doi.org/10.1145/1952383.1952384">Ability-based design: Concept, principles and examples</a>. ACM Transactions on Accessible Computing (TACCESS), 3(3), 9.</p>
+
+		<h2>Podcasts</h2>
+		
+		<p>Software Engineering Daily, <a href="https://softwareengineeringdaily.com/2017/01/18/product-management-with-suzie-prince/">Product Management with Suzie Prince</a></p>
+
+	</body>
+
+</html>
+
+
+

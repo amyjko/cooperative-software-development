@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Requirements</title>
+		
+	</head>
+	<body>
+		<p><a href="index.html">Back to table of contents</a></p>
+
+        <img src="images/scaffolding.jpg" class="img-responsive" />
+		<small>Credit: public domain</small>
+		
+		<h1>Requirements</h1>
+		<div class="lead">Andrew J. Ko</div>
+
+		<p>Once you have a problem, a solution, and a design specification, it's entirely reasonable to start thinking about code. What libraries should we use? What platform is best? Who will build what? After all, there's no better way to test the feasibility of an idea than to build it, deploy it, and find out if it works. Right?</p>
+
+		<p>It depends. This mentality towards product design works fine with building and deploying something is cheap and getting feedback has no consequences. Simple consumer applications often benefit from this simplicity, especially early stage ones, because there's little to lose. But what if a beta isn't cheap to build? What if your product only has one shot at adoption? What if you're building something for a client and they want to define success? Worse yet, what if your product could <em>kill</em> people if it's not built properly? In these settings, software teams take an approach of translating a design into a specific explicit set of goals that must be satisfied in order for the implementation to be complete. We call these goals <b>requirements</b> and we call this process of <b>requirements engineering</b> (<a href="#sommerville">Sommerville & Sawyer 1997</a>).</p>
+		
+		<p>The relationship between requirements and design is somewhat murky. In design disciplines, designers tend to express requirements in the form of prototypes and mockups. These <em>implicitly</em> state requirements, because they suggest what the software is supposed to do without saying it directly. For some types of requirements, they actually imply nothing. For example, how responsive should a web page be to be? A prototype doesn't really say; an explicit requirement of <em>an average page load time of less than 1 second</em> is quite explicit. Requirements can therefore be thought of more like an architect's blueprint: they provide explicit definitions and scaffolding of project success.</p>
+		
+		<p>And yet, like design, requirements come from the world and the people in it and not from software (<a href="#jackson">Jackson 2001</a>). Therefore, the methods that people use to do requirements engineering are quite similar to design methods. Requirements engineers do interviews, conduct user research, create prototypes, and iteratively converge toward requirements (<a href="#lamsweerde">Lamsweerd 2008</a>). The big difference between design and requirements engineering is that requirements engineers take the process one step further than designers, enumerating <em>in detail</em> every property that the software must satisfy. They sometimes even use formal methods to specify requirements, allowing them to automatically identify <em>conflicting</em> requirements, so they don't end up proposing a design that can't possibly exist. Some even use systems to make requirements "traceable", meaning the high level requirement can be linked directly to the code that meets that requirement (<a href="#mader">Mader & Egyed 2015</a>). All of this formality has tradeoffs: not only does it take more time to be so precise, but it can negatively effect creativity in concept generation as well (<a href="#mohanani">Mohanani et al. 2014</a>).</p>
+		
+		<p>Expressing requirements in natural language can mitigate these effects, at the expense of precision. They just have to be <em>complete</em>, <em>precise</em>, <em>non-conflicting</em>, and <em>verifiable</em>. For example, consider a design for a simple <strong>to do list</strong> application. It's requirements might be something like the following:</p>
+		
+		<ul>
+			<li>Users must be able to add to do list items with a single action.</li>
+			<li>To do list items must consist of text and a binary completed state.</li>
+			<li>Users must be able to edit to do list item text.</li>
+			<li>Users must be able to toggle the completed state.</li>
+			<li>Users must be able to delete to do list items.</li>
+			<li>All edits to do list item state must save without user intervention.</li>
+		</ul>
+		
+		<p>Let's review these requirements against the criteria for good requirements that I listed above:</p>
+		
+		<ul>
+			<li>Is it <strong>complete</strong>? I can think of a few more requirements: is the list ordered? How long does state persist? Are there user accounts? Where is data stored? What does it look like? What kinds of user actions must be supported? Is delete undoable? Even just on these completeness dimension, you can see how even a very simple application can become quite complex. When you're generating requirements, your job is to make sure you haven't forgotten important requirements.</li>
+			<li>Is the list <strong>precise</strong>? Not really. When you add a to do list item, is it added at the beginning? The end? Wherever a user request it be added? How long can the to do list item text be? Clearly the requirement above is ambiguous.</li>
+			<li>Are the requirements <strong>non-conflicting</strong>? I <em>think</em> they are since they all seem to be satisfiable together. But some of the missing requirements might conflict: we can't know until we're sure our list is relatively complete.</li>
+			<li>Finally, are they <strong>verifiable</strong>? Some more than others. Is there a way to guarantee that the state saves successfully all the time? That may be difficult to prove given the vast number of ways the operating environment might prevent saving.</li>
+		</ul>
+		
+		<p>Now, the flaws above don't make the requirements "wrong". They just make them "less good." The more complete, precise, non-conflicting, and testable your requirements are, the easier it is to anticipate risk, estimate work, and evaluate progress, since requirements essentially give you a to do list for building and testing your code.</p>
+		
+		<center class="lead"><a href="architecture.html">Next chapter: Architecture</a></center>
+
+		<h2>Further reading</h2>
+
+		<small>
+
+			<p id="jackson">Jackson, Michael (2001). <a href="https://books.google.com/books?id=8fqIP83Q2IAC" target="_blank">Problem Frames</a>. Addison-Wesley.</p>
+			<p id="lamsweerde">Axel van Lamsweerde. 2008. <a href="http://dx.doi.org/10.1145/1453101.1453133" target="_blank">Requirements engineering: from craft to discipline</a>. In Proceedings of the 16th ACM SIGSOFT International Symposium on Foundations of software engineering (SIGSOFT '08/FSE-16). ACM, New York, NY, USA, 238-249.</p>
+			<p id="mader">M&aumlder, P., & Egyed, A. (2015). <a href="https://doi.org/10.1007/s10664-014-9314-z" target="_blank">Do developers benefit from requirements traceability when evolving and maintaining a software system?</a> Empirical Software Engineering, 20(2), 413-441.</p>
+			<p id="mohanani">Rahul Mohanani, Paul Ralph, and Ben Shreeve. 2014. <a href="http://dx.doi.org/10.1145/2568225.2568235" target="_blank">Requirements fixation</a>. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 895-906.</p>
+			<p id="sommerville">Sommerville, I., & Sawyer, P. (1997). <a href="https://books.google.com/books?id=5NnP-VODEc8C" target="_blank">Requirements engineering: a good practice guide</a>. John Wiley & Sons, Inc.</p>
+		
+		</small>
+
+	</body>
+
+</html>
+
+
+
