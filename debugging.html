@@ -27,7 +27,7 @@
 		<h1>Debugging</h1>
 		<div class="lead">Andrew J. Ko</div>
 
-		<p>Despite all of your hard work at design, implementation, and verification, your software has failed. Somewhere in its implementation there's a line of code, or multiple lines of code, that, given a particular set of inputs, causes the program to fail. How do you find those defective lines of code?</p>
+		<p>Despite all of your hard work at design, implementation, and verification, your software has failed. Somewhere in its implementation there's a line of code, or multiple lines of code, that, given a particular set of inputs, causes the program to fail. How do you find those defective lines of code? You debug, and you're doing it right, you do it systematically (<a href="#zeller2">Zeller 2009</a>).</p>
 		
 		<p>To start, you have to <strong>reproduce</strong> the failure. Failure reproduction is a matter of identifying inputs to the program (whether data it receives upon being executed, user inputs, network traffic, or any other form of input) that causes the failure to occur. If you found this failure while <em>you</em> were executing the program, then you're lucky: you should be able to repeat whatever you just did and identify the inputs or series of inputs that caused the problem, giving you a way of testing that the program no longer fails once you've fixed the defect. If someone else was the one executing the program (for example, a user, or someone on your team), you better hope that they reported clear steps for reproducing the problem. When bug reports lack clear reproduction steps, bugs often can't be fixed (<a href="bettenburg">Bettenburg et al. 2008</a>).</p>
 		
@@ -51,7 +51,7 @@
 			<li>Repeat three recursively, analyzing all lines of code for defects along the chain of causality</li>
 		</ol>
 		
-		<p>The nice thing about this strategy is that you're <em>guaranteed</em> to find the defect if you can accurately identify the causes of each line of code contributing to the failure. It still requires you to analyze each line of code and potentially execute to it in order to inspect what might be wrong, but it requires potentially less work than guessing. My doctoral dissertation work investigated how to automate this strategy, allowing you to simply click on the fault output and then immediately see all upstream causes of it (<a href="#ko">Ko & Myers</a>).</p>
+		<p>The nice thing about this strategy is that you're <em>guaranteed</em> to find the defect if you can accurately identify the causes of each line of code contributing to the failure. It still requires you to analyze each line of code and potentially execute to it in order to inspect what might be wrong, but it requires potentially less work than guessing. My dissertation work investigated how to automate this strategy, allowing you to simply click on the fault output and then immediately see all upstream causes of it (<a href="#ko">Ko & Myers</a>).</p>
 		
 		<p>Yet another strategy called <em>delta debugging</em> is to compare successful and failing executions of the program (<a href="#zeller">Zeller 2002</a>):</p>
 		
@@ -92,6 +92,8 @@
 		<p id="murphyhill">Emerson Murphy-Hill, Thomas Zimmermann, Christian Bird, and Nachiappan Nagappan. 2013. The design of bug fixes. In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 332-341.</p>
 		<p id="yin">Zuoning Yin, Ding Yuan, Yuanyuan Zhou, Shankar Pasupathy, and Lakshmi Bairavasundaram. 2011. <a href="http://dx.doi.org/10.1145/2025113.2025121">How do fixes become bugs?</a> In Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering (ESEC/FSE '11). ACM, New York, NY, USA, 26-36.</p>
 		<p id="zeller">Andreas Zeller. 2002. <a href="http://dx.doi.org/10.1145/587051.587053">Isolating cause-effect chains from computer programs</a>. In Proceedings of the 10th ACM SIGSOFT symposium on Foundations of software engineering (SIGSOFT '02/FSE-10). ACM, New York, NY, USA, 1-10.</p>
+		
+		<p id="zeller2">Zeller, A. (2009). <a href="https://books.google.com/books?id=_63Bm4LAdDIC&lpg=PP1&ots=TAzo27xsK-&dq=why%20programs%20fail&lr&pg=PP1#v=onepage&q=why%20programs%20fail&f=false">Why programs fail: a guide to systematic debugging</a>. Elsevier.</p>
 				
 		</small>
 		
