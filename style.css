@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,600,600i');
+
 body {
 	max-width: 800px;
 	padding: 3em;
 	margin-left: auto;
 	margin-right: auto;
+
+	font-weight: 300;
+	font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12pt;
+}
+
+p {
+	line-height: 1.5em;
 }
 
 table.text-left td {
