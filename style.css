@@ -9,10 +9,7 @@ body {
 	font-weight: 300;
 	font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12pt;
-}
-
-p {
-	line-height: 1.5em;
+	line-height: 1.75em;
 }
 
 table.text-left td {
