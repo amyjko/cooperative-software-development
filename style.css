@@ -19,3 +19,11 @@ body {
 table.text-left td {
 	text-align: left;
 }
+
+.img-responsive, .embed-responsive {
+	margin-top: 2em;
+}
+
+p {
+	margin-top: 1em;
+}
