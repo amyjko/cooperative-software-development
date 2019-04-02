@@ -28,14 +28,29 @@
 		<h1>Communication</h1>
 		<div class="lead">Andrew J. Ko</div>
 
-		<p>Because software engineering often times distributes work across multiple people, a fundamental challenge in software engineering is ensuring that everyone on a team has the same understanding of what is being built and why. In the seminal book &ldquo;The Mythical Man Month&rdquo;, Fred Brooks argued that good software needs to have <strong>conceptual integrity</strong>, both in how it is designed, but also how it is implemented (<a href="#brooks">Brooks 1995</a>). This is the idea that whatever vision of what is being built must stay intact, even as the building of it gets distributed to multiple people. When multiple people are responsible for implementing a single coherent idea, how can they ensure they all build the same idea?</p>
+		<p>
+			Because software engineering often times distributes work across multiple people, a fundamental challenge in software engineering is ensuring that everyone on a team has the same understanding of what is being built and why.
+			In the seminal book &ldquo;The Mythical Man Month&rdquo;, Fred Brooks argued that good software needs to have <strong>conceptual integrity</strong>, both in how it is designed, but also how it is implemented (<a href="#brooks">Brooks 1995</a>).
+			This is the idea that whatever vision of what is being built must stay intact, even as the building of it gets distributed to multiple people. 
+			When multiple people are responsible for implementing a single coherent idea, how can they ensure they all build the same idea?
+		</p>
 		
 		<p>
 			The solution is effective communication.
-			As <a href="https://www.nytimes.com/2017/08/12/upshot/techs-damaging-myth-of-the-loner-genius-nerd.html" target="_blank">some events in industry have shown, communication requires empathy</a>.
-			And research has shown that when communication is poor, teams become disconnected and produce software defects (<a href="#bettenburg">Bettenburg & Hassan 2013</a>). 
-			Social relationships in a team also play a large role in structuring how projects evolve <a href="#zhou">(Zhou & Mockus 2011)</a>. 
-			Perhaps the most notable theory underlying these ideas is Conway's Law <a href="#conway">(Conway 1968)</a>, which argues that any designed system&mdash;software included&mdash;will reflect the social relationships behind its design. For example, look at any online banking website: the way the application is designed, how information is organized, the terminology that is used, and even the visual design is a reflection of how the teams inside that bank are organized and socially connected. Put simply, Conway observed that the architectural organization of the product resembled the organizational hierarchy of the teams that produced it.
+			As <a href="https://www.nytimes.com/2017/08/12/upshot/techs-damaging-myth-of-the-loner-genius-nerd.html" target="_blank">some events in industry have shown</a>, communication requires empathy and teamwork.
+			When communication is poor, teams become disconnected and produce software defects (<a href="#bettenburg">Bettenburg & Hassan 2013</a>).
+			Therefore, achieving effective communication practices is paramount.
+		</p>
+		
+		<p>
+			It turns out, however, that communication plays such a powerful role in software projects that it even shapes how projects unfold.
+			Perhaps the most notable theory about the effect of communication is Conway's Law <a href="#conway">(Conway 1968)</a>.
+			This theory argues that any designed system&mdash;software included&mdash;will reflect the communication structures involved in producing it.
+			For example, think back to any course project where you divided the work into chunks and tried to combine them together into a final report at the end.
+			The report and it's structure probably mirrored the fact that several distinct people worked on each section of the report, rather than sounding like a single coherent voice.
+			The same things happens in software: if writing error messages for a website isn't talking to the team presenting them, you're probably going to get a lot of error messages that aren't so clear, may not fit on screen, and may not be phrased using the language of the rest of the site.
+			On the other hand, if those two teams meet regularly to design the error mesages together, they might produce a seamless, coherent experience.
+			Not only does software follow this law when a project is created, they also follow this law as projects evolve over time <a href="#zhou">(Zhou & Mockus 2011)</a>. 
 		</p>
 
 		<p>Because communication is so central, software engineers are constantly seeking information to further their work, going to their coworkers' desks, emailing them, chatting via messaging platforms, and even using social media <a href="#ko">(Ko et al. 2007)</a>. Some of the information that developers are seeking is easier to find than others. For example, in the study I just cited, it was pretty trivial to find information about how wrote a line of code or whether a build was done, but when the information they needed resided in someone else's head (e.g., <em>why</em> a particular line of code was written), it was slow or often impossible to retrieve it. Sometimes it's not even possible to find out who has the information. Researchers have investigated tools for trying to quantify expertise by automatically analyzing the code that developers have written, building platforms to help developers search for other developers who might know what they need to know (<a href="#mockusherbsleb">Mockus & Herbsleb 2002</a>, <a href="#begel">Begel et al. 2010</a>).</p>
