@@ -30,11 +30,31 @@
 
 		<p>When we think of productivity, we usually have a vague concept of a rate of work per unit time. Where it gets tricky is in defining "work". On an individual level, work can be easier to define, because developers often have specific concrete tasks that they're assigned. But until they're not, it's not really easy to define progress (well, it's not that easy to define "done" sometimes either, but that's a topic for a later chapter). When you start considering work at the scale of a team or an organization, productivity gets even harder to define, since an individual's productivity might be increased by ignoring every critical request from a teammate, harming the team's overall productivity.</p>
 		
-		<p>Despite the challenge in defining productivity, there are numerous factors that affect productivity. For example, at the individual level, having the right tools can result in an order of magnitude difference in speed at accomplishing a task. One study I ran found that developers using the Eclipse IDE spent a third of their time just physically navigating between source files (<a href="#koide">Ko et al. 2005</a>). With the right navigation aids, developers could be writing code and fixing bugs 30% faster. In fact, some tools like Mylyn automatically bring relevant code to the developer rather than making them navigate to it, greatly increasing the speed which with developers can accomplish a task (<a href="#kersten">Kersten & Murphy 2006</a>). Long gone are the days when developers should be using bare command lines and text editors to write code: IDEs can and do greatly increase productivity when used and configured with speed in mind.</p>
+		<p>
+			Despite the challenge in defining productivity, there are numerous factors that affect productivity.
+			For example, at the individual level, having the right tools can result in an order of magnitude difference in speed at accomplishing a task. 
+			One study I ran found that developers using the Eclipse IDE spent a third of their time just physically navigating between source files (<a href="#koide">Ko et al. 2005</a>). 
+			With the right navigation aids, developers could be writing code and fixing bugs 30% faster. 
+			In fact, some tools like Mylyn automatically bring relevant code to the developer rather than making them navigate to it, greatly increasing the speed which with developers can accomplish a task (<a href="#kersten">Kersten & Murphy 2006</a>). 
+			Long gone are the days when developers should be using bare command lines and text editors to write code: IDEs can and do greatly increase productivity when used and configured with speed in mind.
+		</p>
+		
+		<p>
+			Of course, individual productivity is about more than just tools.
+			Studies of workplace productivity show that developers have highly fragmented days, interrupted by meetings, emails, coding, and non-work distractions (<a href="#meyer">Meyer et al. 2017</a>).
+			These interruptions are often viewed negatively from an individual perspective, but may be highly valuable from a team and organizational perspective.
+			And then, productivity is not just about skills to manage time, but also many other skills that shape developer expertise, including skills in designing architectures, debugging, testing, programming languages, etc. (<a href="#baltes">Baltes et al. 2018</a>).
+		</p>
 
 		<p>That said, productivity is not just about individual developers. Because communication is a key part of team productivity, an individual's productivity is as much determined by their ability to collaborate and communicate with other developers. In a study spanning dozens of interviews with senior software engineers, Li et al. found that the majority of critical attributes for software engineering skill (productivity included) concerned their interpersonal skills, their communication skills, and their ability to be resourceful within their organization (<a href="#li">Li et al. 2015</a>). Similarly, LaToza et al. found that the primary bottleneck in productivity was communication with teammates, primarily because waiting for replies was slower than just looking something up (<a href="#latoza">LaToza et al. 2006</a>). Of course, looking something up has its own problems. While StackOverflow is an incredible resource for missing documentation (<a href="#mamykina">Mamykina et al. 2001</a>), it also is full of all kinds of misleading and incorrect information contributed by developers without sufficient expertise to answer questions (<a href="#barua">Barua et la. 2014</a>). Finally, because communication is such a critical part of retrieving information, adding more developers to a team has surprising effects. One study found that adding people to a team slowly enough to allow them to onboard effectively could reduce defects, but adding them too fast led to increases in defects (<a href="#meneely">Meneely et al. 2011</a>).</p>
 		
-		<p>Another dimension of productivity is learning. Great engineers are resourceful, quick learners (<a href="#li">Li et al. 2015</a>); new engineers must be even more resourceful, even though their instincts are often to hide their lack of expertise from exactly the people they need help from (<a href="#begel">Begel & Simon 2008</a>). Experienced developers know that learning is important and now rely heavily on social media such as Twitter to follow industry changes, build learning relationships, and discover new concepts and platforms to learn (<a href="singer">Singer et al. 2012</a>).</p>
+		<p>
+			Another dimension of productivity is learning. 
+			Great engineers are resourceful, quick learners (<a href="#li">Li et al. 2015</a>).
+			New engineers must be even more resourceful, even though their instincts are often to hide their lack of expertise from exactly the people they need help from (<a href="#begel">Begel & Simon 2008</a>). 
+			Experienced developers know that learning is important and now rely heavily on social media such as Twitter to follow industry changes, build learning relationships, and discover new concepts and platforms to learn (<a href="singer">Singer et al. 2012</a>).
+			And, of course, developers now rely heavily on web search to fill in inevitable gaps in their knowledge about APIs, error messages, and myriad other details about languages and platforms (<a href="xia">Xia et al. 2017</a>).
+		</p>
 			
 		<p>Unfortunately, learning is no easy task. One of my earliest studies as a researcher investigated the barriers to learning new programming languages and systems, finding six distinct types of content that are challenging (<a href="#ko">Ko & Myers 2004</a>). To use a programming platform successfully, people need to overcome <em>design</em> barriers, which are the abstract computational problems that must be solved, independent of the languages and APIs. People need to overcome <em>selection</em> barriers, which involve finding the right abstractions or APIs to achieve the design they have identified. People need to overcome <em>use</em> and <em>coordination</em> barriers, which involve operating and coordinating different parts of a language or API together to achieve novel functionality. People need to overcome <em>comprehension</em> barriers, which involve knowing what can go wrong when using part of a language or API. And finally, people need to overcome <em>information</em> barriers, which are posed by the limited ability of tools to inspect a program's behavior at runtime during debugging. Every single one of these barriers has its own challenges, and developers encounter them every time they are learning a new platform, regardless of how much expertise they have.</p>
 
@@ -56,6 +76,11 @@
 		
 		<p>One could imagine using these concepts to refine processes and practices in a team, helping both developers and managers be more aware of sources of waste that harm productivity.</p>
 
+		<p>
+			These widely varying conceptions of productivity reveal that programming in a software engineering context is about far more than just writing a lot of code.
+			It's about coordinating productively with a team, synchronizing your work with an organizations goals, and most importantly, reflecting on ways to change work to achieve those goals more effectively.
+		</p>
+		
 		<center class="lead"><a href="quality.html">Next chapter: Quality</a></center>
 
 		<h2>Further reading</h2>
@@ -63,6 +88,7 @@
 		<small>
 
 		<p id="barua">Barua, A., Thomas, S. W., & Hassan, A. E. (2014). <a href="http://link.springer.com/article/10.1007/s10664-012-9231-y" target="_blank">What are developers talking about? an analysis of topics and trends in stack overflow</a>. Empirical Software Engineering, 19(3), 619-654.</p>
+		<p id="baltes">Baltes, S., & Diehl, S. (2018, October). <a href="https://doi.org/10.1145/3236024.3236061">Towards a theory of software development expertise</a>. In Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (pp. 187-200). ACM.</p>
 		<p id="begel">Begel, A., & Simon, B. (2008, September). <a href="http://dl.acm.org/citation.cfm?id=1404522" target="_blank">Novice software developers, all over again</a>. In Proceedings of the Fourth international Workshop on Computing Education Research (pp. 3-14). ACM.</p>
 		<p id="casalnuovo">Casey Casalnuovo, Bogdan Vasilescu, Premkumar Devanbu, and Vladimir Filkov. 2015. <a href="https://doi.org/10.1145/2786805.2786854" target="_blank">Developer onboarding in GitHub: the role of prior social links and language experience</a>. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 817-828.</p>
 		<p id="chong">Jan Chong and Tom Hurlbutt. 2007. <a href="http://dx.doi.org/10.1109/ICSE.2007.87" target="_blank">The Social Dynamics of Pair Programming</a>. In Proceedings of the 29th international conference on Software Engineering (ICSE '07). IEEE Computer Society, Washington, DC, USA, 354-363.</p>
@@ -76,11 +102,12 @@
 		<p id="latoza">Thomas D. LaToza, Gina Venolia, and Robert DeLine. 2006. <a href="http://dx.doi.org/10.1145/1134285.1134355" target="_blank">Maintaining mental models: a study of developer work habits</a>. In Proceedings of the 28th international conference on Software engineering (ICSE '06). ACM, New York, NY, USA, 492-501.</p>
 		<p id="mamykina">Mamykina, L., Manoim, B., Mittal, M., Hripcsak, G., & Hartmann, B. (2011, May). <a href="http://dl.acm.org/citation.cfm?id=1979366" target="_blank">Design lessons from the fastest q&a site in the west</a>. In Proceedings of the SIGCHI conference on Human factors in computing systems (pp. 2857-2866).</p>
 		<p id="meneely">Andrew Meneely, Pete Rotella, and Laurie Williams. 2011. <a href="http://dx.doi.org/10.1145/2025113.2025128" target="_blank">Does adding manpower also affect quality? An empirical, longitudinal analysis</a>. In Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering (ESEC/FSE '11). ACM, New York, NY, USA, 81-90.</p>
-		<p id="meyer">Andr&eacute N. Meyer, Thomas Fritz, Gail C. Murphy, and Thomas Zimmermann. 2014. <a href="http://dx.doi.org/10.1145/2635868.2635892" target="_blank">Software developers' perceptions of productivity</a>. In Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2014). ACM, New York, NY, USA, 19-29.</p>
+		<p id="meyer">Meyer, A. N., Barton, L. E., Murphy, G. C., Zimmermann, T., & Fritz, T. (2017). <a href="https://doi.org/10.1109/TSE.2017.2656886">The work life of developers: Activities, switches and perceived productivity</a>. IEEE Transactions on Software Engineering, 43(12), 1178-1193.</p>
 		<p id="sedano">Sedano, T., Ralph, P., & P&eacute;raire, C. (2017, May). <a href="http://dl.acm.org/citation.cfm?id=3097385">Software development waste</a>. In Proceedings of the 39th International Conference on Software Engineering (pp. 130-140). IEEE Press.</p>
 		<p id="singer">Leif Singer, Fernando Figueira Filho, and Margaret-Anne Storey. 2014. <a href="http://dx.doi.org/10.1145/2568225.2568305" target="_blank">Software engineering at the speed of light: how developers stay current using twitter</a>. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 211-221.</p>
 		<p id="stylos">Jeffrey Stylos and Brad A. Myers. 2008. <a href="http://dx.doi.org/10.1145/1453101.1453117">The implications of method placement on API learnability</a>. In Proceedings of the 16th ACM SIGSOFT International Symposium on Foundations of software engineering (SIGSOFT '08/FSE-16). ACM, New York, NY, USA, 105-112.</p>
 		<p id="vosburgh">J. Vosburgh, B. Curtis, R. Wolverton, B. Albert, H. Malec, S. Hoben, and Y. Liu. 1984. <a href="http://dl.acm.org/citation.cfm?id=801963" target="_blank">Productivity factors and programming environments</a>. In Proceedings of the 7th international conference on Software engineering (ICSE '84). IEEE Press, Piscataway, NJ, USA, 143-152.</p>
+		<p id="xia">Xia, X., Bao, L., Lo, D., Kochhar, P. S., Hassan, A. E., & Xing, Z. (2017). <a href="https://link.springer.com/article/10.1007/s10664-017-9514-4">What do developers search for on the web?</a> Empirical Software Engineering, 22(6), 3149-3185.</p>
 
 		</small>
 
