@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400');
 
 body {
 	max-width: 800px;
@@ -7,13 +7,17 @@ body {
 	margin-right: auto;
 
 	font-weight: 300;
-	font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 12pt;
 	line-height: 1.75em;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
+    font-weight: 400;
+}
+
+strong, b {
+	font-weight: 400;
 }
 
 table.text-left td {
