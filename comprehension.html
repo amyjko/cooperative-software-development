@@ -123,12 +123,13 @@
 		</p>
 		
 		<p>
-			These differences in notation have real impact.
+			These differences in notation can have some impact.
 			Encapsulation through data structures leads to better comprehension that monolithic or purely functional languages (<a href="#woodfield">Woodfield et al. 1981</a>, <a href="#bhattacharya">Bhattacharya & Neamtiu 2011</a>).
 			Declarative programming paradigms (like CSS or HTML) have greater comprehensibility than imperative languages (<a href="#salvaneschi">Salvaneschi et al. 2014</a>).
-			In general, statically typed languages like Java (which require developers to declare the data type of all variables) result in fewer defects (<a href="#ray">Ray et la. 2014</a>), better comprehensibility because of the ability to construct better documentation (<a href="#endrikat">Endrikat et al. 2014</a>), and result in easier debugging (<a href="#hanenberg">Hanenberg et al. 2013</a>).
+			Statically typed languages like Java (which require developers to declare the data type of all variables) result in fewer defects (<a href="#ray">Ray et la. 2014</a>), better comprehensibility because of the ability to construct better documentation (<a href="#endrikat">Endrikat et al. 2014</a>), and result in easier debugging (<a href="#hanenberg">Hanenberg et al. 2013</a>).
 			In fact, studies of more dynamic languages like JavaScript and Smalltalk (<a href="#callau">Calla&uacute et al. 2013</a>) show that the dynamic features of these languages aren't really used all that much anyway.
-			All of this evidence suggests that that the more you tell a compiler about what your code means (by declaring types, writing functional specifications, etc.), the more it helps the other developers know what it means too.
+			Despite all of these measurable differences, the impact of notation seems to be modest in practice (<a href="#ray">Ray et al. 2014</a>).
+			All of this evidence suggests that that the more you tell a compiler about what your code means (by declaring types, writing functional specifications, etc.), the more it helps the other developers know what it means too, but that this doesn't translate into huge differences in defects.
 		</p>
 
 		<p>Code editors, development environments, and program comprehension tools can also be helpful. Early evidence showed that simple features like syntax highlighting and careful typographic choices can improve the speed of program comprehension (<a href="#baecker">Baecker 1988</a>). I have also worked on several tools to support program comprehension, including the Whyline, which automates many of the more challenging aspects of navigating dependencies in code, and visualizes them (<a href="#ko">Ko & Myers 2009</a>):</p>
