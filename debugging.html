@@ -34,6 +34,8 @@
 			You debug, and when you're doing debugging right, you do it systematically (<a href="#zeller2">Zeller 2009</a>).
 		</p>
 		
+		<h2>Finding the defect</h2>
+		
 		<p>To start, you have to <strong>reproduce</strong> the failure. Failure reproduction is a matter of identifying inputs to the program (whether data it receives upon being executed, user inputs, network traffic, or any other form of input) that causes the failure to occur. If you found this failure while <em>you</em> were executing the program, then you're lucky: you should be able to repeat whatever you just did and identify the inputs or series of inputs that caused the problem, giving you a way of testing that the program no longer fails once you've fixed the defect. If someone else was the one executing the program (for example, a user, or someone on your team), you better hope that they reported clear steps for reproducing the problem. When bug reports lack clear reproduction steps, bugs often can't be fixed (<a href="#bettenburg">Bettenburg et al. 2008</a>).</p>
 		
 		<p>If you can reproduce the problem, the next challenge is to <strong>localize</strong> the defect, trying to identify the cause of the failure in code. There are many different strategies for localizing defects. At the highest level, one can think of this process as a hypothesis testing activity (<a href="#gilmore">Gilmore 1991</a>):</p>
@@ -83,6 +85,8 @@
 		<p>For particularly complex software, it can sometimes be necessary to debug with the help of teammates, helping to generate hypotheses, identify more effective search strategies, or rule out the influence of particular components in a bug (<a href="#aranda">Aranda and Venolia 2009</a>).</p>
 		
 		<p>Ultimately, all of these strategies are essentially search algorithms, seeking the events that occurred while a program executed with a particular set of inputs that caused its output to be incorrect. Because programs execution millions and potentially billions of instructions, these strategies are necessary to reduce the scope of your search.</p>
+
+		<h2>Fixing defects</h2>
 
 		<p>Once you've found the defect, what do you do? It turns out that there are usually many ways to repair a defect. How professional developers fix defects depends a lot on the circumstances: if they're near a release, they may not even fix it if it's too risky; if there's no pressure, and the fix requires major changes, they may refactor or even redesign the program to prevent the failure (<a href="#murphyhill">Murphy-Hill et al. 2013</a>). This can be a delicate, risky process: in one study of open source operating systems bug fixes, 27% of the incorrect fixes were made by developers who had never read the source code files they changed, suggesting that key to correct fixes is a deep comprehension of exactly how the defective code is intended to behave (<a href="#yin">Yin et al. 2011</a>).</p>
 		
