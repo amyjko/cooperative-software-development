@@ -35,6 +35,10 @@
 			And yet, despite decades of research and practice, most developers have weak debugging skills, don't know how to property use debugging tools, and still rely in basic print statements (<a href="#beller">Beller et al. 2018</a>).
 		</p>
 		
+		<p>
+			To remedy this, let's discuss some of the basic skills involved in debugging.
+		</p>
+		
 		<h2>Finding the defect</h2>
 		
 		<p>To start, you have to <strong>reproduce</strong> the failure. Failure reproduction is a matter of identifying inputs to the program (whether data it receives upon being executed, user inputs, network traffic, or any other form of input) that causes the failure to occur. If you found this failure while <em>you</em> were executing the program, then you're lucky: you should be able to repeat whatever you just did and identify the inputs or series of inputs that caused the problem, giving you a way of testing that the program no longer fails once you've fixed the defect. If someone else was the one executing the program (for example, a user, or someone on your team), you better hope that they reported clear steps for reproducing the problem. When bug reports lack clear reproduction steps, bugs often can't be fixed (<a href="#bettenburg">Bettenburg et al. 2008</a>).</p>
@@ -85,7 +89,12 @@
 		
 		<p>For particularly complex software, it can sometimes be necessary to debug with the help of teammates, helping to generate hypotheses, identify more effective search strategies, or rule out the influence of particular components in a bug (<a href="#aranda">Aranda and Venolia 2009</a>).</p>
 		
-		<p>Ultimately, all of these strategies are essentially search algorithms, seeking the events that occurred while a program executed with a particular set of inputs that caused its output to be incorrect. Because programs execution millions and potentially billions of instructions, these strategies are necessary to reduce the scope of your search.</p>
+		<p>
+			Ultimately, all of these strategies are essentially search algorithms, seeking the events that occurred while a program executed with a particular set of inputs that caused its output to be incorrect. 
+			Because programs execution millions and potentially billions of instructions, these strategies are necessary to reduce the scope of your search.
+			This is where debugging <strong>tools</strong> come in: if you can find a tool that supports an effective strategy, then your work to search through those millions and billions of instructions will be greatly accelerated.
+			This might be a print statement, a breakpoint debugger, a performance profiler, or one of the many advanced debugging tools beginning to emerge from research.
+		</p>
 
 		<h2>Fixing defects</h2>
 
