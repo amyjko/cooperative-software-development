@@ -98,7 +98,18 @@
 
 		<h2>Fixing defects</h2>
 
-		<p>Once you've found the defect, what do you do? It turns out that there are usually many ways to repair a defect. How professional developers fix defects depends a lot on the circumstances: if they're near a release, they may not even fix it if it's too risky; if there's no pressure, and the fix requires major changes, they may refactor or even redesign the program to prevent the failure (<a href="#murphyhill">Murphy-Hill et al. 2013</a>). This can be a delicate, risky process: in one study of open source operating systems bug fixes, 27% of the incorrect fixes were made by developers who had never read the source code files they changed, suggesting that key to correct fixes is a deep comprehension of exactly how the defective code is intended to behave (<a href="#yin">Yin et al. 2011</a>).</p>
+		<p>
+			Once you've found the defect, what do you do?
+			It turns out that there are usually many ways to repair a defect.
+			How professional developers fix defects depends a lot on the circumstances: if they're near a release, they may not even fix it if it's too risky; if there's no pressure, and the fix requires major changes, they may refactor or even redesign the program to prevent the failure (<a href="#murphyhill">Murphy-Hill et al. 2013</a>). 
+			This can be a delicate, risky process: in one study of open source operating systems bug fixes, 27% of the incorrect fixes were made by developers who had never read the source code files they changed, suggesting that key to correct fixes is a deep comprehension of exactly how the defective code is intended to behave (<a href="#yin">Yin et al. 2011</a>).
+		</p>
+		
+		<p>
+			This risks suggest the importance of <strong>impact analysis</strong>, the activity of systematically and precisely analyzing the consequences of some proposed fix.
+			This can involve analyzing dependencies that are affected by a bug fix, re-running manual and automated tests, and perhaps even running users tests to ensure that the way in which you fixed a bug does not inadvertently introduce problems with usability or workflow.
+			Debugging is therefore like surgery: slow, methodical, purposeful, and risk-averse.
+		</p>
 		
 		<h2>Further reading</h2>
 
