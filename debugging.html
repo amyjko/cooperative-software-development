@@ -27,7 +27,12 @@
 		<h1>Debugging</h1>
 		<div class="lead">Andrew J. Ko</div>
 
-		<p>Despite all of your hard work at design, implementation, and verification, your software has failed. Somewhere in its implementation there's a line of code, or multiple lines of code, that, given a particular set of inputs, causes the program to fail. How do you find those defective lines of code? You debug, and you're doing it right, you do it systematically (<a href="#zeller2">Zeller 2009</a>).</p>
+		<p>
+			Despite all of your hard work at design, implementation, and verification, your software has failed.
+			Somewhere in its implementation there's a line of code, or multiple lines of code, that, given a particular set of inputs, causes the program to fail.
+			How do you find those defective lines of code?
+			You debug, and when you're doing debugging right, you do it systematically (<a href="#zeller2">Zeller 2009</a>).
+		</p>
 		
 		<p>To start, you have to <strong>reproduce</strong> the failure. Failure reproduction is a matter of identifying inputs to the program (whether data it receives upon being executed, user inputs, network traffic, or any other form of input) that causes the failure to occur. If you found this failure while <em>you</em> were executing the program, then you're lucky: you should be able to repeat whatever you just did and identify the inputs or series of inputs that caused the problem, giving you a way of testing that the program no longer fails once you've fixed the defect. If someone else was the one executing the program (for example, a user, or someone on your team), you better hope that they reported clear steps for reproducing the problem. When bug reports lack clear reproduction steps, bugs often can't be fixed (<a href="#bettenburg">Bettenburg et al. 2008</a>).</p>
 		
