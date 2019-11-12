@@ -54,7 +54,7 @@
 		
 		<p>The problems with the strategy above are numerous. First, what if you can't think of a possible cause? Second, what if your hypothesis is way off? You could spend <em>hours</em> generating hypotheses that are completely off base, effectively analyzing all of your code before finding the defect.</p>
 		
-		<p>Another strategy is working backwards (<a href="#ko">Ko & Myers</a>):</p>
+		<p>Another strategy is working backwards (<a href="#ko">Ko & Myers 2008</a>):</p>
 		
 		<ol>
 			<li>Observe failure</li>
@@ -63,7 +63,7 @@
 			<li>Repeat three recursively, analyzing all lines of code for defects along the chain of causality</li>
 		</ol>
 		
-		<p>The nice thing about this strategy is that you're <em>guaranteed</em> to find the defect if you can accurately identify the causes of each line of code contributing to the failure. It still requires you to analyze each line of code and potentially execute to it in order to inspect what might be wrong, but it requires potentially less work than guessing. My dissertation work investigated how to automate this strategy, allowing you to simply click on the fault output and then immediately see all upstream causes of it (<a href="#ko">Ko & Myers</a>).</p>
+		<p>The nice thing about this strategy is that you're <em>guaranteed</em> to find the defect if you can accurately identify the causes of each line of code contributing to the failure. It still requires you to analyze each line of code and potentially execute to it in order to inspect what might be wrong, but it requires potentially less work than guessing. My dissertation work investigated how to automate this strategy, allowing you to simply click on the fault output and then immediately see all upstream causes of it (<a href="#ko">Ko & Myers 2008</a>).</p>
 		
 		<p>Yet another strategy called <em>delta debugging</em> is to compare successful and failing executions of the program (<a href="#zeller">Zeller 2002</a>):</p>
 		
