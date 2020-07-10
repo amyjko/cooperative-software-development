@@ -31,13 +31,13 @@
 			Programs change.
 			You find bugs, you fix them.
 			You discover a new requirement, you add a feature.
-			A requirement changes because the world changes, you revise a feature.
-			The simple fact about programs are that they're rarely stable, but rather constantly changing, living documents that shift as much as the world around them shift.
+			A requirement changes because users demand it, you revise a feature.
+			The simple fact about programs are that they're rarely stable, but rather constantly changing, living artifacts that shift as much as our social worlds shift.
 		</p>
 		
 		<p>Nowhere is this constant evolution more apparent then in our daily encounters with software updates. The apps on our phones are constantly being updated to improve our experiences, while the web sites we visit potentially change every time we visit them, without us noticing. These different models have different notions of who controls changes to user experience: should software companies control when your experience changes or should you? And with systems with significant backend dependencies, is it even possible to give users control over when things change?</p>
 		
-		<p>To manage change, developers use all kinds of tools and practices.</p>
+		<p>To manage change, developers use many kinds of tools and practices.</p>
 		
 		<p>One of the most common ways of managing change is to <strong>refactor</strong> code. Refactoring helps developers modify the <em>architecture</em> of a program while keeping its behavior the same, enabling them to implement or modify functionality more easily. For example, one of the most common and simple refactorings is to rename a variable (renaming its definition and all of its uses). This doesn't change the architecture of a program at all, but does improve its readability. Other refactors can be more complex. For example, consider adding a new parameter to a function: all calls to that function need to pass that new parameter, which means you need to go through each call and decide on a value to send from that call site. Studies of refactoring in practice have found that refactorings can be big and small, that they don't always preserve the behavior of a program, and that developers perceive them as involving substantial costs and risks (<a href="#kim">Kim et al. 2012</a>).</p>
 		
