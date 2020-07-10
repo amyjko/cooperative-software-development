@@ -6,7 +6,7 @@ body {
 
 	font-weight: 400;
 	font-family: "Palatino Linotype", "Georgia", sans-serif;
-	font-size: 14pt;
+	font-size: 12pt;
 	line-height: 1.75em;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 strong, b {
-	font-weight: 400;
+	font-weight: 600;
 }
 
 table.text-left td {
