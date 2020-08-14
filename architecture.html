@@ -33,7 +33,18 @@
 		
 		<p>When encapsulation strategies fail, one can end up with what some affectionately call a "ball of mud" architecture or "spaghetti code". Ball of mud architectures have no apparent organization, which makes it difficult to comprehend how parts of its implementation interact. A more precise concept that can help explain this disorder is <b>cross-cutting concerns</b>, which are things like features and functionality that span multiple different components of a system, or even an entire system. There is some evidence that cross-cutting concerns can lead to difficulties in program comprehension and long-term design degradation (<a href="#walker">Walker et al. 2012</a>), all of which reduce productivity and increase the risk of defects. As long-lived systems get harder to change, they can take on <em>technical debt</em>, which is the degree to which an implementation is out of sync with a team's understanding of what a product is intended to be. Many developers view such debt as emerging from primarily from poor architectural decisions (<a href="ernst">Ernst et al. 2015</a>). Over time, this debt can further result in organizational challenges (<a href="#khadka">Khadka et al. 2014</a>), making change even more difficult.</p>
 		
-		<p>The preventative solution to this problems is to try to design architecture up front, mitigating the various risks that come from cross-cutting concerns (defects, low modifiability, etc.) (<a href="#fairbanks">Fairbanks 2010</a>). A popular method in the 1990's was the <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">Unified Modeling Language</a> (UML), which was a series of notations for expressing the architectural design of a system before implementing it. Recent studies show that UML generally not used and generally not universal (<a href="#petre">Petre 2013</a>). More recent developers have investigated ideas of <b>architectural styles</b>, which are patterns of interactions and information exchange between encapsulated components. Some common architectural styles include:</p>
+		<p>
+			The preventative solution to this problems is to try to design architecture up front, mitigating the various risks that come from cross-cutting concerns (defects, low modifiability, etc.) (<a href="#fairbanks">Fairbanks 2010</a>). 
+			A popular method in the 1990's was the <a href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">Unified Modeling Language</a> (UML), which was a series of notations for expressing the architectural design of a system before implementing it. 
+			Recent studies show that UML generally not used and generally not universal (<a href="#petre">Petre 2013</a>).
+			While these formal representations have generally not been adopted, informal, natural language architectural specifications are still widely used.
+			For example, <a href="https://www.industrialempathy.com/posts/design-docs-at-google/">Google engineers write design specifications</a> to sort through ambiguities, consider alternatives, and clarify the volume of work required.
+		</p>
+			
+		<p>
+			More recent developers have investigated ideas of <b>architectural styles</b>, which are patterns of interactions and information exchange between encapsulated components. 
+			Some common architectural styles include:
+		</p>
 		
 		<ul>
 			<li><strong>Client/server</strong>, in which data is transacted in response to requests. This is the basis of the Internet and cloud computing (<a href="#cito">Cito et la. 2015</a>).</li>
