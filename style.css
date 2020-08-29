@@ -5,14 +5,15 @@ body {
 	margin-right: auto;
 
 	font-weight: 400;
-	font-family: "Palatino Linotype", "Georgia", sans-serif;
-	font-size: 12pt;
-	line-height: 1.75em;
+	font-family: "Lora", serif;
+	font-size: 15pt;
+	line-height: 2em;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     margin-top: 2em;
+    font-family: "Verdana", sans-serif;
 }
 
 strong, b {
