@@ -1,0 +1,1 @@
+ssh ajko@ovid.u.washington.edu "cd public_html/books/cooperative-software-development && git pull"

@@ -1,110 +1,28 @@
 <!DOCTYPE html>
-<html>
-	<head>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-		<!-- Bootstrap requires jQuery -->
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<!-- Bootstrap jQuery -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
-		<!-- Load some Lora -->
+		<!-- Load Lora font -->
 		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-		<!-- Bootstrap requires jQuery -->
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<!-- Puruse style -->
+		<link rel="stylesheet" href="http://faculty.washington.edu/ajko/books/peruse/peruse.css">
 
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		
-		<link rel="stylesheet" href="style.css" />
+		<!-- Peruse app -->
+		<script src="http://faculty.washington.edu/ajko/books/peruse/build/peruse.js"></script>
 
-		<title>Cooperative Software Development</title>
+    </head>
+	<body onload="peruse('book.json')">
 		
-	</head>
-	<body>
-
-		<img src="images/cover.jpg" class="img-responsive" />		
-		<small>Credit: Creative Commons</small>
-		
-		<h1>Cooperative Software Development</h1>
-		<div class="lead"><a href="http://faculty.uw.edu/ajko">Amy J. Ko</a> <small>with contributions from <a href="http://benjixie.com/">Benjamin Xie</a></small></div>
-		
-		<table class="table">
-			<tr>
-				<td rowspan="14" width="40%">
-					<p>After teaching software engineering for many years, I've been frustrated by the lack of a simple, concise, and practical introduction to the human aspects of software engineering for students interested in becoming software engineers.</p>
-					
-					<p> In response, I've distilled my lectures from the past decade into these brief writings. They don't represent <em>everything</em> we know about software engineering (in particular, I don't discuss the deep technical contributions from the field), but the chapters do synthesize the broad evidence we have about how teams have to work together to succeed.</p>
-		
-					<p>I hope you enjoy! If you see something missing or wrong, <a href="https://github.com/andyjko/cooperative-software-development">Submit an issue or a pull request on GitHub</a>.</p>
-		
-				</td>
-				<td>Chapter 1</td><td><a href="history.html">History</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 2</td><td><a href="organizations.html">Organizations</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 3</td><td><a href="communication.html">Communication</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 4</td><td><a href="productivity.html">Productivity</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 5</td><td><a href="quality.html">Quality</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 6</td><td><a href="requirements.html">Requirements</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 7</td><td><a href="architecture.html">Architecture</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 8</td><td><a href="specifications.html">Specifications</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 9</td><td><a href="process.html">Process</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 10</td><td><a href="comprehension.html">Comprehension</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 11</td><td><a href="verification.html">Verification</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 12</td><td><a href="monitoring.html">Monitoring</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 13</td><td><a href="evolution.html">Evolution</a></td>
-			</tr>
-			<tr>
-				<td>Chapter 14</td><td><a href="debugging.html">Debugging</a></td>
-			</tr>
-		</table>
-
-		<h2>Revision history</h2>
-		
-		<ul>
-			<li><em>July 2020</em>. Revised all chapters to address racism, sexism, and ableism in software engineering.</li>
-			<li><em>July 2019</em>. Incorporated newly published work from ICSE, ESEC/FSE, SIGCSE, TSE, and TOSEM.</li>
-			<li><em>July 2018</em>. Incorporated newly published work from ICSE, ESEC/FSE, SIGCSE, TSE, and TOSEM.</li>
-			<li><em>July 2017</em>. First draft of the book release.</li>
-		</ul>
-
-		<p><small>
-			<p>This material is based upon work supported by the National Science Foundation under Grant No. <a target="_blank" href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=0952733">0952733</a>. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.
-			</p>
-	
-			<p><a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a></p>
-		
-		</small></p>
-
 		<script type="text/javascript">
 		
 			var _gaq = _gaq || [];
@@ -118,10 +36,6 @@
 			})();
 		
 		</script>
-
-	</body>
-
+		
+	<body>
 </html>
-
-
-
