@@ -17,7 +17,7 @@ The individuals in a software organization take on different roles to achieve th
 		
 As I noted above, sometimes the roles above get merged into individuals. When I was CTO at AnswerDash, I had software engineering roles, design roles, product roles, sales roles, _and_ support roles. This was partly because it was a small company when I was there. As organizations grow, these roles tend to be divided into smaller pieces. This division often means that different parts of the organization don't share knowledge, even when it would be advantageous<chilana11>.
 		
-Note that in the division of responsibilities above, software engineers really aren't the designers by default. They don't decide what product is made or what problems that product solves. They may have opinions&mdash;and a great deal of power to enforce their opinions, as the people building the product&mdash;but it's not ultimately their decision.
+Note that in the division of responsibilities above, software engineers really aren't the designers by default. They don't decide what product is made or what problems that product solves. They may have opinions--and a great deal of power to enforce their opinions, as the people building the product--but it's not ultimately their decision.
 		
 There are other roles you might be thinking of that I haven't mentioned:
 		
