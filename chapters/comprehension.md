@@ -53,6 +53,6 @@ These differences in notation can have some impact. Encapsulation through data s
 
 Code editors, development environments, and program comprehension tools can also be helpful. Early evidence showed that simple features like syntax highlighting and careful typographic choices can improve the speed of program comprehension<baecker88>. I have also worked on several tools to support program comprehension, including the Whyline, which automates many of the more challenging aspects of navigating dependencies in code, and visualizes them<ko09>:
 
-|https://www.youtube.com/embed/pbElN8nfe3k|The Whyline for Java|The Whyline for Java, a debugging tool that faciliates dependency navigation|Amy J. Ko]
+|https://www.youtube.com/embed/pbElN8nfe3k|The Whyline for Java|The Whyline for Java, a debugging tool that faciliates dependency navigation|Amy J. Ko|
 
 The path from novice to expert in program comprehension is one that involves understanding programming language semantics exceedingly well and reading _a lot_ of code, design patterns, and architectures. Anticipate that as you develop these skills, it will take you time to build robust understandings of what a program is doing, slowing down your writing, testing, and debugging.
