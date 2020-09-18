@@ -1,53 +1,71 @@
-Despite all of your hard work at design, implementation, and verification, your software has failed. Somewhere in its implementation there's a line of code, or multiple lines of code, that, given a particular set of inputs, causes the program to fail. How do you find those defective lines of code? You debug, and when you're doing debugging right, you do it systematically<zeller09>. And yet, despite decades of research and practice, most developers have weak debugging skills, don't know how to properly use debugging tools, and still rely in basic print statements<beller18>.
+Despite all of your hard work at design, implementation, and verification, your software has failed. Somewhere in its implementation there's a line of code, or multiple lines of code, that, given a particular set of inputs, causes the program to fail. *Debugging* is the activity of finding those causes and identifying changes to code that will prevent those failures. Of course, because defects are inenvitable in code that human developers write, debugging is no niche process in software engineering: it is a central, critical, and challenging activity that is part of nearly all aspects of creating software.
 
 # What is debugging?
-		
+
+Before we can talk about debugging, it's first important to consider what counts as a "bug". This term, which according to computer science mythology, first emerged from actual insects finding their way into the vacuum tubes of mainframes, is actually quite vague. Is the "bug" the incorrect code? Is it the faulty behavior that occurs at runtime when that incorrect code executes? Is it the problem that occurs in the world when the software misbehaves, such as a program crashing, or an operating system hanging? "*Bug*" actually refers to all of things things, which makes it a colloquial, but imprecise term.
+
+To clarify things, consider four definitions<ko05b>.
+
+To begin, let's consider *program behavior*, which we will define as any program output, at either a point in time, or over time, that is percevied or processed by a person or other software. Behavior, in this sense, is what we see programs do: they crash, hang, retrieve incorrect information, show error codes, compute something incorrectly, exhibit incomprehensible behavior, and so on. Program behavior is what [requirements|requirements] attempt to constraint (e.g., "the program should always finish in less than one second" is a statement about the program's behavior over time.)
+
+Given this definition of behavior, we can then define a *defect* is some set of program fragments that may cause program behavior that is inconsistent a program's requirements. Note that this definition actually has some non-obvious implications. First, defects do not necessarily cause problems; may defects may actually never be executed, or never executed with inputs that cause a program to misbehave. Second, defects can only be defined as such to the extent that requirements are clear. If you haven't written those requirements down in an unambiguous way, there will be debate about whether something is defect. Take, for example, a web application that has SQL injection security vulnerabilites, but the for the purpose of learning how to identify such vulnerabilities. Those aren't defects because they are their intentionally.
+
+A *fault* is a program state caused by a defect that may result in a program behavior inconsistent with a program's requirements. For example, imagine a program that is supposed to count from 1 to 10 using a variable to track and increment the current number, but with a defect that causes it to start at 0. The fault is the value of that variable when it is set to 0. When it is set to 1 through 10, there's nothing faulty about program behavior. Faults, like defects, do not necessarily cause problems. For example, imagine that the same program prints out the current value, but has another defect that unintentionally skips printing the first value. There would be two defects, a fault on the first number, but no undesirable program behavior, because it would still print 1 to 10.
+
+Finally, a *failure* is a program behavior that is inconsistent with a program's requirements. Failures are what we report in bug reports, what we often mean when we say "bug", and ultimately what matters in the world, as program behavior is what programs do to the world. To use our terminology then, we would say that "_defects may cause faults, faults may cause failures,  and failures may cause consequences in the world_" 
+
+What then, is debugging, using this terminology? *Debugging* is any activity that, given a report of a failure, seeks to identify the one or more defects that caused one or more faults, which caused the failure, and then making changes to a program to eliminate the associated defects. How to do this, of course, is the hard part. Therefore, debugging is inherently a process of searching—for faults that cause failures, and defects that cause faults. What's being searched when debugging is the thousands, millions, or perhaps even billions of instructions that are executed when a program executes (causing faults), and the thousands, or even millions of lines of code that might have have caused those faults.
+
 # Findings defects
 
-To start, you have to *reproduce* the failure. Failure reproduction is a matter of identifying inputs to the program (whether data it receives upon being executed, user inputs, network traffic, or any other form of input) that causes the failure to occur. If you found this failure while _you_ were executing the program, then you're lucky: you should be able to repeat whatever you just did and identify the inputs or series of inputs that caused the problem, giving you a way of testing that the program no longer fails once you've fixed the defect. If someone else was the one executing the program (for example, a user, or someone on your team), you better hope that they reported clear steps for reproducing the problem. When bug reports lack clear reproduction steps, bugs often can't be fixed<bettenburg08>.
+Research and practice broadly agree: finding defects quickly and successfully requires systematic, and sometimes scientific investigations of causality<zeller09>. And yet, despite decades of research and practice, most developers never learn the skills for debugging systematically and don't know how to properly use debugging tools to support systematic debugging. In fact, most still rely in basic print statements, partly because they are the most available and flexible tool<beller18>. Despite this, debugging sysemtatically has a few essential phases.
+
+The first phase is *reproducing* the failure, so that the program may be inspected for faults, which can be traced back to defects. Failure reproduction is a matter of identifying inputs to the program (whether data it receives upon being executed, user inputs, network traffic, or any other form of input) that causes the failure to occur. If you found this failure while _you_ were executing the program, then you're lucky: you should be able to repeat whatever you just did and identify the inputs or series of inputs that caused the problem, giving you a way of testing that the program no longer fails once you've fixed the defect. If someone else was the one executing the program (for example, a user, or someone on your team), you better hope that they reported clear steps for reproducing the problem. When bug reports lack clear reproduction steps, bugs often can't be fixed<bettenburg08>.
+
+Once you can reproduce a failure, the next phase is to minimize the failure-inducing input<zeller02b>. Imagine, for example, a program that, given a string `"abcdefg"`, is supposed to print all of the vowels in the program in the sequence they appear (`"ae"`), but instead produces just `"a"`. The intuition behind minimizing failure-inducing inputs is that they reduce the compexity of the search space in debugging. For example, in our example, we might find that entering the string `"abcde"` causes the same failed output of `"a"`, or even shorter, that just the string `"ae"` causes the failure. To minimize that failure-inducing input, one could just randomly remove parts of the input to find the smallest input that still causes the problem. More effective is to search the input space systematically, perhaps by using knowledge of the program behavior (e.g., vowels are what matter, so get rid of the consonants, as we did above), or even more systematic, doing something like a binary search of the input (e.g., trying successively smaller halves of the string until finding the smallest string that still causes the problem). Note that minimizing failure-inducing input applies to _any_ kind of input, not just data: you can also minimize a program, excluding lines you belive are irrelevant to the failure, finding the smallest possible program that still causes the failure.
+
+Once you have your minimized program and input, the next phase is to *localize* the defect, trying to identify the cause of the failure in code. There are many different strategies for localizing defects. One of the simplest strategies is to work forward:
+
+1. Set a breakpoint to the beginning of the program.
+2. Reproduce the failure. (If the program doesn't pause, then either the line with the breakpoint doesn't execute, the debugger is broken, or you didn't reproduce the failure).
+3. Step forward one instruction at a time until the program deviates from intended behavior, monitoring program state and control flow after each step.
+4. This step that deviates or one of the previous steps caused the failure.
+
+This process, while straightforward, is the slowest, requiring a long, vigilant search. A more efficient scientific strategy can leverage your knowledge of the program by guiding the search with hypotheses you generate<gilmore91>:
+
+1. Observe the failure
+2. Form a hypothesis about what caused the failure
+3. Identify ways of observing program behavior to test your hypothesis.
+4. Analyzing the data from your observations
+5. If you've identified the defect, move on to the repair phase; if not, return to step 2.
 		
-If you can reproduce the problem, the next challenge is to *localize* the defect, trying to identify the cause of the failure in code. There are many different strategies for localizing defects. At the highest level, one can think of this process as a hypothesis testing activity<gilmore91>.
-		
-* Observe failure
-* Form hypothesis of cause of failure
-* Devise a way to test hypothesis, such as analyzing the code you believe caused it or executing the program with the reproduction steps and stopping at the line you believe is wrong.
-* If the hypothesis was supported (meaning the program failed for the reason you thought it did), stop. Otherwise, return to 1.
-		
-The problems with the strategy above are numerous. First, what if you can't think of a possible cause? Second, what if your hypothesis is way off? You could spend _hours_ generating hypotheses that are completely off base, effectively analyzing all of your code before finding the defect.
+The problems with the strategy above are numerous. First, what if you can't generate a hypothesis? What if you can, but testing the hypothesis is slow or impossible? You could spend _hours_ generating hypotheses that are completely off-base, effectively analyzing all of your code and it's executions before finding the defect.
 		
 Another strategy is working backwards<ko08>.
+
+1. Observe the failure
+2. Identify the line of code that caused the failing output
+3. Identify the lines of code that caused the line of code in step 2 and any data used on the line in step 2
+4. Repeat three recursively, analyzing all lines of code for defects along the upstream chain of causality until finding the defect.
 		
-* Observe failure
-* Identify the line of code that caused the failing output
-* Identify the lines of code that caused the line of code in step 2 and any data used on the line in step 2
-* Repeat three recursively, analyzing all lines of code for defects along the chain of causality
-		
-The nice thing about this strategy is that you're _guaranteed_ to find the defect if you can accurately identify the causes of each line of code contributing to the failure. It still requires you to analyze each line of code and potentially execute to it in order to inspect what might be wrong, but it requires potentially less work than guessing. My dissertation work investigated how to automate this strategy, allowing you to simply click on the fault output and then immediately see all upstream causes of it<ko08>.
+This strategy _guarantees_ that you will find the defect if you systematically check all of the upstream causes of the failure. It still requires you to analyze each line of code and potentially execute to it in order to inspect what might be wrong, but it requires potentially less work than guessing. As we discussed in the [Comprehension|comprenshion] chapter, tools can automate some of this process<ko08>.
 		
 Yet another strategy called _delta debugging_ is to compare successful and failing executions of the program<zeller02>.
 		
-* Identify a successful set of inputs
-* Identify a failing set of inputs
-* Compare the differences in state from the successful and failing executions
-* Identify a change to input that minimizes the differences in states between the two executions
-* Variables and values that are different in these two executions contain the defect
-		
+1. Identify a successful set of inputs and minimize them
+2. Identify a failing set of inputs and minimie them
+3. Compare the differences in program state from the successful and failing executions during execution
+4. Identify a change to input that minimizes the differences in states between the two executions
+5. Variables their values that are different in these two executions contain the defect
+
 This is a powerful strategy, but only when you have successful inputs and when you can automate comparing runs and identifying changes to inputs.
 
-One of the simplest strategies is to work forward:
-		
-* Execute the program with the reproduction steps
-* Step forward one instruction at a time until the program deviates from intended behavior
-* This step that deviates or one of the previous steps caused the failure
-		
-This strategy is easy to follow, but can take a _long_ time because there are so many instructions that can execute.
-		
-For particularly complex software, it can sometimes be necessary to debug with the help of teammates, helping to generate hypotheses, identify more effective search strategies, or rule out the influence of particular components in a bug<aranda09>.
-		
+For particularly complex software, it can sometimes be necessary to debug with the help of teammates, helping to generate hypotheses, identify more effective search strategies, or rule out the influence of particular components in a bug<aranda09>. In fact, some work shows that following systematic debugging strategies can make novice developers just as effective as experienced ones<latoza20>, but that many novices struggle to use them, either because they are overconfident, they struggle to self-regulate their work, or because they lack sufficient prior knowledge to execute the strategies, and have to revert to simpler ones that require less knowledge.
+
 Ultimately, all of these strategies are essentially search algorithms, seeking the events that occurred while a program executed with a particular set of inputs that caused its output to be incorrect. Because programs execution millions and potentially billions of instructions, these strategies are necessary to reduce the scope of your search. This is where debugging *tools* come in: if you can find a tool that supports an effective strategy, then your work to search through those millions and billions of instructions will be greatly accelerated. This might be a print statement, a breakpoint debugger, a performance profiler, or one of the many advanced debugging tools beginning to emerge from research.
 
 # Fixing defects
 
-Once you've found the defect, what do you do? It turns out that there are usually many ways to repair a defect. How professional developers fix defects depends a lot on the circumstances: if they're near a release, they may not even fix it if it's too risky; if there's no pressure, and the fix requires major changes, they may refactor or even redesign the program to prevent the failure<murphyhill13>. This can be a delicate, risky process: in one study of open source operating systems bug fixes, 27% of the incorrect fixes were made by developers who had never read the source code files they changed, suggesting that key to correct fixes is a deep comprehension of exactly how the defective code is intended to behave<yin11>.
+Once you've found the defect, what do you do? It turns out that there are usually many ways to repair a defect. How developers fix defects depends a lot on the circumstances: if they're near a release, they may not even fix it if it's too risky; if there's no pressure, and the fix requires major changes, they may refactor or even redesign the program to prevent the failure<murphyhill13>. This can be a delicate, risky process: in one study of open source operating systems bug fixes, 27% of the incorrect fixes were made by developers who had never read the source code files they changed, suggesting that key to correct fixes is a deep comprehension of exactly how the defective code is intended to behave<yin11>.
 
-This risks suggest the importance of *impact analysis*, the activity of systematically and precisely analyzing the consequences of some proposed fix. This can involve analyzing dependencies that are affected by a bug fix, re-running manual and automated tests, and perhaps even running users tests to ensure that the way in which you fixed a bug does not inadvertently introduce problems with usability or workflow. Debugging is therefore like surgery: slow, methodical, purposeful, and risk-averse.
+This risks suggest the importance of *impact analysis*<arnold96>, the activity of systematically and precisely analyzing the consequences of some proposed fix. This can involve analyzing dependencies that are affected by a bug fix, re-running manual and automated tests, and perhaps even running users tests to ensure that the way in which you fixed a bug does not inadvertently introduce problems with usability or workflow. Debugging is therefore like surgery: slow, methodical, purposeful, and risk-averse.
