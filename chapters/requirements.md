@@ -35,7 +35,7 @@ Now, the flaws above don't make the requirements "wrong". They just make them "l
 Lastly, remember that requirements are translated from a design, and designs have many more qualities than just completeness, preciseness, feasibility, and verifiability. Designs must also be legal, ethical, and just. Consider, for example, the anti-Black redlining practices pervasive throughout the United States. Even through the 1980's, it was standard practice for banks to lend to lower-income white residents, but not Black residents, even middle-income or upper-income ones. Banks in the 1980's wrote software to automate many lending decisions; would a software requirement such as this have been legal, ethical, or just?
 
 "
-No loan application with an applicant self-identified as Black should be approved.
+No loan application with an applicant self-identified as a person of color should be approved.
 "
 
-That requirement is both precise and verifiable. In the 1980's, it was legal. But it was definitely not ethical or just? No. Therefore, requirements, no matter how formally extracted from a design specification, no matter how consistent with law, and no matter how aligned with an organization's priorities, is free from racist ideas. Requirements are just one of many ways that such ideas are manifested, and ultimately hidden in code<benjamin19>.
+That requirement is both precise and verifiable. In the 1980's, it was legal. But was it ethical or just? Absolutely not. Therefore, requirements, no matter how formally extracted from a design specification, no matter how consistent with law, and no matter how aligned with an organization's priorities, is free from racist ideas. Requirements are just one of many ways that such ideas are manifested, and ultimately hidden in code<benjamin19>.
