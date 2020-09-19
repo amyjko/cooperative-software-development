@@ -29,216 +29,1071 @@
                 ["July 2018", "Incorporated newly published work from ICSE, ESEC/FSE, SIGCSE, TSE, and TOSEM."],
                 ["July 2017", "First draft of the book release."]
         ],
+        "sources": {
+                "ASE": "IEEE/ACM International Conference on Automated Software Engineering",
+                "CACM": "Communications of the ACM",
+                "ESE": "Empirical Software Engineering",
+                "ICSE": "ACM/IEEE International Conference on Software Engineering",
+                "FSE": "ACM SIGSOFT Foundations of Software Engineering (FSE)",
+                "TSE": "IEEE Transactions on Software Engineering",
+                "CHI": "ACM SIGCHI Conference on Human Factors in Computing (CHI)",
+                "CHASE": "International Workshop on Cooperative and Human Aspects of Software Engineering",
+                "ICPC": "IEEE International Conference on Program Comprehension (ICPC)",
+                "SED": "Software Engineering Daily Podcast",
+                "ESECFSE": "ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)",
+                "CSCW": "ACM Conference on Computer Supported Cooperative Work (CSCW)",
+                "Software": "IEEE Software",
+                "Computer": "IEEE Computer",
+                "SEN": "ACM SIGSOFT Software Engineering Notes",
+                "TOSEM": "ACM Transactions on Software Engineering and Methodology (TOSEM)",
+                "VL/HCC": "IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)",
+                "SEIP": "ACM/IEEE International Conference on Software Engineering, Software Engineering in Practice",
+                "SIGCSE": "ACM Technical Symposium on Computer Science Education",
+                "Surveys": "ACM Computing Surveys"
+        },
 	"references": {
-                "abbate12": "Abbate, Janet (2012). [Recoding Gender: Women's Changing Participation in Computing|https://mitpress.mit.edu/books/recoding-gender]. The MIT Press.",
-                "abdalkareem17": "Rabe Abdalkareem, Olivier Nourry, Sultan Wehaibi, Suhaib Mujahid, and Emad Shihab. 2017. [Why do developers use trivial packages? An empirical case study on npm|https://doi.org/10.1145/3106237.3106267]. In Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2017). ACM, New York, NY, USA, 385-395.",
-                "aghajani20": "Emad Aghajani, Csaba Nagy, Mario Linares-Vásquez, Laura Moreno, Gabriele Bavota, Michele Lanza, David C. Shepherd. 2020. [Software Documentation: The Practitioners’ Perspective|https://www.inf.usi.ch/phd/aghajani/resources/papers/agha2020a.pdf]. International Conference on Software Engineering.",
-                "ahmed16": "Iftekhar Ahmed, Rahul Gopinath, Caius Brindescu, Alex Groce, and Carlos Jensen. 2016. [Can testedness be effectively measured?|https://doi.org/10.1145/2950290.2950324] In Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2016). ACM, New York, NY, USA, 547-558.",
-                "akers09": "David Akers, Matthew Simpson, Robin Jeffries, and Terry Winograd. 2009. [Undo and erase events as indicators of usability problems|http://dx.doi.org/10.1145/1518701.1518804]. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '09). ACM, New York, NY, USA, 659-668.",
-                "albaik15": "Al-Baik, O., & Miller, J. (2015). [The kanban approach, between agility and leanness: a systematic review|https://doi.org/10.1007/s10664-014-9340-x]. Empirical Software Engineering, 20(6), 1861-1897.",
-                "aranda09": "Jorge Aranda and Gina Venolia. 2009. [The secret life of bugs: Going past the errors and omissions in software repositories|http://dx.doi.org/10.1109/ICSE.2009.5070530]. In Proceedings of the 31st International Conference on Software Engineering (ICSE '09). IEEE Computer Society, Washington, DC, USA, 298-308.",
-                "arnold96": "Arnold, R. S. (1996). Software change impact analysis. IEEE Computer Society Press.",
-                "atwood16": "Software Engineering Daily. [The State of Programming with Stack Overflow Co-Founder Jeff Atwood|https://softwareengineeringdaily.com/2016/03/14/state-programming-jeff-atwood/].",
-                "bacchelli13": "Alberto Bacchelli and Christian Bird. 2013. [Expectations, outcomes, and challenges of modern code review|https://doi.org/10.1109/ICSE.2013.6606617]. In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 712-721.",
-                "baecker88": "R. Baecker. 1988. [Enhancing program readability and comprehensibility with tools for program visualization|https://doi.org/10.1109/ICSE.1988.93716]. In Proceedings of the 10th international conference on Software engineering (ICSE '88). IEEE Computer Society Press, Los Alamitos, CA, USA, 356-366.",
-                "baltes18": "Baltes, S., & Diehl, S. (2018). [Towards a theory of software development expertise|https://doi.org/10.1145/3236024.3236061]. In Proceedings of the 2018 26th ACM Joint Meeting on European Software Engineering Conference and Symposium on the Foundations of Software Engineering (pp. 187-200). ACM.",
-                "bartram16": "Software Engineering Daily (2016). [Hiring Engineers with Ammon Bartram|https://softwareengineeringdaily.com/2015/12/23/hiring-engineers-with-ammon-bartram/].",
-                "barua14": "Barua, A., Thomas, S. W., & Hassan, A. E. (2014). [What are developers talking about? an analysis of topics and trends in Stack Overflow|http://link.springer.com/article/10.1007/s10664-012-9231-y]. Empirical Software Engineering, 19(3), 619-654.",
-                "bass03": "Len Bass, Bonnie E. John. 2003. [Linking usability to software architecture patterns through general scenarios|http://www.sciencedirect.com/science/article/pii/S0164121202000766]. Journal of Systems and Software, Volume 66, Issue 3, Pages 187-197.",
-                "beck96": "Kent Beck, Ron Crocker, Gerard Meszaros, John Vlissides, James O. Coplien, Lutz Dominick, and Frances Paulisch. 1996. [Industrial experience with design patterns|https://doi.org/10.1109/ICSE.1996.493406]. In Proceedings of the 18th international conference on Software engineering (ICSE '96). IEEE Computer Society, Washington, DC, USA, 103-114.",
-                "beck99": "Beck, K. (1999). [Embracing change with extreme programming|https://doi.org/10.1007/s10664-014-9340-x]. Computer, 32(10), 70-77.",
-                "begel08": "Begel, A., & Simon, B. (2008). [Novice software developers, all over again|http://dl.acm.org/citation.cfm?id=1404522]. In Proceedings of the Fourth international Workshop on Computing Education Research (pp. 3-14). ACM.",
-                "begel10": "Andrew Begel, Yit Phang Khoo, and Thomas Zimmermann (2010). [Codebook: discovering and exploiting relationships in software repositories|http://dx.doi.org/10.1145/1806799.1806821]. In Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 1 (ICSE '10), Vol. 1. ACM, New York, NY, USA, 125-134.",
-                "begel14": "Begel, A., & Zimmermann, T. (2014). [Analyze this! 145 questions for data scientists in software engineering|https://doi.org/10.1145/2568225.2568233]. In Proceedings of the 36th International Conference on Software Engineering (pp. 12-23).",
-                "beller15": "Moritz Beller, Georgios Gousios, Annibale Panichella, and Andy Zaidman. 2015. [When, how, and why developers (do not) test in their IDEs|https://doi.org/10.1145/2786805.2786843]. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 179-190.",
-                "beller18": "Beller, M., Spruit, N., Spinellis, D., & Zaidman, A. (2018). [On the dichotomy of debugging behavior among programmers|https://doi.org/10.1145/3180155.3180175]. In 2018 IEEE/ACM 40th International Conference on Software Engineering (ICSE) (pp. 572-583).",
-                "bendifallah89": "Salah Bendifallah and Walt Scacchi. 1989. [Work structures and shifts: an empirical analysis of software specification teamwork|http://dx.doi.org/10.1145/74587.74624]. In Proceedings of the 11th international conference on Software engineering (ICSE '89). ACM, New York, NY, USA, 260-270.",
-                "benjamin19": "Benjamin, R. (2019). [Race after Technology: Abolitionist Tools for the New Jim Code|https://www.ruhabenjamin.com/race-after-technology]. Polity Books.",
-                "bertram10": "Dane Bertram, Amy Voida, Saul Greenberg, and Robert Walker. 2010. [Communication, collaboration, and bugs: the social nature of issue tracking in small, collocated teams|http://dx.doi.org/10.1145/1718918.1718972]. In Proceedings of the 2010 ACM conference on Computer supported cooperative work (CSCW '10). ACM, New York, NY, USA, 291-300.",
-                "bettenburg08": " Nicolas Bettenburg, Sascha Just, Adrian Schr&oumlter, Cathrin Weiss, Rahul Premraj, and Thomas Zimmermann. 2008. [What makes a good bug report?|http://dx.doi.org/10.1145/1453101.1453146] In Proceedings of the 16th ACM SIGSOFT International Symposium on Foundations of software engineering (SIGSOFT '08/FSE-16). ACM, New York, NY, USA, 308-318.",
-                "bettenburg13": "Bettenburg, N., & Hassan, A. E. (2013). [Studying the impact of social interactions on software quality|https://doi.org/10.1007/s10664-012-9205-0]. Empirical Software Engineering, 18(2), 375-431.",
-                "bhattacharya11": "Pamela Bhattacharya and Iulian Neamtiu. 2011. [Assessing programming language impact on development and maintenance: a study on C and C++|https://doi.org/10.1145/1985793.1985817]. In Proceedings of the 33rd International Conference on Software Engineering (ICSE '11). ACM, New York, NY, USA, 171-180.",
-                "binkley13": "Binkley, D., Davis, M., Lawrie, D., Maletic, J. I., Morrell, C., & Sharif, B. (2013). [The impact of identifier style on effort and comprehension|https://link.springer.com/article/10.1007/s10664-012-9201-4]. Empirical Software Engineering, 18(2), 219-276.",
-                "bird11": "Christian Bird, Nachiappan Nagappan, Brendan Murphy, Harald Gall, and Premkumar Devanbu. 2011. [Don't touch my code! Examining the effects of ownership on software quality|http://dx.doi.org/10.1145/2025113.2025119]. In Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering (ESEC/FSE '11). ACM, New York, NY, USA, 4-14.",
-                "boehm76": "[Software Engineering|http://ieeexplore.ieee.org/document/1674590/], IEEE Transactions on Computers, 25(12), 1226-1241.",
-                "boehm88": "Boehm, B. W. (1988). [A spiral model of software development and enhancement|http://ieeexplore.ieee.org/abstract/document/59/]. Computer, 21(5), 61-72.",
-                "boehm91": "Boehm, B. W. (1991). [Software risk management: principles and practices|http://ieeexplore.ieee.org/abstract/document/62930]. IEEE software, 8(1), 32-41.",
-                "borozdin17": "[Engineering Management with Mike Borozdin|https://softwareengineeringdaily.com/2017/02/08/engineering-management-with-mike-borozdin/] (2017). Software Engineering Daily.",
-                "brindescu14": "Caius Brindescu, Mihai Codoban, Sergii Shmarkatiuk, and Danny Dig. 2014. [How do centralized and distributed version control systems impact software changes?|http://dx.doi.org/10.1145/2568225.2568322] In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 322-333.",
-                "brooks95": "Brooks, F.P. (1995). [The Mythical Man Month|https://books.google.com/books?id=Yq35BY5Fk3gC].",
-                "callaú13": "Callaú, O., Robbes, R., Tanter, É., & Röthlisberger, D. (2013). [How (and why) developers use the dynamic features of programming languages: the case of Smalltalk|https://doi.org/10.1145/1985441.1985448]. Empirical Software Engineering, 18(6), 1156-1194.",
-                "casalnuovo15": "Casey Casalnuovo, Bogdan Vasilescu, Premkumar Devanbu, and Vladimir Filkov. 2015. [Developer onboarding in GitHub: the role of prior social links and language experience|https://doi.org/10.1145/2786805.2786854]. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 817-828.",
-                "casalnuovo15b": "Casey Casalnuovo, Prem Devanbu, Abilio Oliveira, Vladimir Filkov, and Baishakhi Ray. 2015. [Assert use in GitHub projects|https://doi.org/10.1145/2568225.2568285]. In Proceedings of the 37th International Conference on Software Engineering - Volume 1 (ICSE '15), Vol. 1. IEEE Press, Piscataway, NJ, USA, 755-766.",
-                "chedeua15": "[React JS with Sebastian Marbage and Christopher Chedeua|https://softwareengineeringdaily.com/2015/07/27/react-js-with-sebastian-markbage-and-christopher-chedeau/], Software Engineering Daily",
-                "chen09": "Chen, Chien-Tsun, Yu Chin Cheng, Chin-Yun Hsieh, and I-Lang Wu. [Exception handling refactorings: Directed by goals and driven by bug fixing|https://doi.org/10.1016/j.jss.2008.06.035]. Journal of Systems and Software 82, no. 2 (2009): 333-345.",
-                "chen15": "Chen, L. (2015). [Continuous delivery: Huge benefits, but challenges too|https://doi.org/10.1109/MS.2015.27]. IEEE Software, 32(2), 50-54.",
-                "chilana11": "Parmit K. Chilana, Amy J. Ko, Jacob O. Wobbrock, Tovi Grossman, and George Fitzmaurice. 2011. [Post-deployment usability: a survey of current practices|http://dx.doi.org/10.1145/1978942.1979270]. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (CHI '11). ACM, New York, NY, USA, 2243-2246.",
-                "chilana13": "Chilana, P. K., Ko, A. J., Wobbrock, J. O., & Grossman, T. (2013). [A multi-site field study of crowdsourced contextual help: usage and perspectives of end users and software teams|http://dl.acm.org/citation.cfm?id=2470685]. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 217-226).",
-                "chong07": "Jan Chong and Tom Hurlbutt. 2007. [The Social Dynamics of Pair Programming|http://dx.doi.org/10.1109/ICSE.2007.87]. In Proceedings of the 29th international conference on Software Engineering (ICSE '07). IEEE Computer Society, Washington, DC, USA, 354-363.",
-                "cito15": "Jürgen Cito, Philipp Leitner, Thomas Fritz, and Harald C. Gall. 2015. [The making of cloud applications: an empirical study on software development for the cloud|https://doi.org/10.1145/2786805.2786826]. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 393-403.",
-                "clarke06": "Clarke, L. A., & Rosenblum, D. S. (2006). [A historical perspective on runtime assertion checking in software development|https://doi.org/10.1145/1127878.1127900]. ACM SIGSOFT Software Engineering Notes, 31(3), 25-37.",
-                "clegg08": "Clegg, S. and Bailey, J.R. (2008). [International Encyclopedia of Organization Studies|https://books.google.com/books?id=Uac5DQAAQBAJ]. Sage Publications.",
-                "coelho17": "Jailton Coelho and Marco Tulio Valente (2017). [Why modern open source projects fail|https://doi.org/10.1145/3106237.3106246]. In Proceedings of the 2017 11th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2017).",
-                "conway68": "Conway, M. E. (1968). [How do committees invent|https://pdfs.semanticscholar.org/cbce/35eedcde3ef152bde75950fbc7ef4c6717b2.pdf]. Datamation, 14(4), 28-31.",
-                "dagenais10": "Barthélémy Dagenais, Harold Ossher, Rachel K. E. Bellamy, Martin P. Robillard, and Jacqueline P. de Vries. 2010. [Moving into a new software project landscape|http://dx.doi.org/10.1145/1806799.1806842]. In Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 1 (ICSE '10), Vol. 1. ACM, New York, NY, USA, 275-284.",
-                "demarco85": "Tom DeMarco and Tim Lister. 1985. [Programmer performance and the effects of the workplace|http://dl.acm.org/citation.cfm?id=319651]. In Proceedings of the 8th international conference on Software engineering (ICSE '85). IEEE Computer Society Press, Los Alamitos, CA, USA, 268-272.",
-                "demarco87": "DeMarco, T. and Lister, T. (1987). [Peopleware: Productive Projects and Teams|https://books.google.com/books?id=TVQUAAAAQBAJ].",
-                "dibella13": "di Bella, E., Fronza, I., Phaphoom, N., Sillitti, A., Succi, G., & Vlasenko, J. (2013). [Pair Programming and Software Defects--A Large, Industrial Case Study|https://doi.org/10.1109/TSE.2012.68]. IEEE Transactions on Software Engineering, 39(7), 930-953.",
-                "dingsøyr03": "Torgeir Dingsøyr, Emil Røyrvik. 2003. [An empirical study of an informal knowledge repository in a medium-sized software consulting company|http://dl.acm.org/citation.cfm?id=776827]. In Proceedings of the 25th International Conference on Software Engineering (ICSE '03). IEEE Computer Society, Washington, DC, USA, 84-92.",
-                "duala12": "Ekwa Duala-Ekoko and Martin P. Robillard. 2012. [Asking and answering questions about unfamiliar APIs: an exploratory study|http://dl.acm.org/citation.cfm?id=2337255]. In Proceedings of the 34th International Conference on Software Engineering (ICSE '12). IEEE Press, Piscataway, NJ, USA, 266-276.",
-                "dybå02": "Dybå, T. (2002). [Enabling software process improvement: an investigation of the importance of organizational issues|https://doi.org/10.1145/940071.940092]. Empirical Software Engineering, 7(4), 387-390.",
-                "dybå03": "Tore Dybå (2003). [Factors of software process improvement success in small and large organizations: an empirical study in the scandinavian context|http://dx.doi.org/10.1145/940071.940092]. In Proceedings of the 9th European software engineering conference held jointly with 11th ACM SIGSOFT international symposium on Foundations of software engineering (ESEC/FSE-11). ACM, New York, NY, USA, 148-157.",
-                "ebert15": "Ebert, F., Castor, F., and Serebrenik, A. (2015). [An exploratory study on exception handling bugs in Java programs|https://doi.org/10.1016/j.jss.2015.04.066]. Journal of Systems and Software, 106, 82-101.",
-                "eisenstadt97": "Eisenstadt, M. (1997). [My hairiest bug war stories|https://doi.org/10.1145/248448.248456]. Communications of the ACM, 40(4), 30-37.",
-                "endrikat14": "Stefan Endrikat, Stefan Hanenberg, Romain Robbes, and Andreas Stefik. 2014. [How do API documentation and static typing affect API usability?|https://doi.org/10.1145/2568225.2568299] In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 632-642.",
-                "ernst15": "Neil A. Ernst, Stephany Bellomo, Ipek Ozkaya, Robert L. Nord, and Ian Gorton. 2015. [Measure it? Manage it? Ignore it? Software practitioners and technical debt|https://doi.org/10.1145/2786805.2786848]. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 50-60.",
-                "fairbanks10": "Fairbanks, G. (2010). [Just enough software architecture: a risk-driven approach|https://www.amazon.com/Just-Enough-Software-Architecture-Risk-Driven/dp/0984618104]. Marshall & Brainerd.",
-                "fleming13": "Fleming, S. D., Scaffidi, C., Piorkowski, D., Burnett, M., Bellamy, R., Lawrance, J., & Kwan, I. (2013). [An information foraging theory perspective on tools for debugging, refactoring, and reuse tasks|https://doi.org/10.1145/2430545.2430551]. ACM Transactions on Software Engineering and Methodology (TOSEM), 22(2), 14.",
-                "foucault15": "Matthieu Foucault, Marc Palyart, Xavier Blanc, Gail C. Murphy, and Jean-Rémy Falleri. 2015. [Impact of developer turnover on quality in open-source software|https://doi.org/10.1145/2786805.2786870]. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 829-841.",
-                "fucci16": "Fucci, D., Erdogmus, H., Turhan, B., Oivo, M., & Juristo, N. (2016). [A Dissection of Test-Driven Development: Does It Really Matter to Test-First or to Test-Last?|https://doi.org/10.1109/TSE.2016.2616877]. IEEE Transactions on Software Engineering.",
-                "garlan95": "Garlan, D., Allen, R., & Ockerbloom, J. (1995). [Architectural mismatch or why it's hard to build systems out of existing parts|https://doi.org/10.1145/225014.225031]. In Proceedings of the 17th international conference on Software engineering (pp. 179-185).",
-                "gilmore91": "Gilmore, D. (1991). [Models of debugging|https://doi.org/10.1016/0001-6918(91)90009-O]. Acta Psychologica, 78, 151-172.",
-                "gleick11": "Gleick, James (2011). [The Information: A History, A Theory, A Flood|https://books.google.com/books?id=617JSFW0D2kC]. Pantheon Books.",
-                "glerum09": "Kirk Glerum, Kinshuman Kinshumann, Steve Greenberg, Gabriel Aul, Vince Orgovan, Greg Nichols, David Grant, Gretchen Loihle, and Galen Hunt. 2009. [Debugging in the (very) large: ten years of implementation and experience|http://dx.doi.org/10.1145/1629575.1629586]. In Proceedings of the ACM SIGOPS 22nd symposium on Operating systems principles (SOSP '09). ACM, New York, NY, USA, 103-116.",
-                "grabner16": "[Performance Monitoring with Andi Grabner|https://softwareengineeringdaily.com/2016/12/27/performance-monitoring-with-andi-grabner/]. Software Engineering Daily.",
-                "green89": "Green, T. R. (1989). [Cognitive dimensions of notations|https://www.cl.cam.ac.uk/~afb21/CognitiveDimensions/papers/Green1989.pdf]. People and computers V, 443-460.",
-                "grossman09": "Grossman, T., Fitzmaurice, G., & Attar, R. (2009). [A survey of software learnability: metrics, methodologies and guidelines|https://doi.org/10.1145/1518701.1518803]. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 649-658).",
-                "grudin17": "Grudin, Jonathan (2017). [From Tool to Partner: The Evolution of Human-Computer Interaction|https://books.google.com/books?id=Wc3hDQAAQBAJ].",
-                "hanenberg13": "Stefan Hanenberg, Sebastian Kleinschmager, Romain Robbes, Éric Tanter, Andreas Stefik. [An empirical study on the impact of static typing on software maintainability|https://doi.org/10.1007/s10664-013-9289-1]. Empirical Software Engineering. 2013.",
-                "herbsleb03": "James D. Herbsleb and Audris Mockus. 2003. [Formulation and preliminary test of an empirical theory of coordination in software engineering|http://dx.doi.org/10.1145/940071.940091]. In Proceedings of the 9th European software engineering conference held jointly with 11th ACM SIGSOFT international symposium on Foundations of software engineering (ESEC/FSE-11). ACM, New York, NY, USA, 138-137.",
-                "herbsleb16": "James Herbsleb. 2016. [Building a socio-technical theory of coordination: why and how|https://doi.org/10.1145/2950290.2994160]. In Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2016). ACM, New York, NY, USA, 2-10.",
-                "hilton16": "Hilton, M., Tunnell, T., Huang, K., Marinov, D., & Dig, D. (2016). [Usage, costs, and benefits of continuous integration in open-source projects|https://doi.org/10.1145/2970276.2970358]. In Proceedings of the 31st IEEE/ACM International Conference on Automated Software Engineering.",
-                "hoda10": "Rashina Hoda, James Noble, and Stuart Marshall. 2010. [Organizing self-organizing teams|https://doi.org/10.1145/1806799.1806843]. In Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 1 (ICSE '10), Vol. 1. ACM, New York, NY, USA, 285-294.",
-                "hoda17": "Hoda, R., & Noble, J. (2017). [Becoming agile: a grounded theory of agile transitions in practice|https://doi.org/10.1109/ICSE.2017.21]. In Proceedings of the 39th International Conference on Software Engineering (pp. 141-151). IEEE Press.",
-                "ivory01": "Ivory M.Y., Hearst, M.A. (2001). [The state of the art in automating usability evaluation of user interfaces|http://doi.acm.org/10.1145/503112.503114]. ACM Computing Surveys, 33(4).",
-                "jackson01": "Jackson, Michael (2001). [Problem Frames|https://books.google.com/books?id=8fqIP83Q2IAC]. Addison-Wesley.",
-                "johnson13": "Brittany Johnson, Yoonki Song, Emerson Murphy-Hill, and Robert Bowdidge. 2013. [Why don't software developers use static analysis tools to find bugs?|http://ieeexplore.ieee.org/abstract/document/6606613] In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 672-681.",
-                "johnson15": "Brittany Johnson, Rahul Pandita, Emerson Murphy-Hill, and Sarah Heckman. 2015. [Bespoke tools: adapted to the concepts developers know|https://doi.org/10.1145/2786805.2803197]. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 878-881.",
-                "kalliamvakou17": "Kalliamvakou, E., Bird, C., Zimmermann, T., Begel, A., DeLine, R., & German, D. M. (2017). [What makes a great manager of software engineers?|https://ieeexplore.ieee.org/abstract/document/8094304/] IEEE Transactions on Software Engineering, 45, 1, 87-106.",
-                "kay96": "Kay, A. C. (1996). [The early history of Smalltalk|http://dl.acm.org/citation.cfm?id=1057828]. History of programming languages---II (pp. 511-598).",
-                "kenney00": "Kenney, M. (2000). Understanding Silicon Valley: The anatomy of an entrepreneurial region. Stanford University Press.",
-                "kernighan16": "[Language Design with Brian Kernighan|https://softwareengineeringdaily.com/2016/01/06/language-design-with-brian-kernighan/], Software Engineering Daily.",
-                "kersten06": "Mik Kersten and Gail C. Murphy. 2006. [Using task context to improve programmer productivity|http://dx.doi.org/10.1145/1181775.1181777]. In Proceedings of the 14th ACM SIGSOFT international symposium on Foundations of software engineering (SIGSOFT '06/FSE-14). ACM, New York, NY, USA, 1-11.",
-                "khadka14": "Ravi Khadka, Belfrit V. Batlajery, Amir M. Saeidi, Slinger Jansen, and Jurriaan Hage. 2014. [How do professionals perceive legacy systems and software modernization?|http://dx.doi.org/10.1145/2568225.2568318]. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 36-47.",
-                "kim12": "Miryung Kim, Thomas Zimmermann, and Nachiappan Nagappan. 2012. [A field study of refactoring challenges and benefits|http://dx.doi.org/10.1145/2393596.2393655]. In Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering (FSE '12). ACM, New York, NY, USA, , Article 50 , 11 pages.",
-                "kim16": "Miryung Kim, Thomas Zimmermann, Robert DeLine, and Andrew Begel. 2016. [The emerging role of data scientists on software development teams|https://doi.org/10.1145/2884781.2884783]. In Proceedings of the 38th International Conference on Software Engineering (ICSE '16). ACM, New York, NY, USA, 96-107.",
-                "ko04": "Ko, A. J., Myers, B. A., & Aung, H. H. (2004, September). [Six learning barriers in end-user programming systems|http://ieeexplore.ieee.org/abstract/document/1372321/]. In Visual Languages and Human Centric Computing, 2004 IEEE Symposium on (pp. 199-206). IEEE.",
-                "ko05": "Amy J. Ko, Htet Htet Aung, Brad A. Myers (2005). Eliciting Design Requirements for Maintenance-Oriented IDEs: A Detailed Study of Corrective and Perfective Maintenance Tasks. International Conference on Software Engineering (ICSE), 126-135.",
-                "ko05b": "Ko, A. J., & Myers, B. A. (2005). [A framework and methodology for studying the causes of software errors in programming systems|https://doi.org/10.1016/j.jvlc.2004.08.003]. Journal of Visual Languages & Computing, 16(1-2), 41-84.",
-                "ko07": "Amy J. Ko, Rob DeLine, and Gina Venolia (2007). [Information needs in collocated software development teams|https://doi.org/10.1109/ICSE.2007.45]. In 29th International Conference on Software Engineering, 344-353.",
-                "ko08": "Amy J. Ko and Brad A. Myers. 2008. [Debugging reinvented: asking and answering why and why not questions about program behavior|http://dx.doi.org/10.1145/1368088.1368130]. In Proceedings of the 30th international conference on Software engineering (ICSE '08). ACM, New York, NY, USA, 301-310.",
-                "ko09": "Amy J. Ko and Brad A. Myers (2009). [Finding causes of program output with the Java Whyline|https://doi.org/10.1145/1518701.1518942]. In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (pp. 1569-1578).",
-                "ko17": "Ko, Amy J. (2017). [A Three-Year Participant Observation of Software Startup Software Evolution|https://faculty.washington.edu/ajko/papers/Ko2017AnswerDashReflection.pdf]. International Conference on Software Engineering, Software Engineering in Practice, 3-12.",
-                "ko19": "Ko, A. J., LaToza, T. D., Hull, S., Ko, E. A., Kwok, W., Quichocho, J., ... & Pandit, R. (2019). [Teaching explicit programming strategies to adolescents|https://doi.org/10.1145/3287324.3287371]. In Proceedings of the 50th ACM Technical Symposium on Computer Science Education (pp. 469-475).",
-                "kocaguneli13": "Ekrem Kocaguneli, Thomas Zimmermann, Christian Bird, Nachiappan Nagappan, and Tim Menzies. 2013. [Distributed development considered harmful?|https://doi.org/10.1109/ICSE.2013.6606637]. In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 882-890.",
-                "koide05": "Amy J. Ko, Htet Aung, and Brad A. Myers. 2005. [Eliciting design requirements for maintenance-oriented IDEs: a detailed study of corrective and perfective maintenance tasks|http://ieeexplore.ieee.org/abstract/document/1553555/]. In Proceedings of the 27th international conference on Software engineering (ICSE '05). ACM, New York, NY, USA, 126-135.",
-                "kononenko16": "Oleksii Kononenko, Olga Baysal, and Michael W. Godfrey. 2016. [Code review quality: how developers see it|https://doi.org/10.1145/2884781.2884840]. In Proceedings of the 38th International Conference on Software Engineering (ICSE '16). ACM, New York, NY, USA, 1028-1038.",
-                "lamsweerde08": "Axel van Lamsweerde. (2008). [Requirements engineering: from craft to discipline|http://dx.doi.org/10.1145/1453101.1453133]. In Proceedings of the 16th ACM SIGSOFT International Symposium on Foundations of software engineering (SIGSOFT '08/FSE-16). ACM, New York, NY, USA, 238-249.",
-                "latoza06": "Thomas D. LaToza, Gina Venolia, and Robert DeLine. 2006. [Maintaining mental models: a study of developer work habits|http://dx.doi.org/10.1145/1134285.1134355]. In Proceedings of the 28th international conference on Software engineering (ICSE '06). ACM, New York, NY, USA, 492-501.",
-                "latoza07": "Thomas D. LaToza, David Garlan, James D. Herbsleb, and Brad A. Myers. 2007. [Program comprehension as fact finding|http://dx.doi.org/10.1145/1287624.1287675]. In Proceedings of the the 6th joint meeting of the European software engineering conference and the ACM SIGSOFT symposium on The foundations of software engineering (ESEC-FSE '07). ACM, New York, NY, USA, 361-370.",
-                "latoza10": "Thomas D. LaToza and Brad A. Myers. 2010. [Developers ask reachability questions|http://dx.doi.org/10.1145/1806799.1806829]. In Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 1 (ICSE '10), Vol. 1. ACM, New York, NY, USA, 185-194.",
-                "latoza20": "LaToza, T. D., Arab, M., Loksa, D., & Ko, A. J. (2020). [Explicit programming strategies|https://doi.org/10.1007/s10664-020-09810-1]. Empirical Software Engineering, 1-34.",
-                "lavallee15": "Mathieu Lavallee and Pierre N. Robillard. 2015. [Why good developers write bad code: an observational case study of the impacts of organizational factors on software quality|http://dl.acm.org/citation.cfm?id=2818754.2818837]. In Proceedings of the 37th International Conference on Software Engineering - Volume 1 (ICSE '15), Vol. 1. IEEE Press, Piscataway, NJ, USA, 677-687.",
-                "lawrie06": "Lawrie, D., Morrell, C., Feild, H., & Binkley, D. (2006). [What's in a name? A study of identifiers|https://doi.org/10.1109/ICPC.2006.51]. IEEE International Conference on Program Comprehension, 3-12.",
-                "lee03": "Lee, G. K., & Cole, R. E. (2003). [From a firm-based to a community-based model of knowledge creation: The case of the Linux kernel development|http://pubsonline.informs.org/doi/abs/10.1287/orsc.14.6.633.24866]. Organization science, 14(6), 633-649.",
-                "li15": "Paul Luo Li, Amy J. Ko, and Jiamin Zhu. 2015. [What makes a great software engineer?|http://dl.acm.org/citation.cfm?id=2818839]. In Proceedings of the 37th International Conference on Software Engineering - Volume 1 (ICSE '15), Vol. 1. IEEE Press, Piscataway, NJ, USA, 700-710.",
-                "li17": "Li, P. L., Ko, A. J., & Begel, A. (2017). [Cross-disciplinary perspectives on collaborations with software engineers|http://dl.acm.org/citation.cfm?id=3100319]. In Proceedings of the 10th International Workshop on Cooperative and Human Aspects of Software Engineering (pp. 2-8).",
-                "maalej14": "Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke. 2014. [On the Comprehension of program Comprehension|http://dx.doi.org/10.1145/2622669]. ACM Transactions on Software Engineering and Methodology. 23, 4, Article 31 (September 2014), 37 pages.",
-                "mader15": "Mäder, P., & Egyed, A. (2015). [Do developers benefit from requirements traceability when evolving and maintaining a software system?|https://doi.org/10.1007/s10664-014-9314-z]. Empirical Software Engineering, 20(2), 413-441.",
-                "mamykina11": "Mamykina, L., Manoim, B., Mittal, M., Hripcsak, G., & Hartmann, B. (2011). [Design lessons from the fastest Q&A site in the west|https://doi.org/10.1145/1978942.1979366]. In Proceedings of the SIGCHI conference on Human factors in computing systems, 2857-2866.",
-                "mark08": "Mark, G., Gudith, D., & Klocke, U. (2008). [The cost of interrupted work: more speed and stress|http://dl.acm.org/citation.cfm?id=1357072]. In Proceedings of the SIGCHI conference on Human Factors in Computing Systems (pp. 107-110).",
-                "maxion00": "Maxion, Roy A., and Robert T. Olszewski. [Eliminating exception handling errors with dependability cases: a comparative, empirical study|https://doi.org/10.1109/32.877848]. IEEE Transactions on Software Engineering 26, no. 9 (2000): 888-906.",
-                "may19": "May, A., Wachs, J., & Hannák, A. (2019). [Gender differences in participation and reward on Stack Overflow|https://link.springer.com/article/10.1007/s10664-019-09685-x]. Empirical Software Engineering, 1-23.",
-                "mccarthy78": "McCarthy, J. (1978). [History of LISP|http://dl.acm.org/citation.cfm?id=1198360]. In History of programming languages I (pp. 173-185).",
-                "mcilwain19": "McIlwain, C. D. (2019). [Black Software: The Internet and Racial Justice, from the AfroNet to Black Lives Matter|https://global.oup.com/academic/product/black-software-9780190863845?cc=us&lang=en&]. Oxford University Press.",
-                "meneely11": "Andrew Meneely, Pete Rotella, and Laurie Williams. 2011. [Does adding manpower also affect quality? An empirical, longitudinal analysis|http://dx.doi.org/10.1145/2025113.2025128]. In Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering (ESEC/FSE '11). ACM, New York, NY, USA, 81-90.",
-                "menzies13": "Menzies, T., & Zimmermann, T. (2013). [Software analytics: so what?|https://doi.ieeecomputersociety.org/10.1109/MS.2013.86] IEEE Software, 30(4), 31-37.",
-                "metcalf02": "Metcalf, M. (2002). [History of Fortran|http://dl.acm.org/citation.cfm?id=602379]. In ACM SIGPLAN Fortran Forum (Vol. 21, No. 3, pp. 19-20)",
-                "meyer17": "Meyer, A. N., Barton, L. E., Murphy, G. C., Zimmermann, T., & Fritz, T. (2017). [The work life of developers: Activities, switches and perceived productivity||https://doi.org/10.1109/TSE.2017.2656886]. IEEE Transactions on Software Engineering, 43(12), 1178-1193.",
-                "milewski07": "Milewski, A. E. (2007). [Global and task effects in information-seeking among software engineers|https://link.springer.com/article/10.1007/s10664-007-9036-6]. Empirical Software Engineering, 12(3), 311-326.",
-                "mockus02": "Audris Mockus and James D. Herbsleb. 2002. [Expertise browser: a quantitative approach to identifying expertise|http://dx.doi.org/10.1145/581339.581401]. In Proceedings of the 24th International Conference on Software Engineering (ICSE '02). ACM, New York, NY, USA, 503-512.",
-                "mockus10": "Audris Mockus. 2010. [Organizational volatility and its effects on software defects|http://doi.acm.org/10.1145/1882291.1882311]. In Proceedings of the eighteenth ACM SIGSOFT international symposium on Foundations of software engineering (FSE '10). ACM, New York, NY, USA, 117-126.",
-                "mohanani14": "Rahul Mohanani, Paul Ralph, and Ben Shreeve. 2014. [Requirements fixation|http://dx.doi.org/10.1145/2568225.2568235]. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 895-906.",
-                "murphy14": "Emerson Murphy-Hill, Thomas Zimmermann, and Nachiappan Nagappan. 2014. [Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?|http://dx.doi.org/10.1145/2568225.2568226]. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 1-11.",
-                "murphyhill09": "Emerson Murphy-Hill, Chris Parnin, and Andrew P. Black. 2009. [How we refactor, and how we know it|http://dx.doi.org/10.1109/ICSE.2009.5070529]. In Proceedings of the 31st International Conference on Software Engineering (ICSE '09). IEEE Computer Society, Washington, DC, USA, 287-297.",
-                "murphyhill13": "Emerson Murphy-Hill, Thomas Zimmermann, Christian Bird, and Nachiappan Nagappan. 2013. [The design of bug fixes|http://dl.acm.org/citation.cfm?id=2486833]. In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 332-341.",
-                "müller03": "Matthias M. Müller and Frank Padberg. 2003. [On the economic evaluation of XP projects|http://dx.doi.org/10.1145/940071.940094]. In Proceedings of the 9th European software engineering conference held jointly with 11th ACM SIGSOFT international symposium on Foundations of software engineering (ESEC/FSE-11). ACM, New York, NY, USA, 168-177.",
-                "nelson19": "Nelson, N., Brindescu, C., McKee, S., Sarma, A., & Dig, D. (2019). [The life-cycle of merge conflicts: processes, barriers, and strategies. Empirical Software Engineering, 1-44.|https://link.springer.com/article/10.1007/s10664-018-9674-x]",
-                "ng06": "T. H. Ng, S. C. Cheung, W. K. Chan, and Y. T. Yu. 2006. [Work experience versus refactoring to design patterns: a controlled experiment|http://dx.doi.org/10.1145/1181775.1181778]. In Proceedings of the 14th ACM SIGSOFT international symposium on Foundations of software engineering (SIGSOFT '06/FSE-14). ACM, New York, NY, USA, 12-22.",
-                "norris17": "[Tech Leadership with Jeff Norris|https://softwareengineeringdaily.com/2016/09/22/tech-leadership-with-jeff-norris/] (2017). Software Engineering Daily.",
-                "northrup16": "Software Engineering Daily (2016). [Reflections of an Old Programmer|https://softwareengineeringdaily.com/2016/11/09/reflections-of-an-old-programmer-with-ben-northrup/]",
-                "osterwalder15": "A. Osterwalder, Y. Pigneur, G. Bernarda, & A. Smith (2015). [Value proposition design: how to create products and services customers want|https://books.google.com/books?id=jgu5BAAAQBAJ]. John Wiley & Sons.",
-                "overney20": "Overney, C., Meinicke, J., Kästner, C., & Vasilescu, B. (2020). [How to Not Get Rich: An Empirical Study of Donations in Open Source|https://cmustrudel.github.io/papers/overney20donations.pdf]. International Conference on Software Engineering.",
-                "parnas86": "Parnas, D. L., & Clements, P. C. (1986). [A rational design process: How and why to fake it|https://doi.org/10.1109/TSE.1986.6312940]. IEEE Transactions on Software Engineering, (2), 251-257.",
-                "perlow99": "Perlow, L. A. (1999). [The time famine: Toward a sociology of work time|http://journals.sagepub.com/doi/abs/10.2307/2667031]. Administrative science quarterly, 44(1), 57-81.",
-                "petre13": "Marian Petre. 2013. [UML in practice|https://doi.org/10.1145/2568225.2568285]. In Proceedings of the 2013 International Conference on Software Engineering (ICSE '13). IEEE Press, Piscataway, NJ, USA, 722-731.",
-                "petre16": "Petre, M., van der Hoek, A., & Quach, Y. (2016). [Software Design Decoded: 66 Ways Experts Think|https://www.google.com/books/edition/_/EVE4DQAAQBAJ]. MIT Press.",
-                "pettersen16": "[Git Workflows with Tim Pettersen|https://softwareengineeringdaily.com/2016/04/06/git-workflows-tim-pettersen/] (2016). Software Engineering Daily.",
-                "pham14": "Raphael Pham, Stephan Kiesling, Olga Liskin, Leif Singer, and Kurt Schneider. 2014. [Enablers, inhibitors, and perceptions of testing in novice software teams|http://dx.doi.org/10.1145/2635868.2635925]. In Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2014). ACM, New York, NY, USA, 30-40.",
-                "phillips14": "Shaun Phillips, Thomas Zimmermann, and Christian Bird. 2014. [Understanding and improving software build teams|http://dx.doi.org/10.1145/2568225.2568274]. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 735-744.",
-                "pikkarainen98": "Pikkarainen, M., Haikara, J., Salo, O., Abrahamsson, P., & Still, J. (2008). [The impact of agile practices on communication in software development|http://dl.acm.org/citation.cfm?id=1380667]. Empirical Software Engineering, 13(3), 303-337.",
-                "potvin16": "Potvin, R., & Levenberg, J. (2016). [Why Google stores billions of lines of code in a single repository|]. Communications of the ACM, 59(7), 78-87.",
-                "prince17": "[Product Management with Suzie Prince|https://softwareengineeringdaily.com/2017/01/18/product-management-with-suzie-prince/], Software Engineering Daily.",
-                "procaccino05": "Procaccino, J. D., Verner, J. M., Shelfer, K. M., & Gefen, D. (2005). [What do software practitioners really think about project success: an exploratory study|http://www.sciencedirect.com/science/article/pii/S0164121204002614]. Journal of Systems and Software, 78(2), 194-203.",
-                "qiu13": "Dong Qiu, Bixin Li, and Zhendong Su. 2013. [An empirical analysis of the co-evolution of schema and code in database applications|http://dx.doi.org/10.1145/2491411.2491431]. In Proceedings of the 2013 9th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2013). ACM, New York, NY, USA, 125-135.",
-                "qureshi16": "[Debugging Stories with Haseeb Qureshi|https://softwareengineeringdaily.com/2016/11/19/debugging-stories-with-haseeb-qureshi/]. Software Engineering Daily.",
-                "ralph14": "Paul Ralph and Paul Kelly. 2014. [The dimensions of software engineering success|http://dx.doi.org/10.1145/2568225.2568261]. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 24-35.",
-                "ramasubbu11": "Narayan Ramasubbu, Marcelo Cataldo, Rajesh Krishna Balan, and James D. Herbsleb. 2011. [Configuring global software teams: a multi-company analysis of project productivity, quality, and profits|https://doi.org/10.1145/1985793.1985830]. In Proceedings of the 33rd International Conference on Software Engineering (ICSE '11). ACM, New York, NY, USA, 261-270.",	
-                "ray14": "Baishakhi Ray, Daryl Posnett, Vladimir Filkov, and Premkumar Devanbu. 2014. [A large scale study of programming languages and code quality in GitHub|http://dx.doi.org/10.1145/2635868.2635922]. In Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2014). ACM, New York, NY, USA, 155-165.",
-                "rice16": "[Continuous Delivery with David Rice|https://softwareengineeringdaily.com/2016/10/10/continuous-delivery-with-david-rice/]. Software Engineering Daily.",
-                "rigby11": "Peter C. Rigby and Margaret-Anne Storey. 2011. [Understanding broadcast based peer review on open source software projects|https://doi.org/10.1145/1985793.1985867]. In Proceedings of the 33rd International Conference on Software Engineering (ICSE '11). ACM, New York, NY, USA, 541-550.",
-                "rigby13": "Peter C. Rigby and Christian Bird. 2013. [Convergent contemporary software peer review practices|http://dx.doi.org/10.1145/2491411.2491444]. In Proceedings of the 2013 9th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2013). ACM, New York, NY, USA, 202-212.",
-                "rigby16": "Peter C. Rigby, Yue Cai Zhu, Samuel M. Donadelli, and Audris Mockus. 2016. [Quantifying and mitigating turnover-induced knowledge loss: case studies of chrome and a project at Avaya|https://doi.org/10.1145/2884781.2884851]. In Proceedings of the 38th International Conference on Software Engineering (ICSE '16). ACM, New York, NY, USA, 1006-1016.",
-                "roehm12": "Tobias Roehm, Rebecca Tiarks, Rainer Koschke, and Walid Maalej. 2012. http://dl.acm.org/citation.cfm?id=2337254 How do professional developers comprehend software? In Proceedings of the 34th International Conference on Software Engineering (ICSE '12). IEEE Press, Piscataway, NJ, USA, 255-265.",
-                "rothermel96": "Rothermel, G., & Harrold, M. J. (1996). [Analyzing regression test selection techniques|https://doi.org/10.1109/32.536955]. IEEE Transactions on software engineering, 22(8), 529-551.",
-                "rubin16": "Julia Rubin and Martin Rinard. 2016. [The challenges of staying together while moving fast: an exploratory study|https://doi.org/10.1145/2884781.2884871]. In Proceedings of the 38th International Conference on Software Engineering (ICSE '16). ACM, New York, NY, USA, 982-993.",
-                "runeson06": "Runeson, P. (2006). [A survey of unit testing practices|https://doi.org/10.1109/MS.2006.91]. IEEE Software, 23(4), 22-29.",
-                "salvaneschi14": "Guido Salvaneschi, Sven Amann, Sebastian Proksch, and Mira Mezini. 2014. https://doi.org/10.1145/2635868.2635895 An empirical study on program comprehension with reactive programming. In Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2014). ACM, New York, NY, USA, 564-575.",
-                "santos16": "Ronnie E. S. Santos, Fabio Q. B. da Silva, Cleyton V. C. de Magalhães, and Cleviton V. F. Monteiro. 2016. [Building a theory of job rotation in software engineering from an instrumental case study|https://doi.org/10.1145/2884781.2884837]. In Proceedings of the 38th International Conference on Software Engineering (ICSE '16). ACM, New York, NY, USA, 971-981.",
-                "schiller14": "Schiller, T. W., Donohue, K., Coward, F., & Ernst, M. D. (2014). [Case studies and tools for contract specifications|https://doi.org/10.1145/2568225.2568285]. In Proceedings of the 36th International Conference on Software Engineering (pp. 596-607).",
-                "seaman97": "Carolyn B. Seaman and Victor R. Basili. 1997. [An empirical study of communication in code inspections|http://dx.doi.org/10.1145/253228.253248]. In Proceedings of the 19th international conference on Software engineering (ICSE '97). ACM, New York, NY, USA, 96-106.",
-                "sedano17": "Sedano, T., Ralph, P., & Péraire, C. (2017). [Software development waste|http://dl.acm.org/citation.cfm?id=3097385]. In Proceedings of the 39th International Conference on Software Engineering (pp. 130-140). IEEE Press.", 
-                "sfetsos09": "Sfetsos, P., Stamelos, I., Angelis, L., & Deligiannis, I. (2009). [An experimental investigation of personality types impact on pair effectiveness in pair programming|https://link.springer.com/article/10.1007/s10664-008-9093-5]. Empirical Software Engineering, 14(2), 187.",
-                "sharp04": "Sharp, H., & Robinson, H. (2004). [An ethnographic study of XP practice|https://doi.org/10.1023/B:EMSE.0000039884.79385.54]. Empirical Software Engineering, 9(4), 353-375.",
-                "shetterly17": "Shetterly, M. L. (2017). Hidden figures. HarperCollins Nordic.",
-                "shrestha20": "Shrestha, N., Botta, C., Barik, T., & Parnin, C. (2020). [Here We Go Again: Why Is It Difficult for Developers to Learn Another Programming Language?|http://nischalshrestha.me/docs/cross_language_interference.pdf]. International Conference on Software Engineering.",
-                "sillito06": "Jonathan Sillito, Gail C. Murphy, and Kris De Volder. 2006. http://dx.doi.org/10.1145/1181775.1181779 Questions programmers ask during software evolution tasks. In Proceedings of the 14th ACM SIGSOFT international symposium on Foundations of software engineering (SIGSOFT '06/FSE-14). ACM, New York, NY, USA, 23-34.",
-                "silva16": "Danilo Silva, Nikolaos Tsantalis, and Marco Tulio Valente. 2016. [Why we refactor? Confessions of GitHub contributors|https://doi.org/10.1145/2950290.2950305]. In Proceedings of the 2016 24th ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE 2016). ACM, New York, NY, USA, 858-870.",
-                "singer14": "Leif Singer, Fernando Figueira Filho, and Margaret-Anne Storey. 2014. [Software engineering at the speed of light: how developers stay current using Twitter|http://dx.doi.org/10.1145/2568225.2568305]. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 211-221.",
-                "smite10": "Smite, D., Wohlin, C., Gorschek, T., & Feldt, R. (2010). [Empirical evidence in global software engineering: a systematic review|https://doi.org/10.1007/s10664-009-9123-y]. Empirical software engineering, 15(1), 91-118.",
-                "somers17": "Somers, James (2017). [The Coming Software Apocalypse|https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/]. The Atlantic Monthly.",
-                "sommerville97": "Sommerville, I., & Sawyer, P. (1997). [Requirements engineering: a good practice guide|https://books.google.com/books?id=5NnP-VODEc8C]. John Wiley & Sons, Inc.",
-                "stefik13": "Andreas Stefik and Susanna Siebert. 2013. https://doi.org/10.1145/2534973 An Empirical Investigation into Programming Language Syntax. ACM Transactions on Computing Education 13, 4, Article 19 (November 2013), 40 pages.",
-                "stol14": "Klaas-Jan Stol and Brian Fitzgerald. 2014. [Two's company, three's a crowd: a case study of crowdsourcing software development|http://dx.doi.org/10.1145/2568225.2568249]. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 187-198.",
-                "stroustrup96": "Stroustrup, B. (1996). [A history of C++: 1979--1991|http://dl.acm.org/citation.cfm?id=1057836]. In History of programming languages---II (pp. 699-769).",
-                "stylos08": "Jeffrey Stylos and Brad A. Myers. 2008. [The implications of method placement on API learnability|http://dx.doi.org/10.1145/1453101.1453117]. In Proceedings of the 16th ACM SIGSOFT International Symposium on Foundations of software engineering (SIGSOFT '08/FSE-16). ACM, New York, NY, USA, 105-112.",
-                "syedabdullah06": "Syed-Abdullah, S., Holcombe, M., & Gheorge, M. (2006). [The impact of an agile methodology on the well being of development teams|https://doi.org/10.1007/s10664-009-9123-y]. Empirical Software Engineering, 11(1), 143-167.",
-                "tao12": "Yida Tao, Yingnong Dang, Tao Xie, Dongmei Zhang, and Sunghun Kim. 2012. http://dx.doi.org/10.1145/2393596.2393656 How do software engineers understand code changes? An exploratory study in industry. In Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering (FSE '12). ACM, New York, NY, USA, , Article 51 , 11 pages.",
-                "thongtanunam16": "Thongtanunam, P., McIntosh, S., Hassan, A. E., & Iida, H. (2016). [Review participation in modern code review: An empirical study of the Android, Qt, and OpenStack projects|https://doi.org/10.1007/s10664-016-9452-6]. Empirical Software Engineering.",
-                "treude09": "Christoph Treude and Margaret-Anne Storey. 2009. [How tagging helps bridge the gap between social and technical aspects in software development|http://dx.doi.org/10.1109/ICSE.2009.5070504]. In Proceedings of the 31st International Conference on Software Engineering (ICSE '09). IEEE Computer Society, Washington, DC, USA, 12-22.",
-                "treude10": "Christoph Treude and Margaret-Anne Storey. 2010. [Awareness 2.0: staying aware of projects, developers and tasks using dashboards and feeds|http://dx.doi.org/10.1145/1806799.1806854]. In Proceedings of the 32nd ACM/IEEE International Conference on Software Engineering - Volume 1 (ICSE '10), Vol. 1. ACM, New York, NY, USA, 365-374.",
-                "treude11": "Christoph Treude and Margaret-Anne Storey. 2011. [Effective communication of software development knowledge through community portals|http://dx.doi.org/10.1145/2025113.2025129]. In Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering (ESEC/FSE '11). ACM, New York, NY, USA, 91-101.",
-                "turnbull16": "[The Art of Monitoring with James Turnbull|https://softwareengineeringdaily.com/2016/07/28/2739/]. Software Engineering Daily.",
-                "uemura84": "Keiji Uemura and Miki Ohori. 1984. [A cooperative approach to software development by application engineers and software engineers|http://dl.acm.org/citation.cfm?id=801955]. In Proceedings of the 7th international conference on Software engineering (ICSE '84). IEEE Press, Piscataway, NJ, USA, 86-96.",
-                "vanderhoek97": "André van der Hoek, Richard S. Hall, Dennis Heimbigner, and Alexander L. Wolf. 1997. [Software release management|https://doi.org/10.1145/267896.267909]. ACM SIGSOFT International Symposium on Foundations of Software Engineering, 159-175.",
-                "vasilescu15": "Bogdan Vasilescu, Yue Yu, Huaimin Wang, Premkumar Devanbu, and Vladimir Filkov. 2015. [Quality and productivity outcomes relating to continuous integration in GitHub|https://doi.org/10.1145/2786805.2786850]. In Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE 2015). ACM, New York, NY, USA, 805-816.",
-                "vonmayrhauser94": "A. von Mayrhauser and A. M. Vans. 1994. [Comprehension processes during large scale maintenance|http://dl.acm.org/citation.cfm?id=257741]. In Proceedings of the 16th international conference on Software engineering (ICSE '94). IEEE Computer Society Press, Los Alamitos, CA, USA, 39-48.",
-                "vosburgh84": "J. Vosburgh, B. Curtis, R. Wolverton, B. Albert, H. Malec, S. Hoben, and Y. Liu. 1984. [Productivity factors and programming environments|http://dl.acm.org/citation.cfm?id=801963]. In Proceedings of the 7th international conference on Software engineering (ICSE '84). IEEE Press, Piscataway, NJ, USA, 143-152.",
-                "wagstrom14": "Patrick Wagstrom and Subhajit Datta. 2014. [Does latitude hurt while longitude kills? Geographical and temporal separation in a large scale software development project|http://dx.doi.org/10.1145/2568225.2568279]. In Proceedings of the 36th International Conference on Software Engineering (ICSE 2014). ACM, New York, NY, USA, 199-210.",
-                "walker12": "Robert J. Walker, Shreya Rawal, and Jonathan Sillito. 2012. [Do crosscutting concerns cause modularity problems?|http://dx.doi.org/10.1145/2393596.2393654]. In Proceedings of the ACM SIGSOFT 20th International Symposium on the Foundations of Software Engineering (FSE '12). ACM, New York, NY, USA, , Article 49 , 11 pages.",
-                "wang16": "Software Engineering Daily. [Female Pursuit of Computer Science with Jennifer Wang|https://softwareengineeringdaily.com/2016/06/13/female-pursuit-computer-science-jennifer-wang/].",
-                "washington20": "Alicia Nicki Washington. 2020. [When Twice as Good Isn't Enough: The Case for Cultural Competence in Computing|https://doi.org/10.1145/3328778.3366792]. Proceedings of the 51st ACM Technical Symposium on Computer Science Education. 2020.",
-                "weinberg82": "Gerald M. Weinberg. 1982. [Over-structured management of software engineering|https://dl.acm.org/doi/abs/10.5555/800254.807743]. In Proceedings of the 6th international conference on Software engineering (ICSE '82). IEEE Computer Society Press, Los Alamitos, CA, USA, 2-8.",
-                "weiser81": "Mark Weiser. 1981. http://dl.acm.org/citation.cfm?id=802557 Program slicing. In Proceedings of the 5th international conference on Software engineering (ICSE '81). IEEE Press, Piscataway, NJ, USA, 439-449.",
-                "wobbrock11": "Wobbrock, J. O., Kane, S. K., Gajos, K. Z., Harada, S., & Froehlich, J. (2011). [Ability-based design: Concept, principles and examples|https://doi.org/10.1145/1952383.1952384]. ACM Transactions on Accessible Computing (TACCESS), 3(3), 9.",
-                "woodcock09": "Jim Woodcock, Peter Gorm Larsen, Juan Bicarregui, and John Fitzgerald. 2009. [Formal methods: Practice and experience|http://dx.doi.org/10.1145/1592434.1592436]. ACM Computing Surveys 41, 4, Article 19 (October 2009), 36 pages.",
-                "woodfield81": "S. N. Woodfield, H. E. Dunsmore, and V. Y. Shen. 1981. [The effect of modularization and comments on program comprehension|http://dl.acm.org/citation.cfm?id=802534]. In Proceedings of the 5th international conference on Software engineering (ICSE '81). IEEE Press, Piscataway, NJ, USA, 215-223.",
-                "xia17": "Xia, X., Bao, L., Lo, D., Kochhar, P. S., Hassan, A. E., & Xing, Z. (2017). [What do developers search for on the web?|https://link.springer.com/article/10.1007/s10664-017-9514-4]. Empirical Software Engineering, 22(6), 3149-3185.",
-                "ye03": "Yunwen Ye and Kouichi Kishida (2003). [Toward an understanding of the motivation Open Source Software developers|http://dl.acm.org/citation.cfm?id=776867]. In Proceedings of the 25th International Conference on Software Engineering, 419-429.",
-                "yin11": "Zuoning Yin, Ding Yuan, Yuanyuan Zhou, Shankar Pasupathy, and Lakshmi Bairavasundaram. 2011. [How do fixes become bugs?|http://dx.doi.org/10.1145/2025113.2025121] In Proceedings of the 19th ACM SIGSOFT symposium and the 13th European conference on Foundations of software engineering (ESEC/FSE '11). ACM, New York, NY, USA, 26-36.",
-                "zeller02": "Andreas Zeller. 2002. [Isolating cause-effect chains from computer programs|http://dx.doi.org/10.1145/587051.587053]. In Proceedings of the 10th ACM SIGSOFT symposium on Foundations of software engineering (SIGSOFT '02/FSE-10). ACM, New York, NY, USA, 1-10.",
-                "zeller02b": "Zeller, A., & Hildebrandt, R. (2002). [Simplifying and isolating failure-inducing input|https://doi.org/10.1109/32.988498]. IEEE Transactions on Software Engineering, 28(2), 183-200.",
-                "zeller09": "Zeller, A. (2009). [Why programs fail: a guide to systematic debugging|https://www.google.com/books/edition/_/_63Bm4LAdDIC]. Elsevier.",
-                "zhou11": "Minghui Zhou and Audris Mockus. 2011. [Does the initial environment impact the future of developers?|https://doi.org/10.1145/1985793.1985831] In Proceedings of the 33rd International Conference on Software Engineering (ICSE '11). ACM, New York, NY, USA, 271-280."
+                "abbate12": [
+                        "Janet Abbate", 2012,
+                        "Recoding gender: women's changing participation in computing", "MIT Press",
+                        "https://mitpress.mit.edu/books/recoding-gender"
+                ],
+                "abdalkareem17": [
+                        "Rabe Abdalkareem, Olivier Nourry, Sultan Wehaibi, Suhaib Mujahid, and Emad Shihab", 2017,
+                        "Why do developers use trivial packages? An empirical case study on npm", "#FSE",
+                        "https://doi.org/10.1145/3106237.3106267"
+                ],
+                "aghajani20": [
+                        "Emad Aghajani, Csaba Nagy, Mario Linares-Vásquez, Laura Moreno, Gabriele Bavota, Michele Lanza, David C. Shepherd", 2020,
+                        "Software documentation: the practitioners’ perspective", "#ICSE",
+                        "https://www.inf.usi.ch/phd/aghajani/resources/papers/agha2020a.pdf"
+                ],
+                "ahmed16": [
+                        "Iftekhar Ahmed, Rahul Gopinath, Caius Brindescu, Alex Groce, and Carlos Jensen", 2016,
+                        "Can testedness be effectively measured?", "#FSE",
+                        "https://doi.org/10.1145/2950290.2950324"
+                ],
+                "akers09": [
+                        "David Akers, Matthew Simpson, Robin Jeffries, and Terry Winograd", 2009,
+                        "Undo and erase events as indicators of usability problems", "#CHI",
+                        "http://dx.doi.org/10.1145/1518701.1518804"
+                ],
+                "albaik15": [
+                        "Osama Al-Baik & James Miller", 2015, 
+                        "The kanban approach, between agility and leanness: a systematic review", "#ESE", 
+                        "https://doi.org/10.1007/s10664-014-9340-x"
+                ],
+                "aranda09": [
+                        "Jorge Aranda and Gina Venolia", 2009, 
+                        "The secret life of bugs: Going past the errors and omissions in software repositories", 
+                        "ACM/IEEE International Conference on Software Engineering (ICSE)",
+                        "http://dx.doi.org/10.1109/ICSE.2009.5070530"
+                ],
+                "arnold96": [
+                        "Robert Arnold, Shawn Bohner", 1996,
+                        "Software change impact analysis", "IEEE Computer Society Press."
+                ],
+                "atwood16": [
+                        "Jeff Atwood", 2016,
+                        "The state of programming with Stack Overflow co-founder Jeff Atwood", "#SED",
+                        "https://softwareengineeringdaily.com/2016/03/14/state-programming-jeff-atwood/"
+                ],
+                "bacchelli13": [
+                        "Alberto Bacchelli and Christian Bird", 2013, 
+                        "Expectations, outcomes, and challenges of modern code review",  "#ICSE",
+                        "https://doi.org/10.1109/ICSE.2013.6606617"
+                ],
+                "baecker88": [
+                        "Ron Baecker", 1988, 
+                        "Enhancing program readability and comprehensibility with tools for program visualization", "#ICSE",
+                        "https://doi.org/10.1109/ICSE.1988.93716"
+                ],
+                "baltes18": [
+                        "Sebastian Baltes, Stephan Diehl", 2018, 
+                        "Towards a theory of software development expertise", "#ESECFSE",
+                        "https://doi.org/10.1145/3236024.3236061"
+                ],
+                "bartram16": [
+                        "Ammon Bartram", 2016, 
+                        "Hiring engineers with Ammon Bartram", "#SED",
+                        "https://softwareengineeringdaily.com/2015/12/23/hiring-engineers-with-ammon-bartram/"
+                ],
+                "barua14": [
+                        "Anton Barua, Stephen W. Thomas & Ahmed E. Hassan", 2014, 
+                        "What are developers talking about? an analysis of topics and trends in Stack Overflow", "#ESE", 
+                        "http://link.springer.com/article/10.1007/s10664-012-9231-y"
+                ],
+                "bass03": [
+                        "Len Bass, Bonnie E. John", 2003, 
+                        "Linking usability to software architecture patterns through general scenarios", "Journal of Systems and Software", 
+                        "http://www.sciencedirect.com/science/article/pii/S0164121202000766"
+                ],
+                "beck96": [
+                        "Kent Beck, Ron Crocker, Gerard Meszaros, John Vlissides, James O. Coplien, Lutz Dominick, and Frances Paulisch", 1996, 
+                        "Industrial experience with design patterns", "#ICSE",
+                        "https://doi.org/10.1109/ICSE.1996.493406"
+                ],
+                "beck99": [
+                        "Kent Beck", 1999, 
+                        "Embracing change with extreme programming", "IEEE Computer", 
+                        "https://doi.org/10.1007/s10664-014-9340-x"
+                ],
+                "begel08": [
+                        "Andy Begel, Beth Simon", 2008, 
+                        "Novice software developers, all over again", "ICER",
+                        "http://dl.acm.org/citation.cfm?id=1404522"
+                ],
+                "begel10": [
+                        "Andrew Begel, Yit Phang Khoo, and Thomas Zimmermann ", 2010, 
+                        "Codebook: discovering and exploiting relationships in software repositories", "#ICSE",
+                        "http://dx.doi.org/10.1145/1806799.1806821"
+                ],
+                "begel14": [
+                        "Andy Begel, Thomas Zimmermann ", 2014, 
+                        "Analyze this! 145 questions for data scientists in software engineering", "#ICSE", 
+                        "https://doi.org/10.1145/2568225.2568233"
+                ],
+                "beller15": [
+                        "Moritz Beller, Georgios Gousios, Annibale Panichella, and Andy Zaidman", 2015, 
+                        "When, how, and why developers (do not) test in their IDEs", "#ESECFSE",
+                        "https://doi.org/10.1145/2786805.2786843"
+                ],                    
+                "beller18": [
+                        "Beller, M., Spruit, N., Spinellis, D., & Zaidman, A", 2018, 
+                        "On the dichotomy of debugging behavior among programmers", "#ICSE",
+                        "https://doi.org/10.1145/3180155.3180175"
+                ],
+                "bendifallah89": [
+                        "Salah Bendifallah and Walt Scacchi", 1989, 
+                        "Work structures and shifts: an empirical analysis of software specification teamwork", "#ICSE",
+                        "http://dx.doi.org/10.1145/74587.74624"
+                ],
+                "benjamin19": [
+                        "Ruha Benjamin", 2019, 
+                        "Race after technology: Abolitionist tools for the New Jim Code", "Polity Books", 
+                        "https://www.ruhabenjamin.com/race-after-technology"
+                ],
+                "bertram10": [
+                        "Dane Bertram, Amy Voida, Saul Greenberg, and Robert Walker", 2010, 
+                        "Communication, collaboration, and bugs: the social nature of issue tracking in small, collocated teams", "#CSCW",
+                        "http://dx.doi.org/10.1145/1718918.1718972"
+                ],
+                "bettenburg08": [
+                        "Nicolas Bettenburg, Sascha Just, Adrian Schröter, Cathrin Weiss, Rahul Premraj, and Thomas Zimmermann", 2008,
+                        "What makes a good bug report?", "#FSE",
+                        "http://dx.doi.org/10.1145/1453101.1453146"
+                ],
+                "bettenburg13": [
+                        "Nicolas Bettenburg, Ahmed E. Hassan", 2013, 
+                        "Studying the impact of social interactions on software quality", "#ESE", 
+                        "https://doi.org/10.1007/s10664-012-9205-0"
+                ],
+                "bhattacharya11": [
+                        "Pamela Bhattacharya and Iulian Neamtiu", 2011, 
+                        "Assessing programming language impact on development and maintenance: a study on C and C++", "#ICSE",
+                        "https://doi.org/10.1145/1985793.1985817"
+                ],                    
+                "binkley13": [
+                        "Dave Binkley, Marcia Davis, Dawn Lawrie, Jonathan I. Maletic, Christopher Morrell, Bonita Sharif", 2013, 
+                        "The impact of identifier style on effort and comprehension", "#ESE",
+                        "https://link.springer.com/article/10.1007/s10664-012-9201-4"
+                ],    
+                "bird11": [
+                        "Christian Bird, Nachiappan Nagappan, Brendan Murphy, Harald Gall, and Premkumar Devanbu", 2011, 
+                        "Don't touch my code! Examining the effects of ownership on software quality", "#ESECFSE",
+                        "http://dx.doi.org/10.1145/2025113.2025119"
+                ],                    
+                "boehm76": [
+                        "Barry W. Boehm", 1976,
+                        "Software engineering", "IEEE Transactions on Computers",
+                        "http://ieeexplore.ieee.org/document/1674590/"
+                ],
+                "boehm88": [
+                        "Barry W. Boehm", 1988, 
+                        "A spiral model of software development and enhancement", "#Computer", 
+                        "http://ieeexplore.ieee.org/abstract/document/59/"
+                ],                    
+                "boehm91": [
+                        "Boehm, B. W", 1991, 
+                        "Software risk management: principles and practices", "#Software", 
+                        "http://ieeexplore.ieee.org/abstract/document/62930"
+                ],                    
+                "borozdin17": [
+                        "Mike Borozdin", 2017,
+                        "Engineering management with Mike Borozdin", "#SED",
+                        "https://softwareengineeringdaily.com/2017/02/08/engineering-management-with-mike-borozdin/"
+                ],
+                "brindescu14": [
+                        "Caius Brindescu, Mihai Codoban, Sergii Shmarkatiuk, and Danny Dig", 2014,
+                        "How do centralized and distributed version control systems impact software changes?", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568322"
+                ],
+                "brooks95": [
+                        "Fred P. Brooks", 1995, 
+                        "The mythical man month", "Pearson Education",
+                        "https://books.google.com/books?id=Yq35BY5Fk3gC"
+                ],                    
+                "callaú13": [
+                       "Oscar Callaú, Romain Robbes, Éric Tanter, David Röthlisberger", 2013,
+                        "How (and why) developers use the dynamic features of programming languages: the case of Smalltalk", "#ESE",
+                        "https://doi.org/10.1145/1985441.1985448"
+                ],
+                "casalnuovo15": [
+                        "Casey Casalnuovo, Bogdan Vasilescu, Premkumar Devanbu, and Vladimir Filkov", 2015, 
+                        "Developer onboarding in GitHub: the role of prior social links and language experience", "#ESECFSE",
+                        "https://doi.org/10.1145/2786805.2786854"
+                    ],
+                "casalnuovo15b": [
+                        "Casey Casalnuovo, Prem Devanbu, Abilio Oliveira, Vladimir Filkov, and Baishakhi Ray", 2015, 
+                        "Assert use in GitHub projects", "#ICSE",
+                        "https://doi.org/10.1145/2568225.2568285"
+                ],
+                "chedeua15": [
+                        "Sebastian Marbage, Christopher Chedeua", 2015,
+                        "React JS with Sebastian Marbage and Christopher Chedeua", "#SED",
+                        "https://softwareengineeringdaily.com/2015/07/27/react-js-with-sebastian-markbage-and-christopher-chedeau/"
+                ],
+                "chen09": [
+                        "Chien-Tsun Chen, Yu Chin Cheng, Chin-Yun Hsieh, and I-Lang Wu", 
+                        "Exception handling refactorings: Directed by goals and driven by bug fixing", "Journal of Systems and Software", 
+                        "https://doi.org/10.1016/j.jss.2008.06.035"
+                ],                    
+                "chen15": [
+                        "Lianping Chen", 2015, 
+                        "Continuous delivery: Huge benefits, but challenges too", "#Software", 
+                        "https://doi.org/10.1109/MS.2015.27"
+                ],                    
+                "chilana11": [
+                        "Parmit K. Chilana, Amy J. Ko, Jacob O. Wobbrock, Tovi Grossman, and George Fitzmaurice", 2011, 
+                        "Post-deployment usability: a survey of current practices", "#CHI",
+                        "http://dx.doi.org/10.1145/1978942.1979270"
+                ],
+                "chilana13": [
+                    "Parmit K. Chilana, Amy J. Ko, Jacob O. Wobbrock, Tovi Grossman", 2013, 
+                    "A multi-site field study of crowdsourced contextual help: usage and perspectives of end users and software teams", "#CHI",
+                    "http://dl.acm.org/citation.cfm?id=2470685"
+                ],
+                "chong07": [
+                    "Jan Chong and Tom Hurlbutt", 2007, 
+                    "The social dynamics of pair programming", "#ICSE",
+                    "http://dx.doi.org/10.1109/ICSE.2007.87"
+                ],
+                "cito15": [
+                        "Jürgen Cito, Philipp Leitner, Thomas Fritz, and Harald C. Gall", 2015, 
+                        "The making of cloud applications: an empirical study on software development for the cloud", "#ESECFSE",
+                        "https://doi.org/10.1145/2786805.2786826"
+                ],
+                "clarke06": [
+                        "Clarke, L. A., & Rosenblum, D. S", 2006, 
+                        "A historical perspective on runtime assertion checking in software development", "#SEN",
+                        "https://doi.org/10.1145/1127878.1127900"
+                ],
+                "clegg08": [
+                        "Stewart Clegg, James R. Bailey", 2008, 
+                        "International encyclopedia of organization studies", "Sage Publications", 
+                        "https://books.google.com/books?id=Uac5DQAAQBAJ"
+                ],
+                "coelho17": [
+                        "Jailton Coelho and Marco Tulio Valente ", 2017, 
+                        "Why modern open source projects fail", "#ESECFSE",
+                        "https://doi.org/10.1145/3106237.3106246"
+                ],
+                "conway68": [
+                        "Melvin E. Conway", 1968, 
+                        "How do committees invent", "Datamation", 
+                        "https://pdfs.semanticscholar.org/cbce/35eedcde3ef152bde75950fbc7ef4c6717b2.pdf"
+                ],
+                "dagenais10": [
+                        "Barthélémy Dagenais, Harold Ossher, Rachel K. E. Bellamy, Martin P. Robillard, and Jacqueline P. de Vries", 2010, 
+                        "Moving into a new software project landscape", "#ICSE",
+                        "http://dx.doi.org/10.1145/1806799.1806842"
+                ],
+                "demarco85": [
+                        "Tom DeMarco and Tim Lister", 1985, 
+                        "Programmer performance and the effects of the workplace", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=319651"
+                ],
+                "demarco87": [
+                        "Tom DeMarco, Tim Lister", 1987, 
+                        "Peopleware: Productive projects and teams", " Addison-Wesley", 
+                        "https://books.google.com/books?id=TVQUAAAAQBAJ"
+                ],
+                "dibella13": [
+                        "di Bella, E., Fronza, I., Phaphoom, N., Sillitti, A., Succi, G., & Vlasenko, J", 2013, 
+                        "Pair programming and software defects—A large, industrial case study", "#TSE",
+                        "https://doi.org/10.1109/TSE.2012.68"
+                ],
+                "dingsøyr03": [
+                        "Torgeir Dingsøyr, Emil Røyrvik", 2003,
+                        "An empirical study of an informal knowledge repository in a medium-sized software consulting company", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=776827"
+                ],
+                "duala12": [
+                        "Ekwa Duala-Ekoko and Martin P. Robillard", 2012, 
+                        "Asking and answering questions about unfamiliar APIs: an exploratory study", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=2337255"
+                ],
+                "dybå02": [
+                        "Tore Dybå", 2002,
+                        "Enabling software process improvement: an investigation of the importance of organizational issues", "#ESE",
+                        "https://doi.org/10.1145/940071.940092"
+                ], 
+                "dybå03": [
+                        "Tore Dybå ", 2003,
+                        "Factors of software process improvement success in small and large organizations: an empirical study in the scandinavian context", "#ESECFSE",
+                        "http://dx.doi.org/10.1145/940071.940092"
+                ],
+                "ebert15": [
+                        "Felipe Eberta, Fernando Castora, Alexander Serebrenik", 2015, 
+                        "An exploratory study on exception handling bugs in Java programs", "Journal of Systems and Software", 
+                        "https://doi.org/10.1016/j.jss.2015.04.066"
+                ],
+                "eisenstadt97": [
+                        "Marc Eisenstadt", 1997, 
+                        "My hairiest bug war stories", "#CACM", 
+                        "https://doi.org/10.1145/248448.248456"
+                ],
+                "endrikat14": [
+                        "Stefan Endrikat, Stefan Hanenberg, Romain Robbes, and Andreas Stefik", 2014,
+                        "How do API documentation and static typing affect API usability?", "#ICSE",
+                        "https://doi.org/10.1145/2568225.2568299"
+                ],
+                "ernst15": [
+                        "Neil A. Ernst, Stephany Bellomo, Ipek Ozkaya, Robert L. Nord, and Ian Gorton", 2015, 
+                        "Measure it? Manage it? Ignore it? Software practitioners and technical debt", "#ESECFSE",
+                        "https://doi.org/10.1145/2786805.2786848"
+                ],
+                "fairbanks10": [
+                        "George Fairbanks", 2010, 
+                        "Just enough software architecture: a risk-driven approach", "Marshall & Brainerd", 
+                        "https://www.georgefairbanks.com/assets/jesa/Just_Enough_Software_Architecture__Fairbanks_2010-demo.pdf"
+                ],
+                "fleming13": [
+                        "Scott D. Fleming, Christopher Scaffidi, David Piorkowski, Margaret M. Burnett, Rachel K. E. Bellamy", 2013, 
+                        "An information foraging theory perspective on tools for debugging, refactoring, and reuse tasks", "#TOSEM",
+                        "https://doi.org/10.1145/2430545.2430551"
+                ],
+                "foucault15": [
+                        "Matthieu Foucault, Marc Palyart, Xavier Blanc, Gail C. Murphy, and Jean-Rémy Falleri", 2015, 
+                        "Impact of developer turnover on quality in open-source software", "#ESECFSE",
+                        "https://doi.org/10.1145/2786805.2786870"
+                ],
+                "fucci16": [
+                        "Davide Fucci, Hakan Erdogmus, Burak Turhan, Markku Oivo, Natalia Juristo", 2016, 
+                        "A dissection of test-driven development: Does it really matter to test-first or to test-last?", "#TSE", 
+                        "https://doi.org/10.1109/TSE.2016.2616877"
+                ],
+                "garlan95": [
+                        "Garlan, D., Allen, R., & Ockerbloom, J", 1995, 
+                        "Architectural mismatch or why it's hard to build systems out of existing parts", "#ICSE",
+                        "https://doi.org/10.1145/225014.225031"
+                ],
+                "gilmore91": [
+                        "David Gilmore", 1991, 
+                        "Models of debugging", "Acta Psychologica",
+                        "https://doi.org/10.1016/0001-6918(91)90009-O"
+                ],
+                "gleick11": [
+                        "James Gleick", 2011,
+                        "The Information: A History, A Theory, A Flood", "Pantheon Books",
+                        "https://books.google.com/books?id=617JSFW0D2kC"
+                ],
+                "glerum09": [
+                        "Kirk Glerum, Kinshuman Kinshumann, Steve Greenberg, Gabriel Aul, Vince Orgovan, Greg Nichols, David Grant, Gretchen Loihle, and Galen Hunt", 2009, 
+                        "Debugging in the (very) large: ten years of implementation and experience", "ACM SIGOPS Symposium on Operating Systems Principles (SOSP)",
+                        "http://dx.doi.org/10.1145/1629575.1629586"
+                ],
+                "grabner16": [
+                        "Andi Grabner", 2016,
+                        "Performance monitoring with Andi Grabner", "#SED",
+                        "https://softwareengineeringdaily.com/2016/12/27/performance-monitoring-with-andi-grabner/"
+                ],
+                "green89": [
+                        "Thomas R. G. Green", 1989, 
+                        "Cognitive dimensions of notations", "People and computers", 
+                        "https://www.cl.cam.ac.uk/~afb21/CognitiveDimensions/papers/Green1989.pdf"
+                ],
+                "grossman09": [
+                        "Tovi Grossman, George Fitzmaurice, Ramtin Attar", 2009, 
+                        "A survey of software learnability: metrics, methodologies and guidelines", "#CHI",
+                        "https://doi.org/10.1145/1518701.1518803"
+                ],
+                "grudin17": [
+                        "Grudin, Jonathan ", 2017, "From Tool to Partner: The Evolution of Human-Computer Interaction", "", "https://books.google.com/books?id=Wc3hDQAAQBAJ"
+                ],
+                "hanenberg13": [
+                        "Stefan Hanenberg, Sebastian Kleinschmager, Romain Robbes, Éric Tanter, Andreas Stefik", 2013,
+                        "An empirical study on the impact of static typing on software maintainability", "#ESE",
+                        "https://doi.org/10.1007/s10664-013-9289-1"
+                ],
+                "herbsleb03": [
+                        "James D. Herbsleb and Audris Mockus", 2003, 
+                        "Formulation and preliminary test of an empirical theory of coordination in software engineering", "#ESECFSE",
+                        "http://dx.doi.org/10.1145/940071.940091"
+                ],
+                "herbsleb16": [
+                        "James Herbsleb", 2016, 
+                        "Building a socio-technical theory of coordination: why and how", "#FSE",
+                        "https://doi.org/10.1145/2950290.2994160"
+                ],
+                "hilton16": [
+                        "Michael Hilton, Timothy Tunnell, Kai Huang, Darko Marinov, Danny Dig", 2016, 
+                        "Usage, costs, and benefits of continuous integration in open-source projects", "#ASE", 
+                        "https://doi.org/10.1145/2970276.2970358"
+                ],
+                "hoda10": [
+                        "Rashina Hoda, James Noble, and Stuart Marshall", 2010, 
+                        "Organizing self-organizing teams", "#ICSE",
+                        "https://doi.org/10.1145/1806799.1806843"
+                ],
+                "hoda17": [
+                        "Rashina Hoda, James Noble", 2017, 
+                        "Becoming agile: a grounded theory of agile transitions in practice", "#ICSE",
+                        "https://doi.org/10.1109/ICSE.2017.21"
+                ],
+                "ivory01": [
+                        "Melody Y. Ivory, Marti A. Hearst", 2001, 
+                        "The state of the art in automating usability evaluation of user interfaces", "#Surveys", 
+                        "http://doi.acm.org/10.1145/503112.503114"
+                ],
+                "jackson01": [
+                        "Michael Jackson", 2001, 
+                        "Problem frames", "Addison-Wesley", 
+                        "https://books.google.com/books?id=8fqIP83Q2IAC"
+                ],
+                "johnson13": [
+                        "Brittany Johnson, Yoonki Song, Emerson Murphy-Hill, and Robert Bowdidge", 2013,
+                        "Why don't software developers use static analysis tools to find bugs?", "#ICSE",
+                        "https://doi.org/10.1109/ICSE.2013.6606613"
+                ],
+                "johnson15": [
+                        "Brittany Johnson, Rahul Pandita, Emerson Murphy-Hill, and Sarah Heckman", 2015, 
+                        "Bespoke tools: adapted to the concepts developers know", "#ESECFSE",
+                        "https://doi.org/10.1145/2786805.2803197"
+                ],
+                "kalliamvakou17": [
+                        "Eirini Kalliamvakou, Christian Bird, Thomas Zimmermann, Andrew Begel, Robert DeLine, Daniel M. German", 2017,
+                        "What makes a great manager of software engineers?", "#TSE",
+                        "https://doi.org/10.1109/TSE.2017.2768368"
+                ],
+                "kay96": [
+                        "Alan C. Kay", 1996, 
+                        "The early history of Smalltalk", "History of programming languages II",
+                        "https://doi.org/10.1145/234286.1057828"
+                ],
+                "kenney00": [
+                        "Kenney, M", 2000,
+                        "Understanding Silicon Valley: The anatomy of an entrepreneurial region", "Stanford University Press."
+                ],
+                "kernighan16": [
+                        "Brian Kernighan", 2016,
+                        "Language Design with Brian Kernighan", "#SED",
+                        "https://softwareengineeringdaily.com/2016/01/06/language-design-with-brian-kernighan/"
+                ],
+                "kersten06": [
+                        "Mik Kersten and Gail C. Murphy", 2006, 
+                        "Using task context to improve programmer productivity", "#FSE",
+                        "http://dx.doi.org/10.1145/1181775.1181777"
+                ],
+                "khadka14": [
+                        "Ravi Khadka, Belfrit V. Batlajery, Amir M. Saeidi, Slinger Jansen, and Jurriaan Hage", 2014, 
+                        "How do professionals perceive legacy systems and software modernization?", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568318"
+                ],
+                "kim12": [
+                        "Miryung Kim, Thomas Zimmermann, and Nachiappan Nagappan", 2012, 
+                        "A field study of refactoring challenges and benefits", "#FSE",
+                        "http://dx.doi.org/10.1145/2393596.2393655"
+                ],
+                "kim16": [
+                        "Miryung Kim, Thomas Zimmermann, Robert DeLine, and Andrew Begel", 2016, 
+                        "The emerging role of data scientists on software development teams", "#ICSE",
+                        "https://doi.org/10.1145/2884781.2884783"
+                ],
+                "ko04": [
+                        "Amy J. Ko, Brad A. Myers, Htet Htet Aung", 2004,
+                        "Six learning barriers in end-user programming systems", "#VL/HCC",
+                        "https://doi.org/10.1109/VLHCC.2004.47"
+                ],
+                "ko05": [
+                        "Amy J. Ko, Htet Htet Aung, Brad A. Myers ", 2005,
+                        "Eliciting design requirements for maintenance-oriented IDEs: a detailed ttudy of corrective and perfective maintenance tasks", "#ICSE",
+                        "https://doi.org/10.1145/1062455.1062492"
+                ],                        
+                "ko05b": [
+                        "Amy J. Ko, Brad A. Myers", 2005, 
+                        "A framework and methodology for studying the causes of software errors in programming systems", "Journal of Visual Languages & Computing", 
+                        "https://doi.org/10.1016/j.jvlc.2004.08.003"
+                ],
+                "ko07": [
+                        "Amy J. Ko, Rob DeLine, and Gina Venolia ", 2007, 
+                        "Information needs in collocated software development teams", "#ICSE",
+                        "https://doi.org/10.1109/ICSE.2007.45"
+                ],
+                "ko08": [
+                        "Amy J. Ko and Brad A. Myers", 2008, 
+                        "Debugging reinvented: asking and answering why and why not questions about program behavior", "#ICSE",
+                        "http://dx.doi.org/10.1145/1368088.1368130"
+                ],
+                "ko09": [
+                        "Amy J. Ko and Brad A. Myers ", 2009, 
+                        "Finding causes of program output with the Java Whyline", "#CHI",
+                        "https://doi.org/10.1145/1518701.1518942"
+                ],
+                "ko17": [
+                        "Amy J. Ko", 2017, 
+                        "A Three-Year Participant Observation of Software Startup Software Evolution", "#SEIP",
+                        "https://faculty.washington.edu/ajko/papers/Ko2017AnswerDashReflection.pdf"
+                ],
+                "ko19": [
+                        "Amy J. Ko, Thomas D. LaToza, Stephen Hull, Ellen A. Ko, William Kwok, Jane Quichocho, Harshitha Akkaraju, and Rishin Pandit", 2019, 
+                        "Teaching explicit programming strategies to adolescents", "#SIGCSE",
+                        "https://doi.org/10.1145/3287324.3287371"
+                ],
+                "kocaguneli13": [
+                        "Ekrem Kocaguneli, Thomas Zimmermann, Christian Bird, Nachiappan Nagappan, and Tim Menzies", 2013, 
+                        "Distributed development considered harmful?", "#ICSE", 
+                        "https://doi.org/10.1109/ICSE.2013.6606637"
+                ],
+                "kononenko16": [
+                        "Oleksii Kononenko, Olga Baysal, and Michael W. Godfrey", 2016, 
+                        "Code review quality: how developers see it", "#ICSE",
+                        "https://doi.org/10.1145/2884781.2884840"
+                ],
+                "lamsweerde08": [
+                        "Axel van Lamsweerde", 2008, 
+                        "Requirements engineering: from craft to discipline", "#FSE",
+                        "http://dx.doi.org/10.1145/1453101.1453133"
+                ],
+                "latoza06": [
+                        "Thomas D. LaToza, Gina Venolia, and Robert DeLine", 2006, 
+                        "Maintaining mental models: a study of developer work habits", "#ICSE",
+                        "http://dx.doi.org/10.1145/1134285.1134355"
+                ],
+                "latoza07": [
+                        "Thomas D. LaToza, David Garlan, James D. Herbsleb, and Brad A. Myers", 2007, 
+                        "Program comprehension as fact finding", "#ESECFSE", 
+                        "http://dx.doi.org/10.1145/1287624.1287675"
+                ],
+                "latoza10": [
+                        "Thomas D. LaToza, Brad A. Myers", 2010, 
+                        "Developers ask reachability questions", "#ICSE",
+                        "http://dx.doi.org/10.1145/1806799.1806829"
+                ],
+                "latoza20": [
+                        "Thomas D. LaToza, Maryam Arab, Dastyni Loksa, Amy J. Ko", 2020, 
+                        "Explicit programming strategies", "#ESE", 
+                        "https://doi.org/10.1007/s10664-020-09810-1"
+                ],
+                "lavallee15": [
+                        "Mathieu Lavallee and Pierre N. Robillard", 2015, 
+                        "Why good developers write bad code: an observational case study of the impacts of organizational factors on software quality", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=2818754.2818837"
+                ],
+                "lawrie06": [
+                        "Lawrie, D., Morrell, C., Feild, H., & Binkley, D", 2006, 
+                        "What's in a name? A study of identifiers", "#ICPC", 
+                        "https://doi.org/10.1109/ICPC.2006.51"
+                ],
+                "lee03": [
+                        "Gwendolyn K. Lee, Robert E. Cole", 2003, 
+                        "From a firm-based to a community-based model of knowledge creation: The case of the Linux kernel development", "Organization science", 
+                        "http://pubsonline.informs.org/doi/abs/10.1287/orsc.14.6.633.24866"
+                ],
+                "li15": [
+                        "Paul Luo Li, Amy J. Ko, and Jiamin Zhu", 2015, 
+                        "What makes a great software engineer?", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=2818839"
+                ],
+                "li17": [
+                        "Paul Luo Li, Amy J. Ko, and Andrew Begel", 2017, 
+                        "Cross-disciplinary perspectives on collaborations with software engineers", "#CHASE", 
+                        "https://doi.org/10.1109/CHASE.2017.3"
+                ],
+                "maalej14": [
+                        "Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke", 2014, 
+                        "On the comprehension of program comprehension", "#TOSEM", 
+                        "http://dx.doi.org/10.1145/2622669"
+                ],
+                "mader15": [
+                        "Patrick Mäder, Alexander Egyed ", 2015, 
+                        "Do developers benefit from requirements traceability when evolving and maintaining a software system?", "#ESE",
+                        "https://doi.org/10.1007/s10664-014-9314-z"
+                ],
+                "mamykina11": [
+                        "Lena Mamykina, Bella Manoim, Manas Mittal, George Hripcsak, and Björn Hartmann", 2011, 
+                        "Design lessons from the fastest Q&A site in the west", "#CHI",
+                        "https://doi.org/10.1145/1978942.1979366"
+                ],
+                "mark08": [
+                        "Gloria Mark, Daniela Gudith, and Ulrich Klocke", 2008, 
+                        "The cost of interrupted work: more speed and stress", "#CHI",
+                        "https://doi.org/10.1145/1357054.1357072"
+                ],
+                "maxion00": [
+                        "Maxion, Roy A., and Robert T. Olszewski", 2000,
+                        "Eliminating exception handling errors with dependability cases: a comparative, empirical study", "#TSE",
+                        "https://doi.org/10.1109/32.877848"
+                ],
+                "may19": [
+                        "Anna May, Johannes Wachs, Anikó Hannák ", 2019, 
+                        "Gender differences in participation and reward on Stack Overflow", "#ESE",
+                        "https://doi.org/10.1007/s10664-019-09685-x"
+                ],
+                "mccarthy78": [
+                        "John McCarthy", 1978, 
+                        "History of LISP", "History of Programming Languages I",
+                        "http://dl.acm.org/citation.cfm?id=1198360"
+                ],
+                "mcilwain19": [
+                        "Charlton D. McIlwain", 2019, 
+                        "Black software: the internet and racial justice, from the AfroNet to Black Lives Matter", "Oxford University Press", 
+                        "https://global.oup.com/academic/product/black-software-9780190863845?cc=us&lang=en&"
+                ],
+                "meneely11": [
+                        "Andrew Meneely, Pete Rotella, and Laurie Williams", 2011, 
+                        "Does adding manpower also affect quality? An empirical, longitudinal analysis", "#ESECFSE", 
+                        "http://dx.doi.org/10.1145/2025113.2025128"
+                ],
+                "menzies13": [
+                        "Tim Menzies, Tom Zimmermann", 2013,
+                        "Software analytics: so what?", "#Software",
+                        "https://doi.ieeecomputersociety.org/10.1109/MS.2013.86"
+                ],
+                "metcalf02": [
+                        "Michael Metcalf", 2002, 
+                        "History of Fortran", "ACM SIGPLAN Fortran Forum", 
+                        "https://doi.org/10.1145/602376.602379"
+                ],
+                "meyer17": [
+                        "André N. Meyer, Laura E. Barton, Gail C. Murphy, Thomas Zimmermann, Thomas Fritz", 2017, 
+                        "The work life of developers: Activities, switches and perceived productivity", "#TSE",
+                        "https://doi.org/10.1109/TSE.2017.2656886"
+                ],
+                "milewski07": [
+                        "Allen E. Milewski", 2007, 
+                        "Global and task effects in information-seeking among software engineers", "#ESE",
+                        "https://doi.org/10.1007/s10664-007-9036-6"
+                ],
+                "mockus02": [
+                        "Audris Mockus and James D. Herbsleb", 2002, 
+                        "Expertise browser: a quantitative approach to identifying expertise", "#ICSE",
+                        "http://dx.doi.org/10.1145/581339.581401"
+                ],
+                "mockus10": [
+                        "Audris Mockus", 2010, 
+                        "Organizational volatility and its effects on software defects", "#FSE",
+                        "http://doi.acm.org/10.1145/1882291.1882311"
+                ],
+                "mohanani14": [
+                        "Rahul Mohanani, Paul Ralph, and Ben Shreeve", 2014, 
+                        "Requirements fixation", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568235"
+                ],
+                "murphy14": [
+                        "Emerson Murphy-Hill, Thomas Zimmermann, and Nachiappan Nagappan", 2014, 
+                        "Cowboys, ankle sprains, and keepers of quality: how is video game development different from software development?", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568226"
+                ],
+                "murphyhill09": [
+                        "Emerson Murphy-Hill, Chris Parnin, and Andrew P. Black", 2009, 
+                        "How we refactor, and how we know it", "#ICSE",
+                        "http://dx.doi.org/10.1109/ICSE.2009.5070529"
+                ],
+                "murphyhill13": [
+                        "Emerson Murphy-Hill, Thomas Zimmermann, Christian Bird, and Nachiappan Nagappan", 2013, 
+                        "The design of bug fixes", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=2486833"
+                ],
+                "müller03": [
+                        "Matthias M. Müller and Frank Padberg", 2003,
+                        "On the economic evaluation of XP projects", "#ESECFSE",
+                        "http://dx.doi.org/10.1145/940071.940094"
+                ],
+                "nelson19": [
+                        "Nicholas Nelson, Caius Brindescu, Shane McKee, Anita Sarma & Danny Dig", 2019,
+                        "The life-cycle of merge conflicts: processes, barriers, and strategies", "#ESE",
+                        "https://doi.org/10.1007/s10664-018-9674-x"
+                ],
+                "ng06": [
+                        "T. H. Ng, S. C. Cheung, W. K. Chan, and Y. T. Yu", 2006, 
+                        "Work experience versus refactoring to design patterns: a controlled experiment", "#FSE",
+                        "http://dx.doi.org/10.1145/1181775.1181778"
+                ],
+                "norris17": [
+                        "Jeff Norris", 2016,
+                        "Tech leadership with Jeff Norris", "#SED",
+                        "https://softwareengineeringdaily.com/2016/09/22/tech-leadership-with-jeff-norris/"
+                ],
+                "northrup16": [
+                        "Ben Northup", 2016,
+                        "Reflections of an old programmer", "#SED",
+                        "https://softwareengineeringdaily.com/2016/11/09/reflections-of-an-old-programmer-with-ben-northrup/"
+                ],
+                "osterwalder15": [
+                        "Alexander Osterwalder, Yves Pigneur, Gregory Bernarda, Alan Smith", 2015, 
+                        "Value proposition design: how to create products and services customers want", "John Wiley & Sons", 
+                        "https://books.google.com/books?id=jgu5BAAAQBAJ"
+                ],
+                "overney20": [
+                        "Cassandra Overney, Jens Meinicke, Christian Kästner, Bogdan Vasilescu", 2020, 
+                        "How to not get rich: an empirical study of donations in open source", "#ICSE",
+                        "https://cmustrudel.github.io/papers/overney20donations.pdf"
+                ],
+                "parnas86": [
+                        "David L Parnas, Paul C. Clements", 1986, 
+                        "A rational design process: How and why to fake it", "#TSE",
+                        "https://doi.org/10.1109/TSE.1986.6312940"
+                ],
+                "perlow99": [
+                        "Leslie A. Perlow", 1999, 
+                        "The time famine: Toward a sociology of work time", "Administrative science quarterly", 
+                        "http://journals.sagepub.com/doi/abs/10.2307/2667031"
+                ],
+                "petre13": [
+                        "Marian Petre", 2013, 
+                        "UML in practice", "#ICSE",
+                        "https://doi.org/10.1145/2568225.2568285"
+                ],
+                "petre16": [
+                        "Marian Petre, André van der Hoek", 2016, 
+                        "Software design decoded: 66 ways experts think", "MIT Press", 
+                        "https://www.google.com/books/edition/_/EVE4DQAAQBAJ"
+                ],
+                "pettersen16": [
+                        "Tim Pettersen", 2016,
+                        "Git Workflows with Tim Pettersen", "#SED",
+                        "https://softwareengineeringdaily.com/2016/04/06/git-workflows-tim-pettersen/"
+                ],
+                "pham14": [
+                        "Raphael Pham, Stephan Kiesling, Olga Liskin, Leif Singer, and Kurt Schneider", 2014, 
+                        "Enablers, inhibitors, and perceptions of testing in novice software teams", "#FSE",
+                        "http://dx.doi.org/10.1145/2635868.2635925"
+                ],
+                "phillips14": [
+                        "Shaun Phillips, Thomas Zimmermann, and Christian Bird", 2014, 
+                        "Understanding and improving software build teams", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568274"
+                ],
+                "pikkarainen98": [
+                        "M. Pikkarainen, J. Haikara, O. Salo, P. Abrahamsson, J. Still", 2008, 
+                        "The impact of agile practices on communication in software development", "#ESE",
+                        "https://doi.org/10.1007/s10664-008-9065-9"
+                ],
+                "potvin16": [
+                        "Rachel Potvin, Josh Levenberg", 2016,
+                        "Why Google stores billions of lines of code in a single repository", "#CACM",
+                        "https://doi.org/10.1145/2854146"
+                ],
+                "prince17": [
+                        "Suzie Prince", 2017,
+                        "Product management with Suzie Prince", "#SED",
+                        "https://softwareengineeringdaily.com/2017/01/18/product-management-with-suzie-prince/"
+                ],
+                "procaccino05": [
+                        "J. Drew Procaccino, June M. Verner, Katherine M. Shelfer, David Gefen", 2005, 
+                        "What do software practitioners really think about project success: an exploratory study", "Journal of Systems and Software", 
+                        "https://doi.org/10.1016/j.jss.2004.12.011"
+                ],
+                "qiu13": [
+                        "Dong Qiu, Bixin Li, and Zhendong Su", 2013, 
+                        "An empirical analysis of the co-evolution of schema and code in database applications", "#ESECFSE",
+                        "http://dx.doi.org/10.1145/2491411.2491431"
+                ],
+                "qureshi16": [
+                        "Haseeb Qureshi", 2016,
+                        "Debugging stories with Haseeb Qureshi", "#SED",
+                        "https://softwareengineeringdaily.com/2016/11/19/debugging-stories-with-haseeb-qureshi/"
+                ],
+                "ralph14": [
+                        "Paul Ralph and Paul Kelly", 2014, 
+                        "The dimensions of software engineering success", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568261"
+                ],
+                "ramasubbu11": [
+                        "Narayan Ramasubbu, Marcelo Cataldo, Rajesh Krishna Balan, and James D. Herbsleb", 2011, 
+                        "Configuring global software teams: a multi-company analysis of project productivity, quality, and profits", "#ICSE",
+                        "https://doi.org/10.1145/1985793.1985830"
+                ],
+                "ray14": [
+                        "Baishakhi Ray, Daryl Posnett, Vladimir Filkov, and Premkumar Devanbu", 2014, 
+                        "A large scale study of programming languages and code quality in GitHub", "#FSE",
+                        "http://dx.doi.org/10.1145/2635868.2635922"
+                ],
+                "rice16": [
+                        "David Rice", 2016,
+                        "Continuous delivery with David Rice", "#SED",
+                        "https://softwareengineeringdaily.com/2016/10/10/continuous-delivery-with-david-rice/"
+                ],
+                "rigby11": [
+                        "Peter C. Rigby and Margaret-Anne Storey", 2011, 
+                        "Understanding broadcast based peer review on open source software projects", "#ICSE",
+                        "https://doi.org/10.1145/1985793.1985867"
+                ],
+                "rigby13": [
+                        "Peter C. Rigby and Christian Bird", 2013, 
+                        "Convergent contemporary software peer review practices", "#ESECFSE",
+                        "http://dx.doi.org/10.1145/2491411.2491444"
+                ],
+                "rigby16": [
+                        "Peter C. Rigby, Yue Cai Zhu, Samuel M. Donadelli, and Audris Mockus", 2016, 
+                        "Quantifying and mitigating turnover-induced knowledge loss: case studies of chrome and a project at Avaya", 
+                        "#ICSE",
+                        "https://doi.org/10.1145/2884781.2884851"
+                ],
+                "roehm12": [
+                        "Tobias Roehm, Rebecca Tiarks, Rainer Koschke, and Walid Maalej", 2012,
+                        "How do professional developers comprehend software?", "#ICSE",
+                        "https://doi.org/10.1109/ICSE.2012.6227188"
+                ],
+                "rothermel96": [
+                        "Gregg G. Rothermel, Mary Jean Harrold", 1996, 
+                        "Analyzing regression test selection techniques", "#TSE",
+                        "https://doi.org/10.1109/32.536955"
+                ],
+                "rubin16": [
+                        "Julia Rubin and Martin Rinard", 2016, 
+                        "The challenges of staying together while moving fast: an exploratory study", "#ICSE",
+                        "https://doi.org/10.1145/2884781.2884871"
+                ],
+                "runeson06": [
+                        "Per Runeson", 2006, 
+                        "A survey of unit testing practices", "#Software",
+                        "https://doi.org/10.1109/MS.2006.91"
+                ],
+                "salvaneschi14": [
+                        "Guido Salvaneschi, Sven Amann, Sebastian Proksch, and Mira Mezini", 2014,
+                        "An empirical study on program comprehension with reactive programming", "#FSE",
+                        "https://doi.org/10.1145/2635868.2635895"
+                ],
+                "santos16": [
+                        "Ronnie E. S. Santos, Fabio Q. B. da Silva, Cleyton V. C. de Magalhães, and Cleviton V. F. Monteiro", 2016, 
+                        "Building a theory of job rotation in software engineering from an instrumental case study", "#ICSE",
+                        "https://doi.org/10.1145/2884781.2884837"
+                ],
+                "schiller14": [
+                        "Todd W. Schiller, Kellen Donohue, Forrest Coward, and Michael D. Ernst", 2014, 
+                        "Case studies and tools for contract specifications", "#ICSE",
+                        "https://doi.org/10.1145/2568225.2568285"
+                ],
+                "seaman97": [
+                        "Carolyn B. Seaman and Victor R. Basili", 1997, 
+                        "An empirical study of communication in code inspections", "#ICSE",
+                        "http://dx.doi.org/10.1145/253228.253248"
+                ],
+                "sedano17": [
+                        "Todd Sedano, Paul Ralph, Cécile Péraire", 2017, 
+                        "Software development waste", "#ICSE",
+                        "https://doi.org/10.1109/ICSE.2017.20"
+                ],
+                "sfetsos09": [
+                        "Panagiotis Sfetsos, Ioannis Stamelos, Lefteris Angelis, Ignatios Deligiannis ", 2009, 
+                        "An experimental investigation of personality types impact on pair effectiveness in pair programming", "#ESE",
+                        "https://doi.org/10.1007/s10664-008-9093-5"
+                ],
+                "sharp04": [
+                        "Helen Sharp, Hugh Robinson", 2004, 
+                        "An ethnographic study of XP practice", "#ESE",
+                        "https://doi.org/10.1023/B:EMSE.0000039884.79385.54"
+                ],
+                "shetterly17": [
+                        "Margot Lee Shetterly", 2017,
+                        "Hidden figures: the American dream and the untold story of the Black women mathematicians who helped win the space race", "HarperCollins Nordic",
+                        "https://www.harpercollins.com/products/hidden-figures-margot-lee-shetterly?variant=32132873093154"
+                ],
+                "shrestha20": [
+                        "Shrestha, N., Botta, C., Barik, T., & Parnin, C", 2020, 
+                        "Here we go again: why is it difficult for developers to learn another programming language?", "#ICSE",
+                        "http://nischalshrestha.me/docs/cross_language_interference.pdf"
+                ],
+                "sillito06": [
+                        "Jonathan Sillito, Gail C. Murphy, and Kris De Volder", 2006,
+                        "Questions programmers ask during software evolution tasks", "#FSE",
+                        "http://dx.doi.org/10.1145/1181775.1181779"
+                ],
+                "silva16": [
+                        "Danilo Silva, Nikolaos Tsantalis, and Marco Tulio Valente", 2016, 
+                        "Why we refactor? Confessions of GitHub contributors", "#FSE",
+                        "https://doi.org/10.1145/2950290.2950305"
+                ],
+                "singer14": [
+                        "Leif Singer, Fernando Figueira Filho, and Margaret-Anne Storey", 2014, 
+                        "Software engineering at the speed of light: how developers stay current using Twitter", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568305"
+                ],
+                "smite10": [
+                        "Darja Šmite, Claes Wohlin, Tony Gorschek, Robert Feldt ", 2010, 
+                        "Empirical evidence in global software engineering: a systematic review", "#ESE",
+                        "https://doi.org/10.1007/s10664-009-9123-y"
+                ],
+                "somers17": [
+                        "James Somers", 2017, 
+                        "The coming software apocalypse", "The Atlantic Monthly", 
+                        "https://www.theatlantic.com/technology/archive/2017/09/saving-the-world-from-code/540393/"
+                ],
+                "sommerville97": [
+                        "Ian Sommerville, Pete Sawyer", 1997, 
+                        "Requirements engineering: a good practice guide", "John Wiley & Sons, Inc", 
+                        "https://books.google.com/books?id=5NnP-VODEc8C"
+                ],
+                "stefik13": [
+                        "Andreas Stefik and Susanna Siebert", 2013,
+                        "An Empirical Investigation into Programming Language Syntax", "ACM Transactions on Computing Education",
+                        "https://doi.org/10.1145/2534973"
+                ],
+                "stol14": [
+                        "Klaas-Jan Stol and Brian Fitzgerald", 2014, 
+                        "Two's company, three's a crowd: a case study of crowdsourcing software development", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568249"
+                ],
+                "stroustrup96": [
+                        "Bjarn Stroustrup, B", 1996, 
+                        "A history of C++: 1979--1991", "History of programming languages II",
+                        "http://dl.acm.org/citation.cfm?id=1057836"
+                ],
+                "stylos08": [
+                        "Jeffrey Stylos and Brad A. Myers", 2008, 
+                        "The implications of method placement on API learnability", "#FSE",
+                        "http://dx.doi.org/10.1145/1453101.1453117"
+                ],
+                "syedabdullah06": [
+                        "Sharifah Syed-Abdullah, Mike Holcombe & Marian Gheorge", 2006, 
+                        "The impact of an agile methodology on the well being of development teams", "#ESE",
+                        "https://doi.org/10.1007/s10664-009-9123-y"
+                ],
+                "tao12": [
+                        "Yida Tao, Yingnong Dang, Tao Xie, Dongmei Zhang, and Sunghun Kim", 2012,
+                        "How do software engineers understand code changes? An exploratory study in industry", "#FSE",
+                        "http://dx.doi.org/10.1145/2393596.2393656"
+                ],
+                "thongtanunam16": [
+                        "Thongtanunam, P., McIntosh, S., Hassan, A. E., & Iida, H", 2016, 
+                        "Review participation in modern code review: An empirical study of the Android, Qt, and OpenStack projects", "#ESE",
+                        "https://doi.org/10.1007/s10664-016-9452-6"
+                ],
+                "treude09": [
+                        "Christoph Treude and Margaret-Anne Storey", 2009, 
+                        "How tagging helps bridge the gap between social and technical aspects in software development", "#ICSE",
+                        "http://dx.doi.org/10.1109/ICSE.2009.5070504"
+                ],
+                "treude10": [
+                        "Christoph Treude and Margaret-Anne Storey", 2010, 
+                        "Awareness 2.0: staying aware of projects, developers and tasks using dashboards and feeds", "#ICSE",
+                        "http://dx.doi.org/10.1145/1806799.1806854"
+                ],
+                "treude11": [
+                        "Christoph Treude and Margaret-Anne Storey", 2011, 
+                        "Effective communication of software development knowledge through community portals", "#FSE",
+                        "http://dx.doi.org/10.1145/2025113.2025129"
+                ],
+                "turnbull16": [
+                        "James Turnbull", 2016,
+                        "The art of monitoring with James Turnbull", "#SED",
+                        "https://softwareengineeringdaily.com/2016/07/28/2739/]. Software Engineering Daily."
+                ],
+                "uemura84": [
+                        "Keiji Uemura and Miki Ohori", 1984, 
+                        "A cooperative approach to software development by application engineers and software engineers", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=801955"
+                ],
+                "vanderhoek97": [
+                        "André van der Hoek, Richard S. Hall, Dennis Heimbigner, and Alexander L. Wolf", 1997, 
+                        "Software release management", "#FSE",
+                        "https://doi.org/10.1145/267896.267909"
+                ],
+                "vasilescu15": [
+                        "Bogdan Vasilescu, Yue Yu, Huaimin Wang, Premkumar Devanbu, and Vladimir Filkov", 2015, 
+                        "Quality and productivity outcomes relating to continuous integration in GitHub", "#ESECFSE",
+                        "https://doi.org/10.1145/2786805.2786850"
+                ],
+                "vonmayrhauser94": [
+                        "Anneliese von Mayrhauser A. Marie Vans", 1994, 
+                        "Comprehension processes during large scale maintenance", "#ICSE",
+                        "https://doi.org/10.1109/ICSE.1994.296764"
+                ],
+                "vosburgh84": [
+                        "J. Vosburgh, B. Curtis, R. Wolverton, B. Albert, H. Malec, S. Hoben, and Y. Liu", 1984, 
+                        "Productivity factors and programming environments", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=801963"
+                ],
+                "wagstrom14": [
+                        "Patrick Wagstrom and Subhajit Datta", 2014, 
+                        "Does latitude hurt while longitude kills? Geographical and temporal separation in a large scale software development project", "#ICSE",
+                        "http://dx.doi.org/10.1145/2568225.2568279"
+                ],
+                "walker12": [
+                        "Robert J. Walker, Shreya Rawal, and Jonathan Sillito", 2012, 
+                        "Do crosscutting concerns cause modularity problems?", "#FSE",
+                        "http://dx.doi.org/10.1145/2393596.2393654"
+                ],
+                "wang16": [
+                        "Jennifer Wang'", 2016,
+                        "Female pursuit of Computer Science with Jennifer Wang", "#SED",
+                        "https://softwareengineeringdaily.com/2016/06/13/female-pursuit-computer-science-jennifer-wang/"
+                ],
+                "washington20": [
+                        "Alicia Nicki Washington", 2020, 
+                        "When twice as good isn't enough: the case for cultural competence in computing", "#SIGCSE", 
+                        "https://doi.org/10.1145/3328778.3366792"
+                ],
+                "weinberg82": [
+                        "Gerald M. Weinberg", 1982, 
+                        "Over-structured management of software engineering", "#ICSE",
+                        "https://dl.acm.org/doi/abs/10.5555/800254.807743"
+                ],
+                "weiser81": [
+                        "Mark Weiser", 1981,
+                        "Program slicing", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=802557"
+                ],
+                "wobbrock11": [
+                        "Jacob O. Wobbrock, Shaun K. Kane, Krzysztof Z. Gajos, Susumu Harada, and Jon Froehlich", 2011, 
+                        "Ability-based design: Concept, principles and examples", "ACM Transactions on Accessible Computing (TACCESS)",
+                        "https://doi.org/10.1145/1952383.1952384"
+                ],
+                "woodcock09": [
+                        "Jim Woodcock, Peter Gorm Larsen, Juan Bicarregui, and John Fitzgerald", 2009, 
+                        "Formal methods: Practice and experience", "#Surveys", 
+                        "http://dx.doi.org/10.1145/1592434.1592436"
+                ],
+                "woodfield81": [
+                        "Scott N. Woodfield, Hubert E. Dunsmore, and Vincent Y. Shen", 1981, 
+                        "The effect of modularization and comments on program comprehension", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=802534"
+                ],
+                "xia17": [
+                        "Xin Xia, Lingfeng Bao, David Lo, Pavneet Singh Kochhar, Ahmed E. Hassan, Zhenchang Xing ", 2017, 
+                        "What do developers search for on the web?", "#ESE",
+                        "https://link.springer.com/article/10.1007/s10664-017-9514-4"
+                ],
+                "ye03": [
+                        "Yunwen Ye and Kouichi Kishida ", 2003, 
+                        "Toward an understanding of the motivation Open Source Software developers", "#ICSE",
+                        "http://dl.acm.org/citation.cfm?id=776867"
+                ],
+                "yin11": [
+                        "Zuoning Yin, Ding Yuan, Yuanyuan Zhou, Shankar Pasupathy, and Lakshmi Bairavasundaram", 2011,
+                        "How do fixes become bugs?", "#ESECFSE",
+                        "http://dx.doi.org/10.1145/2025113.2025121"
+                ],
+                "zeller02": [
+                        "Andreas Zeller", 2002, 
+                        "Isolating cause-effect chains from computer programs", "FSE",
+                        "http://dx.doi.org/10.1145/587051.587053"
+                ],
+                "zeller02b": [
+                        "Andreas Zeller, Ralf Hildebrandt", 2002, 
+                        "Simplifying and isolating failure-inducing input", "#TSE",
+                        "https://doi.org/10.1109/32.988498"
+                ],
+                "zeller09": [
+                        "Andreas Zeller", 2009, 
+                        "Why programs fail: a guide to systematic debugging", "Elsevier", 
+                        "https://www.google.com/books/edition/_/_63Bm4LAdDIC"
+                ],
+                "zhou11": [
+                        "Minghui Zhou and Audris Mockus", 2011,
+                        "Does the initial environment impact the future of developers?", "#ICSE",
+                        "https://doi.org/10.1145/1985793.1985831"
+                ]
         }
 }
