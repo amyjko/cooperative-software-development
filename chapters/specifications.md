@@ -6,7 +6,7 @@ The techniques we've discussed so far for avoiding this boil down to _specifying
 
 In their simplest form, a functional specification can be a just some natural language that says what an individual function is supposed to do:
 		
-`
+`javascript
 // Return the smaller of the two numbers, 
 // or if they're equal, the second number.
 function min(a, b) {
@@ -20,7 +20,7 @@ The comment above is okay, but it's not very precise. It says what is returned a
 		
 To make these clearer, many languages use *static typing* to allow developers to specify types explicitly:
 
-`
+`javascript
 // Return the smaller of the two integers, or if they're equal, the second number.
 function min(int a, int b) {
   return a < b ? a : b;
@@ -33,7 +33,7 @@ Of course, if the above was JavaScript code (which doesn't support static typing
 		
 This brings us to a second purpose of writing functional specifications: to help _verify_ that functions, their input, and their output are correct. Tests of functions and other low-level procedures are called *unit tests*. There are many ways to use specifications to verify correctness. By far, one of the simplest and most widely used kinds of unit tests are *assertions*<clarke06>. Assertions consist of two things: 1) a check on some property of a function's input or output and 2) some action to notify about violations of these properties. For example, if we wanted to verify that the JavaScript function above had integer values as inputs, we would do this:
 		
-`
+``javascript
 // Return the smaller of the two numbers, or if they're equal, the second number.
 function min(a, b) {
   if(!Number.isInteger(a)) 
@@ -50,7 +50,7 @@ Assertions are related to the broader category of *error handling* language feat
 		
 Researchers have invented many forms of specification that require more work and more thought to write, but can be used to make stronger guarantees about correctness<woodcock09>. For example, many languages support the expression of formal *pre-conditions* and *post-conditions* that represent contracts that must be kept for the program to be corect. (*Formal* means mathematical, facilitating mathematical proofs that these conditions are met). Because these contracts are essentially mathematical promises, we can build tools that automatically read a function's code and verify that what it computes exhibits those mathematical properties using automated theorem proving systems. For example, suppose we wrote some formal specifications for our example above to replace our assertions (using a fictional notation for illustration purposes):
 
-`
+`javascript
 // pre-conditions: a in Integers, b in Integers
 // post-conditions: result <= a and result <= b
 function min(a, b) {
