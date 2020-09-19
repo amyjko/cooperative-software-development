@@ -85,12 +85,12 @@
                 "aranda09": [
                         "Jorge Aranda and Gina Venolia", 2009, 
                         "The secret life of bugs: Going past the errors and omissions in software repositories", 
-                        "ACM/IEEE International Conference on Software Engineering (ICSE)",
+                        "#ICSE",
                         "http://dx.doi.org/10.1109/ICSE.2009.5070530"
                 ],
                 "arnold96": [
                         "Robert Arnold, Shawn Bohner", 1996,
-                        "Software change impact analysis", "IEEE Computer Society Press."
+                        "Software change impact analysis", "IEEE Computer Society Press"
                 ],
                 "atwood16": [
                         "Jeff Atwood", 2016,
@@ -482,7 +482,7 @@
                 ],
                 "kenney00": [
                         "Kenney, M", 2000,
-                        "Understanding Silicon Valley: The anatomy of an entrepreneurial region", "Stanford University Press."
+                        "Understanding Silicon Valley: The anatomy of an entrepreneurial region", "Stanford University Press"
                 ],
                 "kernighan16": [
                         "Brian Kernighan", 2016,
@@ -988,7 +988,7 @@
                 "turnbull16": [
                         "James Turnbull", 2016,
                         "The art of monitoring with James Turnbull", "#SED",
-                        "https://softwareengineeringdaily.com/2016/07/28/2739/]. Software Engineering Daily."
+                        "https://softwareengineeringdaily.com/2016/07/28/2739/"
                 ],
                 "uemura84": [
                         "Keiji Uemura and Miki Ohori", 1984, 
