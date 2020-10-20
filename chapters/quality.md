@@ -8,7 +8,7 @@ There are a surprisingly large number of software qualities<boehm76>. Many conce
 
 * *Reliability* is the extent to which a program behaves the same way over time in the same operating environment. For example, if your online banking app works most of the time, but crashes sometimes, it's not particularly reliable.
 
-* *Robustness* is the extent to which a program can recover from errors or unexpected input. For example, a login form that crashes if an email is formatted properly isn't very robust. A login form that handles _any_ text input is optimally robust. One can make a system more robust by breadth of errors and inputs it can handle in a reasonable way.
+* *Robustness* is the extent to which a program can recover from errors or unexpected input. For example, a login form that crashes if an email is formatted improperly isn't very robust. A login form that handles _any_ text input is optimally robust. One can make a system more robust by breadth of errors and inputs it can handle in a reasonable way.
 
 * *Performance* is the extent to which a program uses computing resources economically. Synonymous with "fast" and "zippy". Performance is directly determined by how many instructions a program has to execute to accomplish it's operations, but it is difficult to measure because operations, inputs, and the operating environment can vary widely.
 
