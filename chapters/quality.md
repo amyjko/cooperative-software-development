@@ -28,7 +28,7 @@ Whereas the above qualities are concerned with how software behaves technically 
 
 Other qualities are concerned with the use of the software in the world by people:
 
-* *Learnability* is the easy with which a person can learn to operate software. Learnability is multi-dimensional and can be difficult to measure, including aspects of usability, expectations of prior knowledge, reliance on conventions, error proneness, and task alignment<grossman09>.
+* *Learnability* is the ease with which a person can learn to operate software. Learnability is multi-dimensional and can be difficult to measure, including aspects of usability, expectations of prior knowledge, reliance on conventions, error proneness, and task alignment<grossman09>.
 
 * *User efficiency* is the speed with which a person can perform tasks with a program. For example, think about the speed with which you can navigate back to the table of contents of this book. Obviously, because most software supports many tasks, user efficiency isn't a single property of software, but one that varies depending on the task.
 
