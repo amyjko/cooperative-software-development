@@ -15,14 +15,14 @@ Aside from individual and team factors, productivity is also influenced by the p
 A different way to think about productivity is to consider it from a "waste" perspective, in which waste is defined as any activity that does not contribute to a product's value to users or customers. Sedano et al. investigated this view across two years and eight software development projects in a software development consultancy<sedano17>, contributing a taxonomy of waste: 
 		
 * *Building the wrong feature or product*. The cost of building a feature or product that does not address user or business needs.
-* *Mismanaging the backlog*. The cost of duplicating work, expediting lower value user features, or delaying nec- essary bug fixes.
+* *Mismanaging the backlog*. The cost of duplicating work, expediting lower value user features, or delaying necessary bug fixes.
 * *Rework*. The cost of altering delivered work that should have been done correctly but was not.
-* *Unnecessarily complex solutions*. The cost of creating a more complicated solution than necessary, a missed opportu- nity to simplify features, user interface, or code.
+* *Unnecessarily complex solutions*. The cost of creating a more complicated solution than necessary, a missed opportunity to simplify features, user interface, or code.
 * *Extraneous cognitive load*. The costs of unneeded expenditure of mental energy, such as poorly written code, context switching, confusing APIs, or technical debt. 
 * *Psychological distress*. The costs of burdening the team with unhelpful stress arising from low morale, pace, or interpersonal conflict.
 * *Waiting/multitasking*. The cost of idle time, often hidden by multi-tasking, due to slow tests, missing information, or context switching.
 * *Knowledge loss*. The cost of re-acquiring information that the team once knew.
-* *Ineffective communication*. The cost of incomplete, incorrect, mislead- ing, inefficient, or absent communication.
+* *Ineffective communication*. The cost of incomplete, incorrect, misleading, inefficient, or absent communication.
 		
 One could imagine using these concepts to refine processes and practices in a team, helping both developers and managers be more aware of sources of waste that harm productivity. 
 
