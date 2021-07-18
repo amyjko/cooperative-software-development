@@ -11,7 +11,7 @@ In their simplest form, a functional specification can be a just some natural la
 // or if they're equal, the second number.
 function min(a, b) {
   return a < b ? a : b;
-}		
+}
 `
 
 This comment achieves the core purpose of a specification: to help other developers understand what the requirements and intended behavior of a function are. As long as everyone sticks to this "plan" (everyone calls the function with only numbers and the function always returns the smaller of them), then there shouldn't be any problems.
@@ -33,7 +33,7 @@ Of course, if the above was JavaScript code (which doesn't support static typing
 		
 This brings us to a second purpose of writing functional specifications: to help _verify_ that functions, their input, and their output are correct. Tests of functions and other low-level procedures are called *unit tests*. There are many ways to use specifications to verify correctness. By far, one of the simplest and most widely used kinds of unit tests are *assertions*<clarke06>. Assertions consist of two things: 1) a check on some property of a function's input or output and 2) some action to notify about violations of these properties. For example, if we wanted to verify that the JavaScript function above had integer values as inputs, we would do this:
 		
-``javascript
+`javascript
 // Return the smaller of the two numbers, or if they're equal, the second number.
 function min(a, b) {
   if(!Number.isInteger(a)) 
