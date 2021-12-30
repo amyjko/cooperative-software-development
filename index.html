@@ -5,20 +5,57 @@
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-		<!-- Bootstrap jQuery -->
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-
 		<!-- Peruse -->
-		<script src="https://faculty.washington.edu/ajko/peruse/peruse.js"></script>
-		<link rel="stylesheet" href="https://faculty.washington.edu/ajko/peruse/peruse.css">
+		<script src="https://faculty.washington.edu/ajko/bookish/bookish.js"></script>
+		<link rel="stylesheet" href="https://faculty.washington.edu/ajko/bookish/bookish.css">
 		<link rel="apple-touch-icon" sizes="180x180" href="https://faculty.washington.edu/ajko/peruse/ios-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="https://faculty.washington.edu/ajko/peruse/favicon.png">
 
+		<!-- Theme -->
+		<style>
+
+			@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,300&display=swap');
+
+			:root {
+				/* Background colors */
+				--bookish-background-color: #FFFFFF;
+				--bookish-block-background-color: #FCFAFA;
+
+				/* Border colors */
+				--bookish-border-color-light: #E0E0E0;
+				--bookish-border-color-bold: #000000;
+
+				/* Foreground colors */
+				--bookish-paragraph-color: #000000;
+				--bookish-highlight-color: #bb4242;
+				--bookish-link-color: #bb4242;
+				--bookish-bullet-color: #bb4242;
+
+				/* Fonts */
+				--bookish-paragraph-font-family: "Roboto", serif;
+				--bookish-header-font-family: "Bebas Neue", serif;
+				--bookish-bullet-font-family: "Courier New", monospace;
+
+				/* Font weights */
+				--bookish-paragraph-font-weight: 300;
+				--bookish-bold-font-weight: 500;
+				--bookish-link-font-weight: 300;
+
+				/* Line heights */
+				--bookish-paragraph-line-height: 2rem;
+			}
+
+			.bookish-dark {
+				--bookish-paragraph-color: #DADADA;
+				--bookish-highlight-color: #b36363;
+				--bookish-link-color: #b36363;
+				--bookish-bullet-color: #b36363;
+			}
+
+		</style>
+		
     </head>
-	<body onload="peruse('book.json')">
+	<body onload="bookish()">
 		
 		<script type="text/javascript">
 		
