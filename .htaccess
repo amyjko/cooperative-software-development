@@ -1,5 +1,5 @@
 # Set the path to prepend to all rewrites.
-RewriteBase ajko/books/cooperative-software-development
+RewriteBase /ajko/books/cooperative-software-development
 
 # Redirect all non-directory paths to index.html for single-page routing,
 RewriteCond %{REQUEST_FILENAME} !-f
