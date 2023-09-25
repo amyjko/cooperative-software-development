@@ -39,7 +39,7 @@ This process, while straightforward, is the slowest, requiring a long, vigilant 
 4. Analyzing the data from your observations
 5. If you've identified the defect, move on to the repair phase; if not, return to step 2.
 		
-The problems with the strategy above are numerous. First, what if you can't generate a hypothesis? What if you can, but testing the hypothesis is slow or impossible? You could spend _hours_ generating hypotheses that are completely off-base, effectively analyzing all of your code and it's executions before finding the defect.
+The problems with the strategy above are numerous. First, what if you can't generate a hypothesis? What if you can, but testing the hypothesis is slow or impossible? You could spend _hours_ generating hypotheses that are completely off-base, effectively analyzing all of your code and its executions before finding the defect.
 		
 Another strategy is working backwards<ko08>.
 
