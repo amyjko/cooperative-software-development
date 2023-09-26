@@ -16,12 +16,12 @@ There are some approaches to specifying requirements _formally_. These technique
 
 Expressing requirements in natural language can mitigate these effects, at the expense of precision. They just have to be *complete*, *precise*, *non-conflicting*, and *verifiable*. For example, consider a design for a simple to do list application. Its requirements might be something like the following:
 		
-* Users must be able to add to do list items with a single action.
-* To do list items must consist of text and a binary completed state.
-* Users must be able to edit to do list item text.
-* Users must be able to toggle the completed state.
-* Users must be able to delete to do list items.
-* All edits to do list item state must save without user intervention.
+* Users must be able to add to-do list items with a single action.
+* To-do list items must contain text and a binary completed state.
+* Users must be able to edit the text of to-do list items.
+* Users must be able to toggle the completed state of to-do list items.
+* Users must be able to delete to-do list items.
+* All changes made to the state of to-do list items must be saved automatically without user intervention.
 		
 Let's review these requirements against the criteria for good requirements that I listed above:
 		
