@@ -13,7 +13,7 @@ The individuals in a software organization take on different roles to achieve th
 * *Designers* decide _how_ software will provide value. This isn't about code or really even about software; it's about envisioning solutions to problems that people have.
 * *Software engineers* write code with other engineers to implement requirements envisioned by designers. If they fail to meet requirements, the design won't be implemented correctly, which will prevent the software from providing value.
 * *Sales* takes the product that's been built and try to sell it to the audiences that marketers have identified. They also try to refine an organization's understanding of what the customer wants and needs, providing feedback to marketing, product, and design, which engineers then address.
-* *Support* helps the people using the product to use it successfully and, like sales, provides feedback to product, design, and engineering about the product's value (or lack thereof) and it's defects.
+* *Support* helps the people using the product to use it successfully and, like sales, provides feedback to product, design, and engineering about the product's value (or lack thereof) and its defects.
 		
 As I noted above, sometimes the roles above get merged into individuals. When I was CTO at AnswerDash, I had software engineering roles, design roles, product roles, sales roles, _and_ support roles. This was partly because it was a small company when I was there. As organizations grow, these roles tend to be divided into smaller pieces. This division often means that different parts of the organization don't share knowledge, even when it would be advantageous<chilana11>.
 		
