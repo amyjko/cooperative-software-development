@@ -4,7 +4,7 @@ As you've probably noticed by now, this type of process doesn't really scale, ev
 		
 The techniques we've discussed so far for avoiding this boil down to _specifying_ what code should do, so everyone can write code according to a plan. We've talked about [requirements specifications|requirements], which are declarations of what software must do from a users' perspective. We've also talked about [architectural specifications|architecture], which are high-level declarations of how code will be organized, encapsulated, and coordinated. At the lowest level are *functional specifications*, which are declarations about the _properties of input and output of functions in a program_.
 
-In their simplest form, a functional specification can be a just some natural language that says what an individual function is supposed to do:
+In their simplest form, a functional specification can be just some natural language that says what an individual function is supposed to do:
 		
 `javascript
 // Return the smaller of the two numbers, 
