@@ -12,7 +12,7 @@ More recent developers have investigated ideas of *architectural styles*, which 
 * *Pipe and filter*, in which data is passed from component to component, and transformed and filtered along the way. Command lines, compilers, and machine learned programs are examples of pipe and filter architectures.
 * *Model-view-controller (MVC)*, in which data is separated from views of the data and from manipulations of data. Nearly all user interface toolkits use MVC, including popular modern frameworks such as React.
 * *Peer to peer (P2P)*, in which components transact data through a distributed standard interface. Examples include Bitcoin, Spotify, and Gnutella.
-* *Event-driven*, in which some components "broadcast" events and others "subscribe" to notifications of these events. Examples include most model-view-controller-based user interface frameworks, which have models broadest change events to views, so they may update themselves to render new model state.
+* *Event-driven*, in which some components "broadcast" events and others "subscribe" to notifications of these events. Examples include most model-view-controller-based user interface frameworks, which have models broadcast change events to subscribers. For example, views may subscribe to models so they may update themselves to render new model state each time it changes.
 		
 Architectural styles come in all shapes and sizes. Some are smaller design patterns of information sharing<beck96>, whereas others are ubiquitous but specialized patterns such as the architectures required to support undo and cancel in user interfaces<bass03>.
 		
