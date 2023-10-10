@@ -38,4 +38,4 @@ Lastly, remember that requirements are translated from a design, and designs hav
 No loan application with an applicant self-identified as a person of color should be approved.
 "
 
-That requirement is both precise and verifiable. In the 1980's, it was legal. But was it ethical or just? Absolutely not. Therefore, requirements, no matter how formally extracted from a design specification, no matter how consistent with law, and no matter how aligned with an organization's priorities, is free from racist ideas. Requirements are just one of many ways that such ideas are manifested, and ultimately hidden in code<benjamin19>.
+That requirement is both precise and verifiable. In the 1980's, it was legal. But was it ethical or just? Absolutely not. Therefore, requirements, no matter how formally extracted from a design specification, no matter how consistent with law, and no matter how aligned with an organization's priorities, should be free of racist ideas. Requirements are just one of many ways that such ideas are manifested, and ultimately hidden in code<benjamin19>.
