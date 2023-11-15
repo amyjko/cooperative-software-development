@@ -5,7 +5,7 @@ Part of this is being clear about what you intended (by writing [specifications|
 There are many ways to verify code. A reasonable first instinct is to simply run your program. After all, what better way to check whether you expressed your intents then to see with your own eyes what your program does? This is an empirical approach is called *testing*. Some testing is _manual_, in that a human executes a program and verifies that it does what was intended. Some testing is _automated_, in that the test is run automatically by a computer. Another way to verify code is to *analyze* it, using logic to verify its correct operation. As with testing, some analysis is _manual_, since humans do it. We call this manual analysis _inspection_, whereas other analysis is _automated_, since computers do it. We call this _program analysis_. This leads to a nice complementary set of verification technique along two axes: degree of automation and type of verification:
 
 * Manual techniques include *manual testing* (which is empirical) and *inspections* (which is analytical)
-* Automated technqiues include *automated testing* (which is empirical) and *program analysis* (which is analytical)
+* Automated techniques include *automated testing* (which is empirical) and *program analysis* (which is analytical)
 
 To discuss each of these and their tradeoffs, first we have to cover some theory about verification. The first and simplest ideas are some terminology:
 
