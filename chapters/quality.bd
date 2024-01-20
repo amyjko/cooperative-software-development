@@ -38,7 +38,7 @@ Other qualities are concerned with the use of the software in the world by peopl
 
 * *Consistency* is the extent to which related functionality in a system leverages the same skills, rather than requiring new skills to learn how to use. For example, in Mac OS, quitting any application requires the same action: command-Q or the Quit menu item in the application menu; this is highly consistent. Other platforms that are less consistent allow applications to have many different ways of quitting applications.
 
-* *Usability* is an aggregate quality that encompasses all of the qualities above. It is used holistically to refer to all of of those factors. Because it is not very precise, it is mostly useful in casual conversation about software, but not as useful in technical conversations about software quality.
+* *Usability* is an aggregate quality that encompasses all of the qualities above. It is used holistically to refer to all of those factors. Because it is not very precise, it is mostly useful in casual conversation about software, but not as useful in technical conversations about software quality.
 
 * *Bias* is the extent to which software discriminates or excludes on the basis of some aspect of its user, either directly, or by amplifying or reinforcing discriminatory or exclusionary structures in society. For example, data used to train a classifier might used racially biased data, algorithms might use sexist assumptions about gender, web forms might systematically exclude non-Western names and language, and applications might be only accessible to people who can see or use a mouse. Inaccessibility is a form of bias.
 
