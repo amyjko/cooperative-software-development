@@ -2,7 +2,7 @@ There are numerous ways a software project can fail: projects can be over budget
 
 One of the central reasons for this is that there are many distinct *software qualities* that software can have and depending on the stakeholders, each of these qualities might have more or less importance. For example, a safety critical system such as flight automation software should be reliable and defect-free, but it's okay if it's not particularly learnable--that's what training is for. A video game, however, should probably be fun and learnable, but it's fine if it ships with a few defects, as long as they don't interfere with fun<murphy14>
 
-There are a surprisingly large number of software qualities<boehm76>. Many concern properties that are intrisinc to a software's implementation:
+There are a surprisingly large number of software qualities<boehm76>. Many concern properties that are intrinsinc to a software's implementation:
 
 * *Correctness* is the extent to which a program behaves according to its specification. If specifications are ambiguous, correctness is ambiguous. However, even if a specification is perfectly unambiguous, it might still fail to meet other qualities (e.g., a web site may be built as intended, but still be slow, unusable, and useless.)
 
