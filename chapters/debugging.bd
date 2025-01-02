@@ -2,7 +2,7 @@ Despite all of your hard work at design, implementation, and verification, your 
 
 # What is debugging?
 
-Before we can talk about debugging, it's first important to consider what counts as a "bug". This term, which according to computer science mythology, first emerged from actual insects finding their way into the vacuum tubes of mainframes, is actually quite vague. Is the "bug" the incorrect code? Is it the faulty behavior that occurs at runtime when that incorrect code executes? Is it the problem that occurs in the world when the software misbehaves, such as a program crashing, or an operating system hanging? "*Bug*" actually refers to all of things things, which makes it a colloquial, but imprecise term.
+Before we can talk about debugging, it's first important to consider what counts as a "bug". This term is thought to have emerged in the late 19th century to describe any problem with a machine. Grace Hopper's team reported then [found it amusing|https://en.wikipedia.org/wiki/Bug_(engineering)#History] when they found an actual moth in an electromechanical relay in their early computer. And yet, the term is actually quite vague. Is the "bug" the incorrect code? Is it the faulty behavior that occurs at runtime when that incorrect code executes? Is it the problem that occurs in the world when the software misbehaves, such as a program crashing, or an operating system hanging? "*Bug*" actually refers to all of things things, which makes it a colloquial, but imprecise term.
 
 To clarify things, consider four definitions<ko05b>.
 
