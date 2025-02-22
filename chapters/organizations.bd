@@ -12,7 +12,7 @@ The individuals in a software organization take on different roles to achieve th
 * *Product managers* decide what value the product will provide, monitoring the marketplace and prioritizing work.
 * *Designers* decide _how_ software will provide value. This isn't about code or really even about software; it's about envisioning solutions to problems that people have.
 * *Software engineers* write code with other engineers to implement requirements envisioned by designers. If they fail to meet requirements, the design won't be implemented correctly, which will prevent the software from providing value.
-* *Sales* takes the product that's been built and try to sell it to the audiences that marketers have identified. They also try to refine the organization's understanding of what the customer wants and needs, providing feedback to marketing, product, and design, which engineers then address.
+* *Sales* takes the product that's been built and tries to sell it to the audiences that marketers have identified. They also try to refine the organization's understanding of what the customer wants and needs, providing feedback to marketing, product, and design, which engineers then address.
 * *Support* helps the people using the product to use it successfully and, like sales, provides feedback to product, design, and engineering about the product's value (or lack thereof) and its defects.
 		
 As I noted above, sometimes the roles above get merged into individuals. When I was CTO at AnswerDash, I had software engineering roles, design roles, product roles, sales roles, _and_ support roles. This was partly because it was a small company when I was there. As organizations grow, these roles tend to be divided into smaller pieces. This division often means that different parts of the organization don't share knowledge, even when it would be advantageous<chilana11>.
@@ -33,7 +33,7 @@ Open source communities are organizations too. The core activities of design, en
 		
 All of the above has some important implications for what it means to be a software engineer:
 		
-* Engineers are not the only important role in a software organization. In fact, they may be less important to an organization's success than other roles because the decisions they make (how to implement requirements) have smaller impact on the organization's goals than other decisions (what to make, who to sell it to, etc.).
+* Engineers are not the only important role in a software organization. In fact, they may be less important to an organization's success than other roles because the decisions they make (how to implement requirements) have a smaller impact on the organization's goals than other decisions (what to make, who to sell it to, etc.).
 * Engineers have to work with _a lot_ of people working with different roles. Learning what those roles are and what shapes their success is important to being a good collaborator<li17>.
 * While engineers might have many great product ideas, if they really want to shape what they're building, they should be in a product role, not an engineering role.
 				
